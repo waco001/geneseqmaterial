@@ -1,0 +1,10 @@
+@page {
+    size: auto;   /* auto is the initial value */
+    margin: 0;  /* this affects the margin in the printer settings */
+    size: landscape;
+}
+/* Fix graphics.css only for ppf */
+div#content-wrapper{padding:0 0px;text-align:center}
+div.chart{margin:5px;display:inline-block;vertical-align:top}
+/*Break Page*/
+#pg_brk {page-break-before: always;}

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="Introducing Lollipop, a sweet new take on Android." name=
+    "description">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+
+    <title>${Title}</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel=
+    "stylesheet">
+    <link href="https://code.getmdl.io/1.1.1/material.indigo-pink.min.css" rel=
+    "stylesheet">
+    <link href="styles.css" rel="stylesheet">
+    <!--<script type="text/javascript" src="/js/dev/main.js"></script>
+    <script type="text/javascript" src="/js/dev/livesearch.js"></script>-->
+    <%block name="resources" />
+
+    <%block name="head"/>
+</head>
+
+<body>
+    <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+        <div class=
+        "android-header mdl-layout__header mdl-layout__header--fixed">
+            <div class="mdl-layout__header-row">
+                <span class="android-title mdl-layout-title"><img class=
+                "android-logo-image" src="images/android-logo.png"></span>
+                <!-- Add spacer, to align navigation to the right in desktop -->
+
+
+                <div class="android-header-spacer mdl-layout-spacer">
+                </div>
+                <!-- Navigation -->
+
+
+                <div class="android-navigation-container">
+                    <nav class="android-navigation mdl-navigation">
+                        <a class=
+                        "mdl-navigation__link mdl-typography--text-uppercase"
+                        href="">Login</a>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="android-drawer mdl-layout__drawer">
+            <span class="mdl-layout-title"><img class="android-logo-image" src=
+            "images/android-logo-white.png"></span>
+
+            <nav class="mdl-navigation">
+                <a class="mdl-navigation__link" href="/">Home</a>
+                <a class="mdl-navigation__link" href="/">Table</a>
+            </nav>
+        </div>
+
+
+        <div class="mdl-layout__content">
+            <%block name="content"/>
+        </div>
+    </div>
+    <script defer src="https://code.getmdl.io/1.1.1/material.min.js">
+    </script>
+</body>
+</html>

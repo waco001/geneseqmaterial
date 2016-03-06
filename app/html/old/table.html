@@ -1,0 +1,81 @@
+<%inherit file="base.html"/>
+
+<%block name="resources">
+    <script type="text/javascript" src="/js/dev/data_table.js"></script>
+    <script type="text/javascript" src="/js/lib/bootstrap-slider.js"></script>
+    <link rel="stylesheet" href="/css/bootstrap-slider.css" />
+
+</%block>
+
+<%block name="content">
+    <div id="sidebar" class="sidebar data-table">
+    % if not sidebar is UNDEFINED and sidebar == True:
+       <div id="wrapper" class="sidebar">
+       
+       <form id="table-filter" class="pure-form">
+       % if not filters is UNDEFINED:
+        <ul>
+        % for filter in filters:
+        % if filter['type'] == 'slider':
+        <li id="${filter['column']}" class="table-filter range"><span id="name">${filter['name']}</span><span id="value"></span>
+        <input class="table-filter range" name="${filter['column']}" type="range" data-slider-scale="${filter['scale']}" data-slider-min="${filter['min']}" data-slider-max="${filter['max']}" data-slider-step="${filter['step']}" data-slider-value="${filter['init']}"/></li>
+        % else:
+        <li id="${filter['column']}" class="table-filter selection"><span id="name">${filter['name']}</span>
+        % for option in filter['options']:
+        <label class="pure-checkbox">
+        <input class="table-filter selection" id="${option[0]}" type="checkbox" value="${option[0]}"
+        % if option[2]:
+            checked
+        % endif
+        />${option[1]}</label>
+        % endfor
+        <div id="buttons">
+        <button id="select-all" class="pure-button select">All</button><button id="deselect-all" class="pure-button select">None</button>
+        </div>
+        </li>
+        % endif
+        % endfor
+       % endif
+       </ul>
+       </form>
+       
+       </div>
+    % endif
+    </div>
+
+<div id="content-wrapper" class="content data-table">
+    <table id="data" class="table table-hover table-condensed">
+    <thead>
+    <tr>
+    % if not columnNames is UNDEFINED:
+        % for column in columnNames:
+            <th value="${column[1]}" class="sort_none">${column[0]} \
+            <i class="material-icons"> \
+            % if column[1] == order:
+                arrow_drop_down \
+            % else:
+                more_horiz \
+            % endif
+            </i></th>
+        % endfor
+        </i></th>
+    % endif
+    </tr>
+    </thead>
+
+    <tbody>
+    % if not data is UNDEFINED:
+        % for item in data:
+            <tr>
+                <td><a href="./gene?id=${item['_id']}">${item[columnNames[0][1]]}</a></td>
+        % for i in range(1, len(columnNames)):
+                <td>${item[columnNames[i][1]]}</td>
+        % endfor
+            </tr>
+        % endfor
+    % endif
+    </tbody>
+    </table>
+</div>
+
+</%block>

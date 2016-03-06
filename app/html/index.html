@@ -1,0 +1,74 @@
+<%inherit file="base.html"/>
+<%block name="navbarinfo">
+<div class="android-header-spacer mdl-layout-spacer">
+</div>
+<!-- Navigation -->
+<div class="android-navigation-container">
+    <nav class="android-navigation mdl-navigation">
+        % if not login is UNDEFINED and login is not None and login:
+        <a class="mdl-navigation__link mdl-typography--text-uppercase" href="/logout">Logout</a>
+        % else:
+        <a class="mdl-navigation__link mdl-typography--text-uppercase" href="/login">Login</a>
+        % endif
+    </nav>
+</div>
+</%block>
+<%block name="content">
+<div class="home-grid mdl-grid">
+    <div class="mdl-cell--12-col">
+        <div class=
+        "index-card search-card mdl-card mdl-shadow--2dp">
+            <div class="inside-text">
+                <h4>Home</h4>
+
+
+                <p>genseq is a tool that allows all users to
+                explore the human genome and view all information
+                regarding that query and any visual derivations of
+                that data. Developed at Gerstein Lab of Yale
+                University under the guidance of Drs. Robert
+                Kitchen and Mark Gerstein</p>
+
+
+                <p>Use the search bar below to search through our
+                database. For example, you can enter a gene name
+                such as "<code>LPAR2</code>" or part of a gene name
+                such as "<code>LPA</code>".</p>
+
+
+                <form action="/search" method="get" class="search-card-form">
+                    <div class=
+                    "mdl-textfield mdl-textfield-fullwidth mdl-js-textfield mdl-textfield--floating-label">
+                    <input class="mdl-textfield__input" id=
+                    "search-card-input" name="query" type="text">
+                        <label class="mdl-textfield__label" for=
+                        "search-card-input">Search</label>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+        <div class="index-card info-card mdl-card mdl-shadow--2dp">
+            <div class="inside-text">
+                <h4>News</h4>
+
+
+                <ul class="demo-list-icon mdl-list">
+                    <li class="mdl-list__item"><span class=
+                    "mdl-list__item-primary-content"><i class=
+                    "material-icons mdl-list__item-icon">turned_in</i>
+                    V 1.1 Release</span>
+                    </li>
+
+
+                    <li style="list-style: none; display: inline">
+                        <p>Welcome everybody. This is a new version
+                        we are releasing. Features a new UI.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+</%block>

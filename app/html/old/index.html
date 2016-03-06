@@ -1,0 +1,62 @@
+<%inherit file="base.html"/>
+<%block name="content">
+<div id="content-wrapper" class="content" style="text-align: center; height: initial;">
+  <h1 style="margin-top: 5%;">geneseq</h1>
+  <div class="row" style="margin: 0px;">
+    <div class="col-md-6 col-md-offset-3">
+      <p>
+        genseq is a tool that allows all users to explore the human genome and view all information regarding that query and any visual derivations of that data.
+        <br>Developed at Gerstein Lab of Yale University under the guidance of Drs. Robert Kitchen and Mark Gerstein.
+      </p>
+    </div>
+  </div>
+  <div class="row" style="margin: 0px;">
+    <div class="col-lg-6 col-lg-offset-3" style="background-color: white; padding-top:15px;">
+      <div class="input-group input-group-lg" style="margin-bottom: 15px;">
+        <input type="text" class="LiveSearch form-control input-lg" autofocus autocomplete="off" name="query" class="form-control" id="main_search" placeholder="Search ex: PTGDS">
+        <span class="input-group-btn">
+          <button class="btn btn-primary btn-lg" type="submit">Search</button>
+        </span>
+      </div>
+        <div class="searchResult list-group" style="text-align: left;">
+        </div>
+      </div>
+  </div>
+  <div class="row" style="margin: 0px;">
+    <div class="col-md-6 col-md-offset-3">
+      <hr style="border-top: 1px solid rgba(169, 164, 164, 0.78);">
+    </div>
+  </div>
+  <!-- Irrelevant <a href="/human/table" class="btn btn-primary btn-md" role="button">Human Table</a> -->
+  <div class="row" style="margin: 0px;">
+    <div class="col-md-6 col-md-offset-3">
+      <table id="data" class="table table-hover table-condensed">
+        <thead>
+          <tr>
+            <th value="human_name" class="sort_none">Gene Name</th>
+            <th value="cell" class="sort_none">Cell Type</th>
+            <th value="expression" class="sort_none">Expression (TPM)</i></th>
+            <th value="enrichment" class="sort_none">Fold Enrichment</th>
+          </tr>
+        </thead>
+        <tbody><tr class=""><td><a href="./gene?id=ENSMUSG00000015090">PTGDS</a></td><td>Pyramidalneuron</td><td>66211.13</td><td>296.33</td></tr></tbody>
+      </table>
+    </div>
+  </div>
+  <div class="row" style="margin: 0px;">
+    <div class="col-md-4 col-md-offset-3" style="border-right: 1px groove rgba(51, 51, 51, 0.33);">
+      <p>
+        Click on a gene name to go to the gene's page. You can then view all the data plots pertaining with that gene. You can view data plots, compare genes, and print out the genes information for lab use.
+      </p>
+    </div>
+    <div class="col-md-2">
+      <a href="/mouse/table" class="btn btn-primary btn-md" role="button">Explore</a>
+      % if not login is UNDEFINED and login is not None and login:
+      <a href="/logout" class="btn btn-primary btn-md" role="button">Logout</a>
+      % else:
+      <a href="/login" class="btn btn-primary btn-md" role="button">Login</a>
+      % endif
+    </div>
+  </div>
+</div>
+</%block>

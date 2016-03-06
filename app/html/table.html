@@ -1,0 +1,71 @@
+<%inherit file="base.html"/>
+
+<%block name="resources">
+    <script type="text/javascript" src="/js/dev/data_table.js"></script>
+    <script type="text/javascript" src="/js/dev/main.js"></script>
+    <script type="text/javascript" src="/js/lib/bootstrap-slider.js"></script>
+    <link rel="stylesheet" href="/css/bootstrap-slider.css" />
+
+</%block>
+
+<%block name="content">
+<div class="mdl-grid">
+    <div class="mdl-cell--9-col">
+        <table id="data" class="mdl-data-table gene-table mdl-js-data-table mdl-shadow--2dp">
+            <thead>
+                <tr>
+                    <th value="human_name" class="mdl-data-table__cell--non-numeric sort_none">Gene Name<button class="mdl-button mdl-js-button mdl-button--icon"><i class="material-icons">more_horiz</i></button></th>
+                    <th value="cell" class="mdl-data-table__cell--non-numeric sort_none">Cell Type<button class="mdl-button mdl-js-button mdl-button--icon"><i class="material-icons">more_horiz</i></button></th>
+                    <th value="expression" class="sort_none">Expression (TPM)<button class="mdl-button mdl-js-button mdl-button--icon"><i class="material-icons">more_horiz</i></button></th>
+                    <th value="enrichment" class="sort_none">Fold Enrichment<button class="mdl-button mdl-js-button mdl-button--icon"><i class="material-icons">more_horiz</i></button></th>
+                </tr>
+            </thead>
+            <tbody>
+                % if not data is UNDEFINED:
+                    % for item in data:
+                        <tr>
+                            <td class="mdl-data-table__cell--non-numeric"><a href="./gene?id=${item['_id']}">${item[columnNames[0][1]]}</a></td>
+                            <td class="mdl-data-table__cell--non-numeric">${item[columnNames[1][1]]}</td>
+                    % for i in range(2, len(columnNames)):
+                            <td>${item[columnNames[i][1]]}</td>
+                    % endfor
+                        </tr>
+                    % endfor
+                % endif
+            </tbody>
+        </table>
+    </div>
+    % if not sidebar is UNDEFINED and sidebar == True:
+    <div class="mdl-cell mdl-cell--3-col" style="margin-top: 0px; position: fixed;">
+        <div class="fullwidth-card mdl-card mdl-shadow--2dp">
+                <form>
+                    % if not filters is UNDEFINED:
+                     <ul style="padding: 15px; width: auto; list-style: none;">
+                     % for filter in filters:
+                     % if filter['type'] == 'slider':
+                     <li id="${filter['column']}" class="table-filter range"><span id="name">${filter['name']}</span><span id="value"></span>
+                     <input class="table-filter range" name="${filter['column']}" type="range" data-slider-scale="${filter['scale']}" data-slider-min="${filter['min']}" data-slider-max="${filter['max']}" data-slider-step="${filter['step']}" data-slider-value="${filter['init']}"/></li>
+                     % else:
+                     <li id="${filter['column']}" class="table-filter selection"><span id="name">${filter['name']}</span>
+                     % for option in filter['options']:
+                     <br>
+                     <label>
+                     <input class="table-filter selection" id="${option[0]}" type="checkbox" value="${option[0]}"
+                     % if option[2]:
+                         checked
+                     % endif
+                     /><span class="mdl-checkbox__label">${option[1]}</span></label>
+                     % endfor
+                     <div id="buttons">
+                     <button id="select-all" class="mdl-button mdl-js-button mdl-button--accent select">All</button><button id="deselect-all" class="mdl-button mdl-js-button mdl-button--primary select">None</button>
+                     </div>
+                     </li>
+                     % endif
+                     % endfor
+                    % endif
+                </form>
+            </div>
+    </div>
+    % endif
+</div>
+</%block>

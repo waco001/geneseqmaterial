@@ -1,0 +1,91 @@
+<%inherit file="base.html"/>
+
+<%block name="resources">
+<script type="text/javascript" src="/js/lib/jquery.validate.js"></script>
+<script type="text/javascript" src="/js/dev/login.js"></script>
+   <link rel="stylesheet" type="text/css" href="/css/login.css">
+</%block>
+
+<%block name="content">
+<div class="container">
+    <div class="page-header">
+        <h1>Administrator Hub<span class="pull-right label label-default">Welcome ${username}!</span></h1>
+    </div>
+    <div class="row">
+    	
+        <div class="col-md-12">
+            <div class="panel with-nav-tabs panel-primary">
+                <div class="panel-heading">
+                    <ul class="nav nav-tabs">
+                        <li class="dropdown">
+                            <a href="#" data-toggle="dropdown" aria-expanded="true">Users <span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="#tabUserView" data-toggle="tab">View</a></li>
+                                <li><a href="#tabUserMod" data-toggle="tab">Modify</a></li>
+                            </ul>
+                        </li>
+                        <li class=""><a href="#tab3primary" data-toggle="tab" aria-expanded="false">Primary 3</a></li>
+                    </ul>
+                </div>
+                <div class="panel-body">
+                    <div class="tab-content">
+                        <div class="tab-pane fade active in" id="tabUserView">
+                            <table class="table table-striped">
+                                <thead>
+                                    <tr>
+                                        <th>ID</th>
+                                        <th>Timestamp (UTC)</th>
+                                        <th>Username</th>
+                                        <th>Email</th>
+                                        <th>Role</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    % for user in data:
+                                    <tr>
+                                        <th scope="row">
+                                            ${user.get('num', 'ID Unknown')}
+                                        </th>
+                                        <td>
+                                            ${user.get('timestamp', '<span style="color: red;">Timestamp Unkown</span>')}
+                                        </td>
+                                        <td>
+                                            ${user.get('username', '<span style="color: red;">Username Unknown</span>')}
+                                        </td>
+                                        <td>
+                                            ${user.get('email', '<span style="color: red;">Email Unknown</span>')}
+                                        </td>
+                                        <td>
+                                            ${user.get('role', '<span style="color: red;">Role Unkown</span>')}
+                                        </td>
+                                    </tr>
+                                    % endfor
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="tab-pane fade" id="tabUserMod">
+                            <form method="POST">
+                                <div class="form-group">
+                                    <label for="selectUserID">Change user(s) with ID</label>
+                                    <select id="selectUserID" name="selectUserID"multiple class="form-control">
+                                        % for user in data:
+                                            <option value="${user.get('username', 'ERROR')}">${user.get('num', 'ID is undefined')}: ${user.get('username', 'Username is undefined')}</option>
+                                        % endfor
+                                    </select>
+                                </div>
+                                <div class="form-group">
+                                    <label for="ChangeUserTo">To the role of</label>
+                                    <input type="text" id="ChangeUserTo" name="ChangeUserTo" class="form-control" placeholder="Ex. 1, 2, 3">
+                                </div>
+                                <input type=hidden name="method" value="changeRole">
+                                <button class="btn btn-primary" type="submit">Submit</button>
+                            </form>
+                        </div>
+                        <div class="tab-pane fade" id="tab3primary">Primary 3</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+	</div>
+</div>
+</%block>

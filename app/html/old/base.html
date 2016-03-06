@@ -1,0 +1,75 @@
+<html>
+  <head>
+    <title>${Title}</title>
+    <link rel="icon" type="image/png" href="/img/brain.png" />
+    <link rel="stylesheet" type="text/css" href="/css/fonts.css" />
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="/css/bootstrap.css" rel="stylesheet">
+    <link rel="stylesheet" href="/css/pure-min.css">
+    <script type="text/javascript" src="/js/lib/jquery.js"></script>
+    <script type="text/javascript" src="/js/lib/bootstrap.js"></script>
+    <script type="text/javascript" src="/js/lib/underscore-min.js"></script>
+    <script type="text/javascript" src="/js/dev/main.js"></script>
+    <script type="text/javascript" src="/js/dev/livesearch.js"></script>
+
+##
+    <%block name="resources" />
+## load local css
+    % if style is UNDEFINED:
+    <link rel="stylesheet" type="text/css" href="/css/main.css" />
+    % else:
+    <link rel="stylesheet" type="text/css" href="${style}" />
+    % endif
+    % if not extraCSS is UNDEFINED:
+      % for item in extraCSS:
+        <link rel="stylesheet" type="text/css" href="${item}" />
+      % endfor
+    % endif
+## load local scripts
+    % if not script is UNDEFINED:
+      <script type="text/javascript" src="${script}"></script>
+    % elif not scripts is UNDEFINED:
+      % for item in scripts:
+        <script type="text/javascript" src="${item}"></script>
+      % endfor
+    % endif
+
+    <%block name="head"/>
+  </head>
+  <body>
+    <div id="body">
+      % if not ppf:
+        <div id="top-bar">
+          % if Title is not 'Home':
+          <div id="top-bar-wrapper">
+            <form class="top-bar-item pure-form" name="search" action="/search" method="get">
+              <input class="pure-input-1 LiveSearch" name="query" type="text" placeholder="Search"
+              % if not query is UNDEFINED:
+              value="${query}"
+              % endif
+              ></input>
+            </form>
+            <div id="top-bar-menu" class="top-bar-item pure-menu pure-menu-horizontal">
+              <ul class="pure-menu-list">
+              <li class="pure-menu-item"><a href="/" class="pure-menu-link">Home</a></li>
+              <li class="pure-menu-item"><a href="/mouse/table" class="pure-menu-link">Mouse Table</a></li>
+              <li class="pure-menu-item"><a href="/human/table" class="pure-menu-link">Human Table</a></li>
+              <li class="pure-menu-item">
+                % if not login is UNDEFINED and login is not None and login:
+                <a href="/logout" class="url pure-menu-link">Logout</a>
+                % else:
+                <a href="/login" class="url pure-menu-link">Login</a>
+                % endif
+              </li>
+              </ul>
+            </div>
+          </div>
+          % endif
+        </div>
+      % endif
+      <div id="content" class="mains fleft">
+        <%block name="content"/>
+      </div>
+    </div>
+  </body>
+</html>

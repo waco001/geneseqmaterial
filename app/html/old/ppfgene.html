@@ -1,0 +1,46 @@
+<%inherit file="base.html"/>
+
+##Variable Names
+##geneName
+##cellType
+##expr
+##expr_next
+##geneID
+##geneID_human
+##geneID_mouse
+
+<%block name="resources">
+   <script type="text/javascript" src="/js/lib/d3.js"></script>
+   <!--<script type="text/javascript" src="/js/dev/jspdf.debug.js"></script>-->
+   <script type="text/javascript" src="/js/dev/ppf/expression_bodymap.js"></script>
+   <script type="text/javascript" src="/js/dev/ppf/bodydonut.js"></script>
+   <script type="text/javascript" src="/js/dev/ppf/expression_mouse.js"></script>
+   <script type="text/javascript" src="/js/dev/ppf/expression_brainspan.js"></script>
+   <script type="text/javascript" src="/js/dev/ppf/charts.js"></script>
+   <!--<script type="text/javascript" src="/js/dev/pdfgen.js"></script>-->
+   <link rel="stylesheet" type="text/css" href="/css/graphics.css">
+   <link rel="stylesheet" type="text/css" href="/css/ppf.css">
+
+<style type="text/css" media="print">
+@page {
+    size: auto;   /* auto is the initial value */
+    margin: 0;  /* this affects the margin in the printer settings */
+}
+</style>
+</%block>
+
+
+<%block name="content">
+<div id="gene_data">
+   <div id="wrapper" class="gene_data">
+      <ul class="gene_data">
+      % for item in header:
+      <li><div>${item[0]}</div><div id="${item[1]}" value="${item[2]}">${item[2]}</div></li>
+      % endfor
+      </ul>
+   </div>
+</div>
+   <div id="content-wrapper" class="content">
+## main content block
+   </div>
+</%block>
