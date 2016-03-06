@@ -71,7 +71,7 @@ class Pipe(object):
     def connect(self):
         """opens connection to mongo database"""
         logger.debug('connecting')
-        self.client = MongoClient('mongodb',27017)
+        self.client = MongoClient()
         self.db = self.client.gene_locale
 
     def disconnect(self):
