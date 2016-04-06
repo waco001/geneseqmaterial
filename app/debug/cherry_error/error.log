@@ -8283,3 +8283,91 @@ Traceback (most recent call last):
   File "/data/source-newtemplate/app/mouse.py", line 234, in POST
     data = self.getData(kwargs['gene_id'])
 KeyError: 'gene_id'
+[16/Mar/2016:03:22:39] ENGINE Bus STARTING
+[16/Mar/2016:03:22:39] ENGINE Started monitor thread 'Autoreloader'.
+[16/Mar/2016:03:22:39] ENGINE Started monitor thread '_TimeoutMonitor'.
+[16/Mar/2016:03:22:39] ENGINE Serving on http://0.0.0.0
+[16/Mar/2016:03:22:39] ENGINE Bus STARTED
+[16/Mar/2016:03:25:20] ENGINE Keyboard Interrupt: shutting down bus
+[16/Mar/2016:03:25:20] ENGINE Bus STOPPING
+[16/Mar/2016:03:25:20] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 80)) shut down
+[16/Mar/2016:03:25:20] ENGINE Stopped thread 'Autoreloader'.
+[16/Mar/2016:03:25:20] ENGINE Stopped thread '_TimeoutMonitor'.
+[16/Mar/2016:03:25:20] ENGINE Bus STOPPED
+[16/Mar/2016:03:25:20] ENGINE Bus EXITING
+[16/Mar/2016:03:25:20] ENGINE Bus EXITED
+[16/Mar/2016:03:25:20] ENGINE Waiting for child threads to terminate...
+[16/Mar/2016:03:25:26] ENGINE Bus STARTING
+[16/Mar/2016:03:25:26] ENGINE Started monitor thread 'Autoreloader'.
+[16/Mar/2016:03:25:26] ENGINE Started monitor thread '_TimeoutMonitor'.
+[16/Mar/2016:03:25:26] ENGINE Serving on http://0.0.0.0
+[16/Mar/2016:03:25:26] ENGINE Bus STARTED
+[16/Mar/2016:03:26:32] ENGINE Keyboard Interrupt: shutting down bus
+[16/Mar/2016:03:26:32] ENGINE Bus STOPPING
+[16/Mar/2016:03:26:32] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 80)) shut down
+[16/Mar/2016:03:26:32] ENGINE Stopped thread 'Autoreloader'.
+[16/Mar/2016:03:26:32] ENGINE Stopped thread '_TimeoutMonitor'.
+[16/Mar/2016:03:26:32] ENGINE Bus STOPPED
+[16/Mar/2016:03:26:32] ENGINE Bus EXITING
+[16/Mar/2016:03:26:32] ENGINE Bus EXITED
+[16/Mar/2016:03:26:32] ENGINE Waiting for child threads to terminate...
+[16/Mar/2016:03:27:07] ENGINE Bus STARTING
+[16/Mar/2016:03:27:07] ENGINE Started monitor thread 'Autoreloader'.
+[16/Mar/2016:03:27:07] ENGINE Started monitor thread '_TimeoutMonitor'.
+[16/Mar/2016:03:27:07] ENGINE Serving on http://0.0.0.0
+[16/Mar/2016:03:27:07] ENGINE Bus STARTED
+[16/Mar/2016:03:29:22] ENGINE Keyboard Interrupt: shutting down bus
+[16/Mar/2016:03:29:22] ENGINE Bus STOPPING
+[16/Mar/2016:03:29:22] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 80)) shut down
+[16/Mar/2016:03:29:22] ENGINE Stopped thread 'Autoreloader'.
+[16/Mar/2016:03:29:22] ENGINE Stopped thread '_TimeoutMonitor'.
+[16/Mar/2016:03:29:22] ENGINE Bus STOPPED
+[16/Mar/2016:03:29:22] ENGINE Bus EXITING
+[16/Mar/2016:03:29:22] ENGINE Bus EXITED
+[16/Mar/2016:03:29:22] ENGINE Waiting for child threads to terminate...
+[16/Mar/2016:03:30:11] ENGINE Bus STARTING
+[16/Mar/2016:03:30:11] ENGINE Started monitor thread 'Autoreloader'.
+[16/Mar/2016:03:30:11] ENGINE Started monitor thread '_TimeoutMonitor'.
+[16/Mar/2016:03:30:11] ENGINE Serving on http://0.0.0.0:8080
+[16/Mar/2016:03:30:11] ENGINE Bus STARTED
+[16/Mar/2016:03:30:18] ENGINE Started monitor thread 'Session cleanup'.
+[16/Mar/2016:03:30:48] ENGINE Restarting because /data/source-newtemplate/app/web.py changed.
+[16/Mar/2016:03:30:48] ENGINE Stopped thread 'Autoreloader'.
+[16/Mar/2016:03:30:48] ENGINE Bus STOPPING
+[16/Mar/2016:03:30:48] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[16/Mar/2016:03:30:48] ENGINE Stopped thread 'Session cleanup'.
+[16/Mar/2016:03:30:48] ENGINE Stopped thread '_TimeoutMonitor'.
+[16/Mar/2016:03:30:48] ENGINE Bus STOPPED
+[16/Mar/2016:03:30:48] ENGINE Bus EXITING
+[16/Mar/2016:03:30:48] ENGINE Bus EXITED
+[16/Mar/2016:03:30:48] ENGINE Waiting for child threads to terminate...
+[16/Mar/2016:03:30:48] ENGINE Re-spawning /data/source-newtemplate/wsgi.py
+[16/Mar/2016:03:30:50] ENGINE Bus STARTING
+[16/Mar/2016:03:30:50] ENGINE Started monitor thread 'Autoreloader'.
+[16/Mar/2016:03:30:50] ENGINE Started monitor thread '_TimeoutMonitor'.
+[16/Mar/2016:03:30:50] ENGINE Serving on http://0.0.0.0:8080
+[16/Mar/2016:03:30:50] ENGINE Bus STARTED
+[16/Mar/2016:03:30:52] ENGINE Started monitor thread 'Session cleanup'.
+[16/Mar/2016:03:30:57] ENGINE Restarting because /data/source-newtemplate/app/web.py changed.
+[16/Mar/2016:03:30:57] ENGINE Stopped thread 'Autoreloader'.
+[16/Mar/2016:03:30:57] ENGINE Bus STOPPING
+[16/Mar/2016:03:31:02] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[16/Mar/2016:03:31:02] ENGINE Stopped thread '_TimeoutMonitor'.
+[16/Mar/2016:03:31:02] ENGINE Stopped thread 'Session cleanup'.
+[16/Mar/2016:03:31:02] ENGINE Bus STOPPED
+[16/Mar/2016:03:31:02] ENGINE Bus EXITING
+[16/Mar/2016:03:31:02] ENGINE Bus EXITED
+[16/Mar/2016:03:31:02] ENGINE Waiting for child threads to terminate...
+[16/Mar/2016:03:31:02] ENGINE Re-spawning /data/source-newtemplate/wsgi.py
+[16/Mar/2016:03:31:04] ENGINE Bus STARTING
+[16/Mar/2016:03:31:04] ENGINE Started monitor thread 'Autoreloader'.
+[16/Mar/2016:03:31:04] ENGINE Started monitor thread '_TimeoutMonitor'.
+[16/Mar/2016:03:31:04] ENGINE Serving on http://0.0.0.0:8080
+[16/Mar/2016:03:31:04] ENGINE Bus STARTED
+[16/Mar/2016:11:33:32] ENGINE Started monitor thread 'Session cleanup'.
+[16/Mar/2016:12:54:58] ENGINE Bus STARTING
+[16/Mar/2016:12:54:58] ENGINE Started monitor thread 'Autoreloader'.
+[16/Mar/2016:12:54:58] ENGINE Started monitor thread '_TimeoutMonitor'.
+[16/Mar/2016:12:54:58] ENGINE Serving on http://0.0.0.0:8080
+[16/Mar/2016:12:54:58] ENGINE Bus STARTED
+[16/Mar/2016:12:54:59] ENGINE Started monitor thread 'Session cleanup'.
