@@ -1,4 +1,7 @@
 $(document).ready(function() {
+    $('input[name=query]').keyup(function() {
+        alert("Key up detected");
+    });
   var delay = (function(){
     var timer = 0;
     return function(callback, ms){
@@ -6,8 +9,9 @@ $(document).ready(function() {
       timer = setTimeout(callback, ms);
     };
   })();
-  $('.LiveSearch').keyup(function() {
-    $('.searchResult').empty();
+
+ $('.LiveSearch').keyup(function() {
+     console.log("keyup");
     if($(this).val().length >= 3){
       delay(function(){
         getData = {};
@@ -25,10 +29,10 @@ $(document).ready(function() {
             $.each( data, function( key, val ) {
               items.push('<a href="/gene?id=' + val["_id"] + '" class="list-group-item"><span class="badge">' + parseFloat(val['expression']).toFixed(2) +'</span><h4 class="list-group-item-heading">'+ val['human_name'] +'</h4><p class="list-group-item-text">'+ val['cell'] +'</p></a>');
             });
-            $('.searchResult').append( items.join('') );
+            console.log(items);
           }
         });
       }, 1000 );
     }
-  });
+});
 });

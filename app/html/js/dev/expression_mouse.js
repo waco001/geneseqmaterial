@@ -12,33 +12,37 @@
 */
 var mouse = new function() {
     var self = this;
+
+    var width = 400;
+    var height = 400;
+
     var margin = {};
-    margin.left = 230;
+    margin.left = 200;
     margin.right = 0;
     margin.top = 45;
     margin.bottom = 0;
 
-    var max_width = 400;
+    // var max_width = 600;
     var default_radius = 3;
-
-    /**
-     * Gets width for svg
-     * @return {int} width of svg
-     */
-    var get_width = function() {
-        var width = $(window).width();
-        if (width > max_width) return max_width;
-        else return width;
-    };
-
-    /**
-     * Gets height for plot
-     * @param {int} width - width of the plot
-     * @return {int} height of plot
-     */
-    var get_height = function(width) {
-        return width / 1.05;
-    };
+    //
+    // /**
+    //  * Gets width for svg
+    //  * @return {int} width of svg
+    //  */
+    // var get_width = function() {
+    //     var width = $(window).width();
+    //     if (width > max_width) return max_width;
+    //     else return width;
+    // };
+    //
+    // /**
+    //  * Gets height for plot
+    //  * @param {int} width - width of the plot
+    //  * @return {int} height of plot
+    //  */
+    // var get_height = function(width) {
+    //     return 400;
+    // };
 
     /**
      * Draws creates plot
@@ -71,7 +75,7 @@ var mouse = new function() {
         var done = false;
         $.post(source, {'gene_id': id}, function(data, status) {
             if (status == 'success' && data != null) {
-                $('#one').addClass("mdl-cell--7-col");
+                $('#one').addClass("mdl-cell--8-col");
                 $('#one').append('<div class="celltype-card mdl-card mdl-shadow--2dp"></div>');
                 var mouse_node = $('<div />', {
                     id: 'mouse-chart',
@@ -99,12 +103,13 @@ var mouse = new function() {
                 var svg;
                 if (params.node != null) svg = d3.select(params.node);
                 else svg = d3.select('div#content-wrapper');
-                height*=.7;
+                width = $(params.node).width();
+                height = width / 2.76;
                 svg = svg.append('svg')
-                    .attr('width', width + margin.left + margin.right)
+                    .attr('width', width - 30)
                     .attr('height', height);
                 svg.append('rect')
-                    .attr('width', width + margin.left + margin.right)
+                    .attr('width', width - 30)
                     .attr('height', height )
                     .attr('fill', '#DDD');
                 var canvas = svg
@@ -142,7 +147,7 @@ var mouse = new function() {
 
                 canvas.append('text')
                     .attr('class', 'title')
-                    .attr('x', (height / 2))
+                    .attr('x', (height / 2.5))
                     .attr('y', - (margin.top / 2))
                     .attr('text-anchor', 'middle')
                     .text(data.title);
@@ -162,8 +167,8 @@ var mouse = new function() {
      */
     this.plot = function(id, source, params) {
         //console.log(params);
-        if (params.width == null) params.width = get_width();
-        if (params.height == null) params.height = get_height(params.width);
+        if (params.width == null) params.width = width;
+        if (params.height == null) params.height = height;
         if (params.radius == null) params.radius = default_radius;
 
         draw_plot(id, source, params);

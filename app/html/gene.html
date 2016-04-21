@@ -1,31 +1,12 @@
-<%inherit file="base.html"/>
-<%block name="resources">
-<script type="text/javascript" src="/js/lib/d3.js"></script>
-<script type="text/javascript" src="/js/dev/bodydonut.js"></script>
-<script type="text/javascript" src="/js/dev/expression_bodymap.js"></script>
-<script type="text/javascript" src="/js/dev/expression_mouse.js"></script>
-<script type="text/javascript" src="/js/dev/expression_brainspan.js"></script>
-<script type="text/javascript" src="/js/dev/charts.js"></script>
-</%block>
-<%block name="navbarinfo">
-<div class="android-navigation-container">
-    <nav class="android-navigation mdl-navigation">
-        % for item in header:
-        <span class="geneseq-navigation-link" id="${item[1]}" value="${item[2]}">${item[0]} <br> <code>${item[2]}</code></span>
-        % endfor
-    </nav>
-</div>
-<div class="android-header-spacer mdl-layout-spacer">
-</div>
-<!-- Navigation -->
-<div class="geneseq-header-pushleft">
-    <!-- Blank to push other data left -->
-</div>
-</%block>
-<%block name="content">
 <div class="mdl-grid card-grids">
+        % for item in header:
+        <span style="display: none; display: inline-block; margin: 10px;" class="header-info" id="${item[1]}" value="${item[2]}">${item[0]} <br> <code>${item[2]}</code></span>
+        % endfor
     <div id="one" class="mdl-cell"></div>
-    <div id="two" class="mdl-cell"></div></div>
-    <div id="three" class="mdl-cell"></div></div>
+    <div id="two" class="mdl-cell"></div>
+    <div id="three" class="mdl-cell"></div>
 </div>
-</%block>
+<script>
+drawCharts();
+headerInfo();
+</script>

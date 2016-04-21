@@ -122,7 +122,7 @@ var brainspan = new function() {
         .attr('width', width)
         .attr('height', height + margin.top + margin.bottom)
         .attr('transform', 'translate(0,' + -margin.top + ')')
-        .attr('fill', '#DDD');
+        .attr('fill', '#cccccc');
 
         canvas.selectAll('circle')
             .data(data.points)
@@ -167,7 +167,7 @@ var brainspan = new function() {
             .attr('x', (width / 2))
             .attr('y', - (margin.top / 4))
             .attr('text-anchor', 'middle')
-            .text(data.title);
+            .text(longName(data.title));
 
         self.canvases[data.title] = canvas;
         var worker = new Worker('/js/dev/fit_worker.js');
@@ -250,7 +250,7 @@ var brainspan = new function() {
                 svg.append('rect')
                     .attr('width', width.outer)
                     .attr('height', height.outer)
-                    .attr('fill', '#f0f0f0');
+                    .attr('fill', '#DDD');
                 var canvas = svg
                     .append('g')
                     .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
@@ -327,4 +327,28 @@ var brainspan = new function() {
 
         draw_svg(id, source, params);
     };
+}
+function longName(name){
+    switch (name) {
+        case "NCX":
+            return "Neocortex (NCX)"
+            break;
+        case "HIP":
+            return "Hippocampus (HIP)"
+            break;
+        case "STR":
+            return "Stratium (STR)"
+            break;
+        case "MD":
+            return "Thalamus (MD)"
+            break;
+        case "AMY":
+            return "Amygdala (AMY)"
+            break;
+        case "CBC":
+            return "Cerebellum (CBC)"
+            break;
+        default:
+
+    }
 }

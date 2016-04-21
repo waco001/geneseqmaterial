@@ -8371,3 +8371,3473 @@ KeyError: 'gene_id'
 [16/Mar/2016:12:54:58] ENGINE Serving on http://0.0.0.0:8080
 [16/Mar/2016:12:54:58] ENGINE Bus STARTED
 [16/Mar/2016:12:54:59] ENGINE Started monitor thread 'Session cleanup'.
+[06/Apr/2016:12:53:30] ENGINE Bus STARTING
+[06/Apr/2016:12:53:30] ENGINE Started monitor thread 'Autoreloader'.
+[06/Apr/2016:12:53:30] ENGINE Started monitor thread '_TimeoutMonitor'.
+[06/Apr/2016:12:53:31] ENGINE Serving on http://0.0.0.0:8080
+[06/Apr/2016:12:53:31] ENGINE Bus STARTED
+[06/Apr/2016:12:53:34] ENGINE Started monitor thread 'Session cleanup'.
+[06/Apr/2016:20:19:37] ENGINE Keyboard Interrupt: shutting down bus
+[06/Apr/2016:20:19:37] ENGINE Bus STOPPING
+[06/Apr/2016:20:19:37] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[06/Apr/2016:20:19:37] ENGINE Stopped thread '_TimeoutMonitor'.
+[06/Apr/2016:20:19:37] ENGINE Stopped thread 'Session cleanup'.
+[06/Apr/2016:20:19:37] ENGINE Stopped thread 'Autoreloader'.
+[06/Apr/2016:20:19:37] ENGINE Bus STOPPED
+[06/Apr/2016:20:19:37] ENGINE Bus EXITING
+[06/Apr/2016:20:19:37] ENGINE Bus EXITED
+[06/Apr/2016:20:19:37] ENGINE Waiting for child threads to terminate...
+[10/Apr/2016:02:56:55] ENGINE Bus STARTING
+[10/Apr/2016:02:56:55] ENGINE Started monitor thread 'Autoreloader'.
+[10/Apr/2016:02:56:55] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Apr/2016:02:56:55] ENGINE Serving on http://0.0.0.0:8080
+[10/Apr/2016:02:56:55] ENGINE Bus STARTED
+[10/Apr/2016:02:57:48] ENGINE Started monitor thread 'Session cleanup'.
+[10/Apr/2016:03:02:02] HTTP 
+Request Headers:
+  Content-Length: 0
+  COOKIE: session=eyJ1c2VybmFtZSI6ImFkbWluIn0.CeRetQ.vnoGQ11usV9tqXg_u248uEJhyWQ; session_id=297123579321ff19f3d3c1bbb0a3cd30104c7ea3
+  REFERER: http://0.0.0.0/explore
+  ACCEPT: */*
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36 Vivaldi/1.0.403.24
+  Remote-Addr: 172.17.0.1
+  ACCEPT-ENCODING: gzip, deflate
+  CONNECTION: keep-alive
+  ORIGIN: http://0.0.0.0
+  X-REQUESTED-WITH: XMLHttpRequest
+  HOST: 0.0.0.0
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+[10/Apr/2016:03:02:02] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 234, in POST
+    data = self.getData(kwargs['gene_id'])
+KeyError: 'gene_id'
+[10/Apr/2016:03:53:21] HTTP 
+Request Headers:
+  Content-Length: 0
+  X-REQUESTED-WITH: XMLHttpRequest
+  REFERER: http://0.0.0.0/
+  Remote-Addr: 172.17.0.1
+  ACCEPT-ENCODING: gzip, deflate
+  CONNECTION: keep-alive
+  HOST: 0.0.0.0
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  CACHE-CONTROL: no-cache
+  COOKIE: session=eyJ1c2VybmFtZSI6ImFkbWluIn0.CeRetQ.vnoGQ11usV9tqXg_u248uEJhyWQ; session_id=297123579321ff19f3d3c1bbb0a3cd30104c7ea3
+  ACCEPT: */*
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36 Vivaldi/1.0.403.24
+  PRAGMA: no-cache
+  ORIGIN: http://0.0.0.0
+[10/Apr/2016:03:53:21] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 234, in POST
+    data = self.getData(kwargs['gene_id'])
+KeyError: 'gene_id'
+[10/Apr/2016:03:54:16] HTTP 
+Request Headers:
+  Content-Length: 0
+  X-REQUESTED-WITH: XMLHttpRequest
+  REFERER: http://0.0.0.0/
+  Remote-Addr: 172.17.0.1
+  ACCEPT-ENCODING: gzip, deflate
+  CONNECTION: keep-alive
+  HOST: 0.0.0.0
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  CACHE-CONTROL: no-cache
+  COOKIE: session=eyJ1c2VybmFtZSI6ImFkbWluIn0.CeRetQ.vnoGQ11usV9tqXg_u248uEJhyWQ; session_id=297123579321ff19f3d3c1bbb0a3cd30104c7ea3
+  ACCEPT: */*
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36 Vivaldi/1.0.403.24
+  PRAGMA: no-cache
+  ORIGIN: http://0.0.0.0
+[10/Apr/2016:03:54:16] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 234, in POST
+    data = self.getData(kwargs['gene_id'])
+KeyError: 'gene_id'
+[10/Apr/2016:03:54:19] HTTP 
+Request Headers:
+  Content-Length: 0
+  X-REQUESTED-WITH: XMLHttpRequest
+  REFERER: http://0.0.0.0/
+  Remote-Addr: 172.17.0.1
+  ACCEPT-ENCODING: gzip, deflate
+  CONNECTION: keep-alive
+  HOST: 0.0.0.0
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  CACHE-CONTROL: no-cache
+  COOKIE: session=eyJ1c2VybmFtZSI6ImFkbWluIn0.CeRetQ.vnoGQ11usV9tqXg_u248uEJhyWQ; session_id=297123579321ff19f3d3c1bbb0a3cd30104c7ea3
+  ACCEPT: */*
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36 Vivaldi/1.0.403.24
+  PRAGMA: no-cache
+  ORIGIN: http://0.0.0.0
+[10/Apr/2016:03:54:19] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 234, in POST
+    data = self.getData(kwargs['gene_id'])
+KeyError: 'gene_id'
+[10/Apr/2016:03:54:20] HTTP 
+Request Headers:
+  Content-Length: 0
+  CACHE-CONTROL: max-age=0
+  COOKIE: session=eyJ1c2VybmFtZSI6ImFkbWluIn0.CeRetQ.vnoGQ11usV9tqXg_u248uEJhyWQ; session_id=297123579321ff19f3d3c1bbb0a3cd30104c7ea3
+  REFERER: http://0.0.0.0/
+  ACCEPT: */*
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36 Vivaldi/1.0.403.24
+  Remote-Addr: 172.17.0.1
+  ACCEPT-ENCODING: gzip, deflate
+  CONNECTION: keep-alive
+  ORIGIN: http://0.0.0.0
+  X-REQUESTED-WITH: XMLHttpRequest
+  HOST: 0.0.0.0
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+[10/Apr/2016:03:54:20] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 234, in POST
+    data = self.getData(kwargs['gene_id'])
+KeyError: 'gene_id'
+[10/Apr/2016:03:54:22] HTTP 
+Request Headers:
+  Content-Length: 0
+  COOKIE: session=eyJ1c2VybmFtZSI6ImFkbWluIn0.CeRetQ.vnoGQ11usV9tqXg_u248uEJhyWQ; session_id=297123579321ff19f3d3c1bbb0a3cd30104c7ea3
+  REFERER: http://0.0.0.0/
+  ACCEPT: */*
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36 Vivaldi/1.0.403.24
+  Remote-Addr: 172.17.0.1
+  ACCEPT-ENCODING: gzip, deflate
+  CONNECTION: keep-alive
+  ORIGIN: http://0.0.0.0
+  X-REQUESTED-WITH: XMLHttpRequest
+  HOST: 0.0.0.0
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+[10/Apr/2016:03:54:22] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 234, in POST
+    data = self.getData(kwargs['gene_id'])
+KeyError: 'gene_id'
+[10/Apr/2016:03:54:39] HTTP 
+Request Headers:
+  Content-Length: 0
+  X-REQUESTED-WITH: XMLHttpRequest
+  REFERER: http://0.0.0.0/
+  Remote-Addr: 172.17.0.1
+  ACCEPT-ENCODING: gzip, deflate
+  CONNECTION: keep-alive
+  HOST: 0.0.0.0
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  CACHE-CONTROL: no-cache
+  COOKIE: session=eyJ1c2VybmFtZSI6ImFkbWluIn0.CeRetQ.vnoGQ11usV9tqXg_u248uEJhyWQ; session_id=297123579321ff19f3d3c1bbb0a3cd30104c7ea3
+  ACCEPT: */*
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36 Vivaldi/1.0.403.24
+  PRAGMA: no-cache
+  ORIGIN: http://0.0.0.0
+[10/Apr/2016:03:54:39] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 234, in POST
+    data = self.getData(kwargs['gene_id'])
+KeyError: 'gene_id'
+[10/Apr/2016:03:54:41] HTTP 
+Request Headers:
+  Content-Length: 0
+  CACHE-CONTROL: max-age=0
+  COOKIE: session=eyJ1c2VybmFtZSI6ImFkbWluIn0.CeRetQ.vnoGQ11usV9tqXg_u248uEJhyWQ; session_id=297123579321ff19f3d3c1bbb0a3cd30104c7ea3
+  REFERER: http://0.0.0.0/
+  ACCEPT: */*
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36 Vivaldi/1.0.403.24
+  Remote-Addr: 172.17.0.1
+  ACCEPT-ENCODING: gzip, deflate
+  CONNECTION: keep-alive
+  ORIGIN: http://0.0.0.0
+  X-REQUESTED-WITH: XMLHttpRequest
+  HOST: 0.0.0.0
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+[10/Apr/2016:03:54:41] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 234, in POST
+    data = self.getData(kwargs['gene_id'])
+KeyError: 'gene_id'
+[10/Apr/2016:03:54:57] HTTP 
+Request Headers:
+  Content-Length: 0
+  COOKIE: session=eyJ1c2VybmFtZSI6ImFkbWluIn0.CeRetQ.vnoGQ11usV9tqXg_u248uEJhyWQ; session_id=297123579321ff19f3d3c1bbb0a3cd30104c7ea3
+  REFERER: http://0.0.0.0/
+  ACCEPT: */*
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36 Vivaldi/1.0.403.24
+  Remote-Addr: 172.17.0.1
+  ACCEPT-ENCODING: gzip, deflate
+  CONNECTION: keep-alive
+  ORIGIN: http://0.0.0.0
+  X-REQUESTED-WITH: XMLHttpRequest
+  HOST: 0.0.0.0
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+[10/Apr/2016:03:54:57] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 234, in POST
+    data = self.getData(kwargs['gene_id'])
+KeyError: 'gene_id'
+[10/Apr/2016:03:58:12] ENGINE Restarting because /data/source/geneseqmaterial/app/conf/apps.conf changed.
+[10/Apr/2016:03:58:12] ENGINE Stopped thread 'Autoreloader'.
+[10/Apr/2016:03:58:12] ENGINE Bus STOPPING
+[10/Apr/2016:03:58:12] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[10/Apr/2016:03:58:12] ENGINE Stopped thread 'Session cleanup'.
+[10/Apr/2016:03:58:12] ENGINE Stopped thread '_TimeoutMonitor'.
+[10/Apr/2016:03:58:12] ENGINE Bus STOPPED
+[10/Apr/2016:03:58:12] ENGINE Bus EXITING
+[10/Apr/2016:03:58:12] ENGINE Bus EXITED
+[10/Apr/2016:03:58:12] ENGINE Waiting for child threads to terminate...
+[10/Apr/2016:03:58:12] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[10/Apr/2016:03:58:15] ENGINE Bus STARTING
+[10/Apr/2016:03:58:15] ENGINE Started monitor thread 'Autoreloader'.
+[10/Apr/2016:03:58:15] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Apr/2016:03:58:15] ENGINE Serving on http://0.0.0.0:8080
+[10/Apr/2016:03:58:15] ENGINE Bus STARTED
+[10/Apr/2016:03:58:33] ENGINE Keyboard Interrupt: shutting down bus
+[10/Apr/2016:03:58:33] ENGINE Bus STOPPING
+[10/Apr/2016:03:58:37] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[10/Apr/2016:03:58:37] ENGINE Stopped thread '_TimeoutMonitor'.
+[10/Apr/2016:03:58:37] ENGINE Stopped thread 'Autoreloader'.
+[10/Apr/2016:03:58:37] ENGINE Bus STOPPED
+[10/Apr/2016:03:58:37] ENGINE Bus EXITING
+[10/Apr/2016:03:58:37] ENGINE Bus EXITED
+[10/Apr/2016:03:58:37] ENGINE Waiting for child threads to terminate...
+[10/Apr/2016:03:58:42] ENGINE Bus STARTING
+[10/Apr/2016:03:58:42] ENGINE Started monitor thread 'Autoreloader'.
+[10/Apr/2016:03:58:42] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Apr/2016:03:58:42] ENGINE Serving on http://0.0.0.0:8080
+[10/Apr/2016:03:58:42] ENGINE Bus STARTED
+[10/Apr/2016:03:59:49] ENGINE Restarting because /data/source/geneseqmaterial/app/conf/apps.conf changed.
+[10/Apr/2016:03:59:49] ENGINE Stopped thread 'Autoreloader'.
+[10/Apr/2016:03:59:49] ENGINE Bus STOPPING
+[10/Apr/2016:03:59:49] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[10/Apr/2016:03:59:49] ENGINE Stopped thread '_TimeoutMonitor'.
+[10/Apr/2016:03:59:49] ENGINE Bus STOPPED
+[10/Apr/2016:03:59:49] ENGINE Bus EXITING
+[10/Apr/2016:03:59:49] ENGINE Bus EXITED
+[10/Apr/2016:03:59:49] ENGINE Waiting for child threads to terminate...
+[10/Apr/2016:03:59:49] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[10/Apr/2016:03:59:52] ENGINE Bus STARTING
+[10/Apr/2016:03:59:52] ENGINE Started monitor thread 'Autoreloader'.
+[10/Apr/2016:03:59:52] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Apr/2016:03:59:52] ENGINE Serving on http://0.0.0.0:8080
+[10/Apr/2016:03:59:52] ENGINE Bus STARTED
+[10/Apr/2016:03:59:53] ENGINE Keyboard Interrupt: shutting down bus
+[10/Apr/2016:03:59:53] ENGINE Bus STOPPING
+[10/Apr/2016:03:59:53] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[10/Apr/2016:03:59:53] ENGINE Stopped thread '_TimeoutMonitor'.
+[10/Apr/2016:03:59:53] ENGINE Stopped thread 'Autoreloader'.
+[10/Apr/2016:03:59:53] ENGINE Bus STOPPED
+[10/Apr/2016:03:59:53] ENGINE Bus EXITING
+[10/Apr/2016:03:59:53] ENGINE Bus EXITED
+[10/Apr/2016:03:59:53] ENGINE Waiting for child threads to terminate...
+[10/Apr/2016:03:59:55] ENGINE Bus STARTING
+[10/Apr/2016:03:59:55] ENGINE Started monitor thread 'Autoreloader'.
+[10/Apr/2016:03:59:55] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Apr/2016:03:59:55] ENGINE Serving on http://0.0.0.0:8080
+[10/Apr/2016:03:59:55] ENGINE Bus STARTED
+[10/Apr/2016:04:01:01] ENGINE Restarting because /data/source/geneseqmaterial/app/web.py changed.
+[10/Apr/2016:04:01:01] ENGINE Stopped thread 'Autoreloader'.
+[10/Apr/2016:04:01:01] ENGINE Bus STOPPING
+[10/Apr/2016:04:01:01] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[10/Apr/2016:04:01:01] ENGINE Stopped thread '_TimeoutMonitor'.
+[10/Apr/2016:04:01:01] ENGINE Bus STOPPED
+[10/Apr/2016:04:01:01] ENGINE Bus EXITING
+[10/Apr/2016:04:01:01] ENGINE Bus EXITED
+[10/Apr/2016:04:01:01] ENGINE Waiting for child threads to terminate...
+[10/Apr/2016:04:01:01] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[10/Apr/2016:04:01:04] ENGINE Bus STARTING
+[10/Apr/2016:04:01:04] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Apr/2016:04:01:04] ENGINE Started monitor thread 'Autoreloader'.
+[10/Apr/2016:04:01:04] ENGINE Serving on http://0.0.0.0:8080
+[10/Apr/2016:04:01:04] ENGINE Bus STARTED
+[10/Apr/2016:04:01:06] ENGINE Started monitor thread 'Session cleanup'.
+[10/Apr/2016:04:01:06] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 234, in POST
+    data = self.getData(kwargs['gene_id'])
+KeyError: 'gene_id'
+[10/Apr/2016:04:01:06] HTTP 
+Request Headers:
+  REFERER: http://0.0.0.0/
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ORIGIN: http://0.0.0.0
+  Content-Length: 0
+  X-REQUESTED-WITH: XMLHttpRequest
+  CONNECTION: keep-alive
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36 Vivaldi/1.0.403.24
+  COOKIE: session=eyJ1c2VybmFtZSI6ImFkbWluIn0.CeRetQ.vnoGQ11usV9tqXg_u248uEJhyWQ; session_id=297123579321ff19f3d3c1bbb0a3cd30104c7ea3
+  ACCEPT-ENCODING: gzip, deflate
+  Remote-Addr: 172.17.0.1
+  ACCEPT: */*
+  HOST: 0.0.0.0
+[10/Apr/2016:04:01:10] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 234, in POST
+    data = self.getData(kwargs['gene_id'])
+KeyError: 'gene_id'
+[10/Apr/2016:04:01:10] HTTP 
+Request Headers:
+  HOST: 0.0.0.0
+  ORIGIN: http://0.0.0.0
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  Content-Length: 0
+  CONNECTION: keep-alive
+  CACHE-CONTROL: no-cache
+  PRAGMA: no-cache
+  Remote-Addr: 172.17.0.1
+  ACCEPT: */*
+  REFERER: http://0.0.0.0/
+  X-REQUESTED-WITH: XMLHttpRequest
+  ACCEPT-ENCODING: gzip, deflate
+  COOKIE: session=eyJ1c2VybmFtZSI6ImFkbWluIn0.CeRetQ.vnoGQ11usV9tqXg_u248uEJhyWQ; session_id=297123579321ff19f3d3c1bbb0a3cd30104c7ea3
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36 Vivaldi/1.0.403.24
+[10/Apr/2016:04:02:56] ENGINE Restarting because /data/source/geneseqmaterial/app/conf/apps.conf changed.
+[10/Apr/2016:04:02:56] ENGINE Stopped thread 'Autoreloader'.
+[10/Apr/2016:04:02:56] ENGINE Bus STOPPING
+[10/Apr/2016:04:02:56] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[10/Apr/2016:04:02:56] ENGINE Stopped thread '_TimeoutMonitor'.
+[10/Apr/2016:04:02:56] ENGINE Stopped thread 'Session cleanup'.
+[10/Apr/2016:04:02:56] ENGINE Bus STOPPED
+[10/Apr/2016:04:02:56] ENGINE Bus EXITING
+[10/Apr/2016:04:02:56] ENGINE Bus EXITED
+[10/Apr/2016:04:02:56] ENGINE Waiting for child threads to terminate...
+[10/Apr/2016:04:02:56] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[10/Apr/2016:04:02:59] ENGINE Bus STARTING
+[10/Apr/2016:04:02:59] ENGINE Started monitor thread 'Autoreloader'.
+[10/Apr/2016:04:02:59] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Apr/2016:04:02:59] ENGINE Serving on http://0.0.0.0:8080
+[10/Apr/2016:04:02:59] ENGINE Bus STARTED
+[10/Apr/2016:04:03:00] ENGINE Keyboard Interrupt: shutting down bus
+[10/Apr/2016:04:03:00] ENGINE Bus STOPPING
+[10/Apr/2016:04:03:00] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[10/Apr/2016:04:03:00] ENGINE Stopped thread '_TimeoutMonitor'.
+[10/Apr/2016:04:03:00] ENGINE Stopped thread 'Autoreloader'.
+[10/Apr/2016:04:03:00] ENGINE Bus STOPPED
+[10/Apr/2016:04:03:00] ENGINE Bus EXITING
+[10/Apr/2016:04:03:00] ENGINE Bus EXITED
+[10/Apr/2016:04:03:00] ENGINE Waiting for child threads to terminate...
+[10/Apr/2016:04:03:03] ENGINE Bus STARTING
+[10/Apr/2016:04:03:03] ENGINE Started monitor thread 'Autoreloader'.
+[10/Apr/2016:04:03:03] ENGINE Started monitor thread '_TimeoutMonitor'.
+[10/Apr/2016:04:03:03] ENGINE Serving on http://0.0.0.0:8080
+[10/Apr/2016:04:03:03] ENGINE Bus STARTED
+[10/Apr/2016:04:03:28] ENGINE Started monitor thread 'Session cleanup'.
+[10/Apr/2016:04:03:28] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 234, in POST
+    data = self.getData(kwargs['gene_id'])
+KeyError: 'gene_id'
+[10/Apr/2016:04:03:28] HTTP 
+Request Headers:
+  HOST: 0.0.0.0
+  Remote-Addr: 172.17.0.1
+  ACCEPT: */*
+  X-REQUESTED-WITH: XMLHttpRequest
+  ACCEPT-ENCODING: gzip, deflate
+  Content-Length: 0
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  COOKIE: session=eyJ1c2VybmFtZSI6ImFkbWluIn0.CeRetQ.vnoGQ11usV9tqXg_u248uEJhyWQ; session_id=297123579321ff19f3d3c1bbb0a3cd30104c7ea3
+  CONNECTION: keep-alive
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36 Vivaldi/1.0.403.24
+  REFERER: http://0.0.0.0/
+  ORIGIN: http://0.0.0.0
+[10/Apr/2016:04:03:58] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 234, in POST
+    data = self.getData(kwargs['gene_id'])
+KeyError: 'gene_id'
+[10/Apr/2016:04:03:58] HTTP 
+Request Headers:
+  HOST: 0.0.0.0
+  Remote-Addr: 172.17.0.1
+  CACHE-CONTROL: max-age=0
+  ACCEPT: */*
+  X-REQUESTED-WITH: XMLHttpRequest
+  ACCEPT-ENCODING: gzip, deflate
+  Content-Length: 0
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  COOKIE: session=eyJ1c2VybmFtZSI6ImFkbWluIn0.CeRetQ.vnoGQ11usV9tqXg_u248uEJhyWQ; session_id=297123579321ff19f3d3c1bbb0a3cd30104c7ea3
+  CONNECTION: keep-alive
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36 Vivaldi/1.0.403.24
+  REFERER: http://0.0.0.0/
+  ORIGIN: http://0.0.0.0
+[10/Apr/2016:04:20:00] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 234, in POST
+    data = self.getData(kwargs['gene_id'])
+KeyError: 'gene_id'
+[10/Apr/2016:04:20:00] HTTP 
+Request Headers:
+  HOST: 0.0.0.0
+  CACHE-CONTROL: no-cache
+  ACCEPT: */*
+  X-REQUESTED-WITH: XMLHttpRequest
+  ACCEPT-ENCODING: gzip, deflate
+  Content-Length: 0
+  CONNECTION: keep-alive
+  PRAGMA: no-cache
+  Remote-Addr: 172.17.0.1
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  COOKIE: session=eyJ1c2VybmFtZSI6ImFkbWluIn0.CeRetQ.vnoGQ11usV9tqXg_u248uEJhyWQ; session_id=297123579321ff19f3d3c1bbb0a3cd30104c7ea3
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36 Vivaldi/1.0.403.24
+  REFERER: http://0.0.0.0/
+  ORIGIN: http://0.0.0.0
+[10/Apr/2016:04:53:27] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 122, in GET
+    kwargs = self.fixInput(kwargs)
+  File "/data/source/geneseqmaterial/app/parent.py", line 44, in fixInput
+    tmp = int(v)
+TypeError: int() argument must be a string, a bytes-like object or a number, not 'list'
+[10/Apr/2016:04:53:27] HTTP 
+Request Headers:
+  HOST: 0.0.0.0
+  Remote-Addr: 172.17.0.1
+  ACCEPT: text/html, */*; q=0.01
+  X-REQUESTED-WITH: XMLHttpRequest
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  COOKIE: session=eyJ1c2VybmFtZSI6ImFkbWluIn0.CeRetQ.vnoGQ11usV9tqXg_u248uEJhyWQ; session_id=297123579321ff19f3d3c1bbb0a3cd30104c7ea3
+  CONNECTION: keep-alive
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36 Vivaldi/1.0.403.24
+  REFERER: http://0.0.0.0/
+[10/Apr/2016:05:01:56] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 58, in GET
+    for key, value in gene.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+[10/Apr/2016:05:01:56] HTTP 
+Request Headers:
+  HOST: 0.0.0.0
+  Remote-Addr: 172.17.0.1
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  UPGRADE-INSECURE-REQUESTS: 1
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  COOKIE: session=eyJ1c2VybmFtZSI6ImFkbWluIn0.CeRetQ.vnoGQ11usV9tqXg_u248uEJhyWQ; session_id=297123579321ff19f3d3c1bbb0a3cd30104c7ea3
+  CONNECTION: keep-alive
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36 Vivaldi/1.0.403.24
+[10/Apr/2016:05:09:29] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 234, in POST
+    data = self.getData(kwargs['gene_id'])
+KeyError: 'gene_id'
+[10/Apr/2016:05:09:29] HTTP 
+Request Headers:
+  HOST: 0.0.0.0
+  Remote-Addr: 172.17.0.1
+  ACCEPT: */*
+  X-REQUESTED-WITH: XMLHttpRequest
+  ACCEPT-ENCODING: gzip, deflate
+  Content-Length: 0
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  COOKIE: session=eyJ1c2VybmFtZSI6ImFkbWluIn0.CeRetQ.vnoGQ11usV9tqXg_u248uEJhyWQ; session_id=297123579321ff19f3d3c1bbb0a3cd30104c7ea3
+  CONNECTION: keep-alive
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36 Vivaldi/1.0.403.24
+  REFERER: http://0.0.0.0/
+  ORIGIN: http://0.0.0.0
+[10/Apr/2016:05:09:38] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 234, in POST
+    data = self.getData(kwargs['gene_id'])
+KeyError: 'gene_id'
+[10/Apr/2016:05:09:38] HTTP 
+Request Headers:
+  HOST: 0.0.0.0
+  Remote-Addr: 172.17.0.1
+  ACCEPT: */*
+  X-REQUESTED-WITH: XMLHttpRequest
+  ACCEPT-ENCODING: gzip, deflate
+  Content-Length: 0
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  COOKIE: session=eyJ1c2VybmFtZSI6ImFkbWluIn0.CeRetQ.vnoGQ11usV9tqXg_u248uEJhyWQ; session_id=297123579321ff19f3d3c1bbb0a3cd30104c7ea3
+  CONNECTION: keep-alive
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36 Vivaldi/1.0.403.24
+  REFERER: http://0.0.0.0/
+  ORIGIN: http://0.0.0.0
+[10/Apr/2016:05:11:31] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 234, in POST
+    data = self.getData(kwargs['gene_id'])
+KeyError: 'gene_id'
+[10/Apr/2016:05:11:31] HTTP 
+Request Headers:
+  HOST: 0.0.0.0
+  Remote-Addr: 172.17.0.1
+  ACCEPT: */*
+  X-REQUESTED-WITH: XMLHttpRequest
+  ACCEPT-ENCODING: gzip, deflate
+  Content-Length: 0
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  COOKIE: session=eyJ1c2VybmFtZSI6ImFkbWluIn0.CeRetQ.vnoGQ11usV9tqXg_u248uEJhyWQ; session_id=297123579321ff19f3d3c1bbb0a3cd30104c7ea3
+  CONNECTION: keep-alive
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36 Vivaldi/1.0.403.24
+  REFERER: http://0.0.0.0/
+  ORIGIN: http://0.0.0.0
+[10/Apr/2016:05:11:35] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 234, in POST
+    data = self.getData(kwargs['gene_id'])
+KeyError: 'gene_id'
+[10/Apr/2016:05:11:35] HTTP 
+Request Headers:
+  HOST: 0.0.0.0
+  Remote-Addr: 172.17.0.1
+  ACCEPT: */*
+  X-REQUESTED-WITH: XMLHttpRequest
+  ACCEPT-ENCODING: gzip, deflate
+  Content-Length: 0
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  COOKIE: session=eyJ1c2VybmFtZSI6ImFkbWluIn0.CeRetQ.vnoGQ11usV9tqXg_u248uEJhyWQ; session_id=297123579321ff19f3d3c1bbb0a3cd30104c7ea3
+  CONNECTION: keep-alive
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36 Vivaldi/1.0.403.24
+  REFERER: http://0.0.0.0/
+  ORIGIN: http://0.0.0.0
+[10/Apr/2016:05:18:49] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 234, in POST
+    data = self.getData(kwargs['gene_id'])
+KeyError: 'gene_id'
+[10/Apr/2016:05:18:49] HTTP 
+Request Headers:
+  HOST: 0.0.0.0
+  Remote-Addr: 172.17.0.1
+  ACCEPT: */*
+  X-REQUESTED-WITH: XMLHttpRequest
+  ACCEPT-ENCODING: gzip, deflate
+  Content-Length: 0
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  COOKIE: session=eyJ1c2VybmFtZSI6ImFkbWluIn0.CeRetQ.vnoGQ11usV9tqXg_u248uEJhyWQ; session_id=297123579321ff19f3d3c1bbb0a3cd30104c7ea3
+  CONNECTION: keep-alive
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36 Vivaldi/1.0.403.24
+  REFERER: http://0.0.0.0/
+  ORIGIN: http://0.0.0.0
+[10/Apr/2016:05:19:48] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/human.py", line 204, in POST
+    data = self.getData(gene_id)
+  File "/data/source/geneseqmaterial/app/human.py", line 237, in getData
+    ret['min'] = min([x[1] for x in values])
+ValueError: min() arg is an empty sequence
+[10/Apr/2016:05:19:48] HTTP 
+Request Headers:
+  HOST: 0.0.0.0
+  Remote-Addr: 172.17.0.1
+  ACCEPT: */*
+  X-REQUESTED-WITH: XMLHttpRequest
+  ACCEPT-ENCODING: gzip, deflate
+  Content-Length: 13
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  COOKIE: session=eyJ1c2VybmFtZSI6ImFkbWluIn0.CeRetQ.vnoGQ11usV9tqXg_u248uEJhyWQ; session_id=297123579321ff19f3d3c1bbb0a3cd30104c7ea3
+  CONNECTION: keep-alive
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36 Vivaldi/1.0.403.24
+  REFERER: http://0.0.0.0/
+  ORIGIN: http://0.0.0.0
+  Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+[10/Apr/2016:05:19:48] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/human.py", line 255, in POST
+    data = self.getData(gene_id)
+  File "/data/source/geneseqmaterial/app/human.py", line 296, in getData
+    ret['min'] = min([x['value'] for x in data])
+ValueError: min() arg is an empty sequence
+[10/Apr/2016:05:19:48] HTTP 
+Request Headers:
+  HOST: 0.0.0.0
+  Remote-Addr: 172.17.0.1
+  ACCEPT: */*
+  X-REQUESTED-WITH: XMLHttpRequest
+  ACCEPT-ENCODING: gzip, deflate
+  Content-Length: 13
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  COOKIE: session=eyJ1c2VybmFtZSI6ImFkbWluIn0.CeRetQ.vnoGQ11usV9tqXg_u248uEJhyWQ; session_id=297123579321ff19f3d3c1bbb0a3cd30104c7ea3
+  CONNECTION: keep-alive
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36 Vivaldi/1.0.403.24
+  REFERER: http://0.0.0.0/
+  ORIGIN: http://0.0.0.0
+  Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+[10/Apr/2016:05:20:06] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/human.py", line 204, in POST
+    data = self.getData(gene_id)
+  File "/data/source/geneseqmaterial/app/human.py", line 237, in getData
+    ret['min'] = min([x[1] for x in values])
+ValueError: min() arg is an empty sequence
+[10/Apr/2016:05:20:06] HTTP 
+Request Headers:
+  HOST: 0.0.0.0
+  Remote-Addr: 172.17.0.1
+  ACCEPT: */*
+  X-REQUESTED-WITH: XMLHttpRequest
+  ACCEPT-ENCODING: gzip, deflate
+  Content-Length: 13
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  COOKIE: session=eyJ1c2VybmFtZSI6ImFkbWluIn0.CeRetQ.vnoGQ11usV9tqXg_u248uEJhyWQ; session_id=297123579321ff19f3d3c1bbb0a3cd30104c7ea3
+  CONNECTION: keep-alive
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36 Vivaldi/1.0.403.24
+  REFERER: http://0.0.0.0/
+  ORIGIN: http://0.0.0.0
+  Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+[10/Apr/2016:05:20:06] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/human.py", line 255, in POST
+    data = self.getData(gene_id)
+  File "/data/source/geneseqmaterial/app/human.py", line 296, in getData
+    ret['min'] = min([x['value'] for x in data])
+ValueError: min() arg is an empty sequence
+[10/Apr/2016:05:20:06] HTTP 
+Request Headers:
+  HOST: 0.0.0.0
+  Remote-Addr: 172.17.0.1
+  ACCEPT: */*
+  X-REQUESTED-WITH: XMLHttpRequest
+  ACCEPT-ENCODING: gzip, deflate
+  Content-Length: 13
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  COOKIE: session=eyJ1c2VybmFtZSI6ImFkbWluIn0.CeRetQ.vnoGQ11usV9tqXg_u248uEJhyWQ; session_id=297123579321ff19f3d3c1bbb0a3cd30104c7ea3
+  CONNECTION: keep-alive
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36 Vivaldi/1.0.403.24
+  REFERER: http://0.0.0.0/
+  ORIGIN: http://0.0.0.0
+  Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+[10/Apr/2016:05:20:07] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/human.py", line 204, in POST
+    data = self.getData(gene_id)
+  File "/data/source/geneseqmaterial/app/human.py", line 237, in getData
+    ret['min'] = min([x[1] for x in values])
+ValueError: min() arg is an empty sequence
+[10/Apr/2016:05:20:07] HTTP 
+Request Headers:
+  HOST: 0.0.0.0
+  Remote-Addr: 172.17.0.1
+  ACCEPT: */*
+  X-REQUESTED-WITH: XMLHttpRequest
+  ACCEPT-ENCODING: gzip, deflate
+  Content-Length: 13
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  COOKIE: session=eyJ1c2VybmFtZSI6ImFkbWluIn0.CeRetQ.vnoGQ11usV9tqXg_u248uEJhyWQ; session_id=297123579321ff19f3d3c1bbb0a3cd30104c7ea3
+  CONNECTION: keep-alive
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36 Vivaldi/1.0.403.24
+  REFERER: http://0.0.0.0/
+  ORIGIN: http://0.0.0.0
+  Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+[10/Apr/2016:05:20:07] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/human.py", line 255, in POST
+    data = self.getData(gene_id)
+  File "/data/source/geneseqmaterial/app/human.py", line 296, in getData
+    ret['min'] = min([x['value'] for x in data])
+ValueError: min() arg is an empty sequence
+[10/Apr/2016:05:20:07] HTTP 
+Request Headers:
+  HOST: 0.0.0.0
+  Remote-Addr: 172.17.0.1
+  ACCEPT: */*
+  X-REQUESTED-WITH: XMLHttpRequest
+  ACCEPT-ENCODING: gzip, deflate
+  Content-Length: 13
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  COOKIE: session=eyJ1c2VybmFtZSI6ImFkbWluIn0.CeRetQ.vnoGQ11usV9tqXg_u248uEJhyWQ; session_id=297123579321ff19f3d3c1bbb0a3cd30104c7ea3
+  CONNECTION: keep-alive
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36 Vivaldi/1.0.403.24
+  REFERER: http://0.0.0.0/
+  ORIGIN: http://0.0.0.0
+  Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+[10/Apr/2016:05:21:19] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 58, in GET
+    for key, value in gene.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+[10/Apr/2016:05:21:20] HTTP 
+Request Headers:
+  HOST: 0.0.0.0
+  Remote-Addr: 172.17.0.1
+  ACCEPT: text/html, */*; q=0.01
+  X-REQUESTED-WITH: XMLHttpRequest
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  COOKIE: session=eyJ1c2VybmFtZSI6ImFkbWluIn0.CeRetQ.vnoGQ11usV9tqXg_u248uEJhyWQ; session_id=297123579321ff19f3d3c1bbb0a3cd30104c7ea3
+  CONNECTION: keep-alive
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36 Vivaldi/1.0.403.24
+  REFERER: http://0.0.0.0/
+[10/Apr/2016:05:21:41] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 58, in GET
+    for key, value in gene.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+[10/Apr/2016:05:21:41] HTTP 
+Request Headers:
+  HOST: 0.0.0.0
+  Remote-Addr: 172.17.0.1
+  ACCEPT: text/html, */*; q=0.01
+  X-REQUESTED-WITH: XMLHttpRequest
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  COOKIE: session=eyJ1c2VybmFtZSI6ImFkbWluIn0.CeRetQ.vnoGQ11usV9tqXg_u248uEJhyWQ; session_id=297123579321ff19f3d3c1bbb0a3cd30104c7ea3
+  CONNECTION: keep-alive
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36 Vivaldi/1.0.403.24
+  REFERER: http://0.0.0.0/
+[10/Apr/2016:05:21:52] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 58, in GET
+    for key, value in gene.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+[10/Apr/2016:05:21:52] HTTP 
+Request Headers:
+  HOST: 0.0.0.0
+  Remote-Addr: 172.17.0.1
+  ACCEPT: text/html, */*; q=0.01
+  X-REQUESTED-WITH: XMLHttpRequest
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  COOKIE: session=eyJ1c2VybmFtZSI6ImFkbWluIn0.CeRetQ.vnoGQ11usV9tqXg_u248uEJhyWQ; session_id=297123579321ff19f3d3c1bbb0a3cd30104c7ea3
+  CONNECTION: keep-alive
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36 Vivaldi/1.0.403.24
+  REFERER: http://0.0.0.0/
+[10/Apr/2016:05:23:33] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 58, in GET
+    for key, value in gene.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+[10/Apr/2016:05:23:33] HTTP 
+Request Headers:
+  HOST: 0.0.0.0
+  Remote-Addr: 172.17.0.1
+  ACCEPT: text/html, */*; q=0.01
+  X-REQUESTED-WITH: XMLHttpRequest
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  COOKIE: session=eyJ1c2VybmFtZSI6ImFkbWluIn0.CeRetQ.vnoGQ11usV9tqXg_u248uEJhyWQ; session_id=297123579321ff19f3d3c1bbb0a3cd30104c7ea3
+  CONNECTION: keep-alive
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36 Vivaldi/1.0.403.24
+  REFERER: http://0.0.0.0/
+[10/Apr/2016:05:24:00] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 58, in GET
+    for key, value in gene.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+[10/Apr/2016:05:24:00] HTTP 
+Request Headers:
+  HOST: 0.0.0.0
+  Remote-Addr: 172.17.0.1
+  ACCEPT: text/html, */*; q=0.01
+  X-REQUESTED-WITH: XMLHttpRequest
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  COOKIE: session=eyJ1c2VybmFtZSI6ImFkbWluIn0.CeRetQ.vnoGQ11usV9tqXg_u248uEJhyWQ; session_id=297123579321ff19f3d3c1bbb0a3cd30104c7ea3
+  CONNECTION: keep-alive
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36 Vivaldi/1.0.403.24
+  REFERER: http://0.0.0.0/
+[10/Apr/2016:05:25:41] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 58, in GET
+    for key, value in gene.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+[10/Apr/2016:05:25:41] HTTP 
+Request Headers:
+  HOST: 0.0.0.0
+  Remote-Addr: 172.17.0.1
+  ACCEPT: text/html, */*; q=0.01
+  X-REQUESTED-WITH: XMLHttpRequest
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  COOKIE: session=eyJ1c2VybmFtZSI6ImFkbWluIn0.CeRetQ.vnoGQ11usV9tqXg_u248uEJhyWQ; session_id=297123579321ff19f3d3c1bbb0a3cd30104c7ea3
+  CONNECTION: keep-alive
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36 Vivaldi/1.0.403.24
+  REFERER: http://0.0.0.0/
+[10/Apr/2016:05:26:09] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 58, in GET
+    for key, value in gene.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+[10/Apr/2016:05:26:09] HTTP 
+Request Headers:
+  HOST: 0.0.0.0
+  Remote-Addr: 172.17.0.1
+  ACCEPT: text/html, */*; q=0.01
+  X-REQUESTED-WITH: XMLHttpRequest
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  COOKIE: session=eyJ1c2VybmFtZSI6ImFkbWluIn0.CeRetQ.vnoGQ11usV9tqXg_u248uEJhyWQ; session_id=297123579321ff19f3d3c1bbb0a3cd30104c7ea3
+  CONNECTION: keep-alive
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36 Vivaldi/1.0.403.24
+  REFERER: http://0.0.0.0/
+[10/Apr/2016:05:29:08] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 58, in GET
+    for key, value in gene.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+[10/Apr/2016:05:29:08] HTTP 
+Request Headers:
+  HOST: 0.0.0.0
+  Remote-Addr: 172.17.0.1
+  CACHE-CONTROL: no-cache
+  ACCEPT: text/html, */*; q=0.01
+  X-REQUESTED-WITH: XMLHttpRequest
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  COOKIE: session=eyJ1c2VybmFtZSI6ImFkbWluIn0.CeRetQ.vnoGQ11usV9tqXg_u248uEJhyWQ; session_id=297123579321ff19f3d3c1bbb0a3cd30104c7ea3
+  CONNECTION: keep-alive
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36 Vivaldi/1.0.403.24
+  PRAGMA: no-cache
+  REFERER: http://0.0.0.0/
+[10/Apr/2016:05:29:14] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 58, in GET
+    for key, value in gene.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+[10/Apr/2016:05:29:14] HTTP 
+Request Headers:
+  HOST: 0.0.0.0
+  Remote-Addr: 172.17.0.1
+  ACCEPT: text/html, */*; q=0.01
+  X-REQUESTED-WITH: XMLHttpRequest
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  COOKIE: session=eyJ1c2VybmFtZSI6ImFkbWluIn0.CeRetQ.vnoGQ11usV9tqXg_u248uEJhyWQ; session_id=297123579321ff19f3d3c1bbb0a3cd30104c7ea3
+  CONNECTION: keep-alive
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36 Vivaldi/1.0.403.24
+  REFERER: http://0.0.0.0/
+[10/Apr/2016:05:29:17] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 58, in GET
+    for key, value in gene.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+[10/Apr/2016:05:29:17] HTTP 
+Request Headers:
+  HOST: 0.0.0.0
+  Remote-Addr: 172.17.0.1
+  ACCEPT: text/html, */*; q=0.01
+  X-REQUESTED-WITH: XMLHttpRequest
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  COOKIE: session=eyJ1c2VybmFtZSI6ImFkbWluIn0.CeRetQ.vnoGQ11usV9tqXg_u248uEJhyWQ; session_id=297123579321ff19f3d3c1bbb0a3cd30104c7ea3
+  CONNECTION: keep-alive
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36 Vivaldi/1.0.403.24
+  REFERER: http://0.0.0.0/
+[10/Apr/2016:05:29:19] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 58, in GET
+    for key, value in gene.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+[10/Apr/2016:05:29:19] HTTP 
+Request Headers:
+  HOST: 0.0.0.0
+  Remote-Addr: 172.17.0.1
+  ACCEPT: text/html, */*; q=0.01
+  X-REQUESTED-WITH: XMLHttpRequest
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  COOKIE: session=eyJ1c2VybmFtZSI6ImFkbWluIn0.CeRetQ.vnoGQ11usV9tqXg_u248uEJhyWQ; session_id=297123579321ff19f3d3c1bbb0a3cd30104c7ea3
+  CONNECTION: keep-alive
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36 Vivaldi/1.0.403.24
+  REFERER: http://0.0.0.0/
+[10/Apr/2016:05:30:09] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 58, in GET
+    for key, value in gene.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+[10/Apr/2016:05:30:09] HTTP 
+Request Headers:
+  HOST: 0.0.0.0
+  Remote-Addr: 172.17.0.1
+  ACCEPT: text/html, */*; q=0.01
+  X-REQUESTED-WITH: XMLHttpRequest
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  COOKIE: session=eyJ1c2VybmFtZSI6ImFkbWluIn0.CeRetQ.vnoGQ11usV9tqXg_u248uEJhyWQ; session_id=297123579321ff19f3d3c1bbb0a3cd30104c7ea3
+  CONNECTION: keep-alive
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36 Vivaldi/1.0.403.24
+  REFERER: http://0.0.0.0/
+[10/Apr/2016:05:30:14] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 58, in GET
+    for key, value in gene.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+[10/Apr/2016:05:30:14] HTTP 
+Request Headers:
+  HOST: 0.0.0.0
+  Remote-Addr: 172.17.0.1
+  ACCEPT: text/html, */*; q=0.01
+  X-REQUESTED-WITH: XMLHttpRequest
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  COOKIE: session=eyJ1c2VybmFtZSI6ImFkbWluIn0.CeRetQ.vnoGQ11usV9tqXg_u248uEJhyWQ; session_id=297123579321ff19f3d3c1bbb0a3cd30104c7ea3
+  CONNECTION: keep-alive
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36 Vivaldi/1.0.403.24
+  REFERER: http://0.0.0.0/
+[10/Apr/2016:05:30:16] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 58, in GET
+    for key, value in gene.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+[10/Apr/2016:05:30:16] HTTP 
+Request Headers:
+  HOST: 0.0.0.0
+  Remote-Addr: 172.17.0.1
+  ACCEPT: text/html, */*; q=0.01
+  X-REQUESTED-WITH: XMLHttpRequest
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  COOKIE: session=eyJ1c2VybmFtZSI6ImFkbWluIn0.CeRetQ.vnoGQ11usV9tqXg_u248uEJhyWQ; session_id=297123579321ff19f3d3c1bbb0a3cd30104c7ea3
+  CONNECTION: keep-alive
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36 Vivaldi/1.0.403.24
+  REFERER: http://0.0.0.0/
+[10/Apr/2016:05:30:26] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 234, in POST
+    data = self.getData(kwargs['gene_id'])
+  File "/data/source/geneseqmaterial/app/mouse.py", line 274, in getData
+    ret['min'] = min([x[-1] for x in values])
+ValueError: min() arg is an empty sequence
+[10/Apr/2016:05:30:26] HTTP 
+Request Headers:
+  HOST: 0.0.0.0
+  Remote-Addr: 172.17.0.1
+  ACCEPT: */*
+  X-REQUESTED-WITH: XMLHttpRequest
+  ACCEPT-ENCODING: gzip, deflate
+  Content-Length: 8
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  COOKIE: session=eyJ1c2VybmFtZSI6ImFkbWluIn0.CeRetQ.vnoGQ11usV9tqXg_u248uEJhyWQ; session_id=297123579321ff19f3d3c1bbb0a3cd30104c7ea3
+  CONNECTION: keep-alive
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36 Vivaldi/1.0.403.24
+  REFERER: http://0.0.0.0/
+  ORIGIN: http://0.0.0.0
+  Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+[10/Apr/2016:05:33:07] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 58, in GET
+    for key, value in gene.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+[10/Apr/2016:05:33:07] HTTP 
+Request Headers:
+  HOST: 0.0.0.0
+  Remote-Addr: 172.17.0.1
+  ACCEPT: text/html, */*; q=0.01
+  X-REQUESTED-WITH: XMLHttpRequest
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  COOKIE: session=eyJ1c2VybmFtZSI6ImFkbWluIn0.CeRetQ.vnoGQ11usV9tqXg_u248uEJhyWQ; session_id=297123579321ff19f3d3c1bbb0a3cd30104c7ea3
+  CONNECTION: keep-alive
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/48.0.2564.109 Safari/537.36 Vivaldi/1.0.403.24
+  REFERER: http://0.0.0.0/
+[10/Apr/2016:05:36:36] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 234, in POST
+    data = self.getData(kwargs['gene_id'])
+KeyError: 'gene_id'
+[10/Apr/2016:05:36:36] HTTP 
+Request Headers:
+  HOST: 0.0.0.0
+  CACHE-CONTROL: no-cache
+  ACCEPT: */*
+  X-REQUESTED-WITH: XMLHttpRequest
+  ACCEPT-ENCODING: gzip, deflate
+  Content-Length: 0
+  CONNECTION: keep-alive
+  PRAGMA: no-cache
+  DNT: 1
+  Remote-Addr: 172.17.0.1
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  COOKIE: session_id=5fb72315b13186b241063abd34fd6a1207072c87
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36
+  REFERER: http://0.0.0.0/
+  ORIGIN: http://0.0.0.0
+[10/Apr/2016:05:44:07] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 58, in GET
+    for key, value in gene.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+[10/Apr/2016:05:44:07] HTTP 
+Request Headers:
+  HOST: 0.0.0.0
+  Remote-Addr: 172.17.0.1
+  CACHE-CONTROL: no-cache
+  ACCEPT: text/html, */*; q=0.01
+  X-REQUESTED-WITH: XMLHttpRequest
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  COOKIE: session_id=5fb72315b13186b241063abd34fd6a1207072c87
+  CONNECTION: keep-alive
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36
+  PRAGMA: no-cache
+  REFERER: http://0.0.0.0/
+  DNT: 1
+[10/Apr/2016:05:56:34] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 58, in GET
+    for key, value in gene.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+[10/Apr/2016:05:56:34] HTTP 
+Request Headers:
+  HOST: 0.0.0.0
+  Remote-Addr: 172.17.0.1
+  CACHE-CONTROL: no-cache
+  ACCEPT: text/html, */*; q=0.01
+  X-REQUESTED-WITH: XMLHttpRequest
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  COOKIE: session_id=5fb72315b13186b241063abd34fd6a1207072c87
+  CONNECTION: keep-alive
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36
+  PRAGMA: no-cache
+  REFERER: http://0.0.0.0/
+  DNT: 1
+[11/Apr/2016:01:54:06] ENGINE Restarting because /data/source/geneseqmaterial/app/mouse.py changed.
+[11/Apr/2016:01:54:06] ENGINE Stopped thread 'Autoreloader'.
+[11/Apr/2016:01:54:06] ENGINE Bus STOPPING
+[11/Apr/2016:01:54:06] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[11/Apr/2016:01:54:06] ENGINE Stopped thread '_TimeoutMonitor'.
+[11/Apr/2016:01:54:06] ENGINE Stopped thread 'Session cleanup'.
+[11/Apr/2016:01:54:06] ENGINE Bus STOPPED
+[11/Apr/2016:01:54:06] ENGINE Bus EXITING
+[11/Apr/2016:01:54:06] ENGINE Bus EXITED
+[11/Apr/2016:01:54:06] ENGINE Waiting for child threads to terminate...
+[11/Apr/2016:01:54:06] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[11/Apr/2016:01:54:08] ENGINE Bus STARTING
+[11/Apr/2016:01:54:08] ENGINE Started monitor thread 'Autoreloader'.
+[11/Apr/2016:01:54:08] ENGINE Started monitor thread '_TimeoutMonitor'.
+[11/Apr/2016:01:54:08] ENGINE Serving on http://0.0.0.0:8080
+[11/Apr/2016:01:54:08] ENGINE Bus STARTED
+[11/Apr/2016:01:54:08] ENGINE Started monitor thread 'Session cleanup'.
+[11/Apr/2016:01:54:16] ENGINE Restarting because /data/source/geneseqmaterial/app/mouse.py changed.
+[11/Apr/2016:01:54:16] ENGINE Stopped thread 'Autoreloader'.
+[11/Apr/2016:01:54:16] ENGINE Bus STOPPING
+[11/Apr/2016:01:54:21] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[11/Apr/2016:01:54:21] ENGINE Stopped thread '_TimeoutMonitor'.
+[11/Apr/2016:01:54:21] ENGINE Stopped thread 'Session cleanup'.
+[11/Apr/2016:01:54:21] ENGINE Bus STOPPED
+[11/Apr/2016:01:54:21] ENGINE Bus EXITING
+[11/Apr/2016:01:54:21] ENGINE Bus EXITED
+[11/Apr/2016:01:54:21] ENGINE Waiting for child threads to terminate...
+[11/Apr/2016:01:54:21] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[11/Apr/2016:01:54:24] ENGINE Bus STARTING
+[11/Apr/2016:01:54:24] ENGINE Started monitor thread 'Autoreloader'.
+[11/Apr/2016:01:54:24] ENGINE Started monitor thread '_TimeoutMonitor'.
+[11/Apr/2016:01:54:24] ENGINE Serving on http://0.0.0.0:8080
+[11/Apr/2016:01:54:24] ENGINE Bus STARTED
+[11/Apr/2016:01:54:25] ENGINE Started monitor thread 'Session cleanup'.
+[11/Apr/2016:02:07:14] ENGINE Restarting because /data/source/geneseqmaterial/app/mongo_pipe.py changed.
+[11/Apr/2016:02:07:14] ENGINE Stopped thread 'Autoreloader'.
+[11/Apr/2016:02:07:14] ENGINE Bus STOPPING
+[11/Apr/2016:02:07:14] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[11/Apr/2016:02:07:14] ENGINE Stopped thread '_TimeoutMonitor'.
+[11/Apr/2016:02:07:14] ENGINE Stopped thread 'Session cleanup'.
+[11/Apr/2016:02:07:14] ENGINE Bus STOPPED
+[11/Apr/2016:02:07:14] ENGINE Bus EXITING
+[11/Apr/2016:02:07:14] ENGINE Bus EXITED
+[11/Apr/2016:02:07:14] ENGINE Waiting for child threads to terminate...
+[11/Apr/2016:02:07:14] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[11/Apr/2016:02:07:17] ENGINE Bus STARTING
+[11/Apr/2016:02:07:17] ENGINE Started monitor thread 'Autoreloader'.
+[11/Apr/2016:02:07:17] ENGINE Started monitor thread '_TimeoutMonitor'.
+[11/Apr/2016:02:07:17] ENGINE Serving on http://0.0.0.0:8080
+[11/Apr/2016:02:07:17] ENGINE Bus STARTED
+[11/Apr/2016:02:07:17] ENGINE Started monitor thread 'Session cleanup'.
+[11/Apr/2016:02:07:46] ENGINE Restarting because /data/source/geneseqmaterial/app/mongo_pipe.py changed.
+[11/Apr/2016:02:07:46] ENGINE Stopped thread 'Autoreloader'.
+[11/Apr/2016:02:07:46] ENGINE Bus STOPPING
+[11/Apr/2016:02:07:46] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[11/Apr/2016:02:07:46] ENGINE Stopped thread 'Session cleanup'.
+[11/Apr/2016:02:07:46] ENGINE Stopped thread '_TimeoutMonitor'.
+[11/Apr/2016:02:07:46] ENGINE Bus STOPPED
+[11/Apr/2016:02:07:46] ENGINE Bus EXITING
+[11/Apr/2016:02:07:46] ENGINE Bus EXITED
+[11/Apr/2016:02:07:46] ENGINE Waiting for child threads to terminate...
+[11/Apr/2016:02:07:46] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[11/Apr/2016:02:07:48] ENGINE Bus STARTING
+[11/Apr/2016:02:07:48] ENGINE Started monitor thread 'Autoreloader'.
+[11/Apr/2016:02:07:48] ENGINE Started monitor thread '_TimeoutMonitor'.
+[11/Apr/2016:02:07:48] ENGINE Serving on http://0.0.0.0:8080
+[11/Apr/2016:02:07:48] ENGINE Bus STARTED
+[11/Apr/2016:02:07:50] ENGINE Started monitor thread 'Session cleanup'.
+[11/Apr/2016:02:08:01] ENGINE Keyboard Interrupt: shutting down bus
+[11/Apr/2016:02:08:01] ENGINE Bus STOPPING
+[11/Apr/2016:02:08:01] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[11/Apr/2016:02:08:01] ENGINE Stopped thread '_TimeoutMonitor'.
+[11/Apr/2016:02:08:01] ENGINE Stopped thread 'Session cleanup'.
+[11/Apr/2016:02:08:01] ENGINE Stopped thread 'Autoreloader'.
+[11/Apr/2016:02:08:01] ENGINE Bus STOPPED
+[11/Apr/2016:02:08:01] ENGINE Bus EXITING
+[11/Apr/2016:02:08:01] ENGINE Bus EXITED
+[11/Apr/2016:02:08:01] ENGINE Waiting for child threads to terminate...
+[11/Apr/2016:02:12:21] ENGINE Bus STARTING
+[11/Apr/2016:02:12:21] ENGINE Started monitor thread 'Autoreloader'.
+[11/Apr/2016:02:12:21] ENGINE Started monitor thread '_TimeoutMonitor'.
+[11/Apr/2016:02:12:21] ENGINE Serving on http://0.0.0.0:8080
+[11/Apr/2016:02:12:21] ENGINE Bus STARTED
+[11/Apr/2016:02:12:22] ENGINE Started monitor thread 'Session cleanup'.
+[11/Apr/2016:02:13:04] ENGINE Restarting because /data/source/geneseqmaterial/app/mongo_pipe.py changed.
+[11/Apr/2016:02:13:04] ENGINE Stopped thread 'Autoreloader'.
+[11/Apr/2016:02:13:04] ENGINE Bus STOPPING
+[11/Apr/2016:02:13:04] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[11/Apr/2016:02:13:04] ENGINE Stopped thread '_TimeoutMonitor'.
+[11/Apr/2016:02:13:04] ENGINE Stopped thread 'Session cleanup'.
+[11/Apr/2016:02:13:04] ENGINE Bus STOPPED
+[11/Apr/2016:02:13:04] ENGINE Bus EXITING
+[11/Apr/2016:02:13:04] ENGINE Bus EXITED
+[11/Apr/2016:02:13:04] ENGINE Waiting for child threads to terminate...
+[11/Apr/2016:02:13:04] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[11/Apr/2016:02:13:24] ENGINE Bus STARTING
+[11/Apr/2016:02:13:24] ENGINE Started monitor thread 'Autoreloader'.
+[11/Apr/2016:02:13:24] ENGINE Started monitor thread '_TimeoutMonitor'.
+[11/Apr/2016:02:13:24] ENGINE Serving on http://0.0.0.0:8080
+[11/Apr/2016:02:13:24] ENGINE Bus STARTED
+[11/Apr/2016:02:13:27] ENGINE Started monitor thread 'Session cleanup'.
+[11/Apr/2016:02:14:16] ENGINE Restarting because /data/source/geneseqmaterial/app/mongo_pipe.py changed.
+[11/Apr/2016:02:14:16] ENGINE Stopped thread 'Autoreloader'.
+[11/Apr/2016:02:14:16] ENGINE Bus STOPPING
+[11/Apr/2016:02:14:16] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[11/Apr/2016:02:14:16] ENGINE Stopped thread 'Session cleanup'.
+[11/Apr/2016:02:14:16] ENGINE Stopped thread '_TimeoutMonitor'.
+[11/Apr/2016:02:14:16] ENGINE Bus STOPPED
+[11/Apr/2016:02:14:16] ENGINE Bus EXITING
+[11/Apr/2016:02:14:16] ENGINE Bus EXITED
+[11/Apr/2016:02:14:16] ENGINE Waiting for child threads to terminate...
+[11/Apr/2016:02:14:16] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[11/Apr/2016:02:14:28] ENGINE Bus STARTING
+[11/Apr/2016:02:14:28] ENGINE Started monitor thread 'Autoreloader'.
+[11/Apr/2016:02:14:28] ENGINE Started monitor thread '_TimeoutMonitor'.
+[11/Apr/2016:02:14:28] ENGINE Serving on http://0.0.0.0:8080
+[11/Apr/2016:02:14:28] ENGINE Bus STARTED
+[11/Apr/2016:02:14:36] ENGINE Started monitor thread 'Session cleanup'.
+[11/Apr/2016:02:14:37] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/human.py", line 255, in POST
+    data = self.getData(gene_id)
+  File "/data/source/geneseqmaterial/app/human.py", line 275, in getData
+    data = self.pipe.human.plot_brainspan(human_id)
+  File "/data/source/geneseqmaterial/app/mongo_pipe.py", line 399, in plot_brainspan
+    if item.region == "NCX":
+AttributeError: 'dict' object has no attribute 'region'
+[11/Apr/2016:02:14:37] HTTP 
+Request Headers:
+  DNT: 1
+  HOST: 0.0.0.0
+  Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+  Content-Length: 23
+  Remote-Addr: 172.17.0.1
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ORIGIN: http://0.0.0.0
+  CONNECTION: keep-alive
+  ACCEPT: */*
+  REFERER: http://0.0.0.0/
+  ACCEPT-ENCODING: gzip, deflate
+  COOKIE: session_id=4a1c16d190e5fb105216244e6455e08bab0aeb42
+  X-REQUESTED-WITH: XMLHttpRequest
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36
+[11/Apr/2016:02:14:55] ENGINE Restarting because /data/source/geneseqmaterial/app/mongo_pipe.py changed.
+[11/Apr/2016:02:14:55] ENGINE Stopped thread 'Autoreloader'.
+[11/Apr/2016:02:14:55] ENGINE Bus STOPPING
+[11/Apr/2016:02:14:55] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[11/Apr/2016:02:14:55] ENGINE Stopped thread '_TimeoutMonitor'.
+[11/Apr/2016:02:14:55] ENGINE Stopped thread 'Session cleanup'.
+[11/Apr/2016:02:14:55] ENGINE Bus STOPPED
+[11/Apr/2016:02:14:55] ENGINE Bus EXITING
+[11/Apr/2016:02:14:55] ENGINE Bus EXITED
+[11/Apr/2016:02:14:55] ENGINE Waiting for child threads to terminate...
+[11/Apr/2016:02:14:55] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[11/Apr/2016:02:14:57] ENGINE Bus STARTING
+[11/Apr/2016:02:14:57] ENGINE Started monitor thread 'Autoreloader'.
+[11/Apr/2016:02:14:57] ENGINE Started monitor thread '_TimeoutMonitor'.
+[11/Apr/2016:02:14:58] ENGINE Serving on http://0.0.0.0:8080
+[11/Apr/2016:02:14:58] ENGINE Bus STARTED
+[11/Apr/2016:02:15:01] ENGINE Started monitor thread 'Session cleanup'.
+[11/Apr/2016:02:16:01] ENGINE Restarting because /data/source/geneseqmaterial/app/mongo_pipe.py changed.
+[11/Apr/2016:02:16:01] ENGINE Stopped thread 'Autoreloader'.
+[11/Apr/2016:02:16:01] ENGINE Bus STOPPING
+[11/Apr/2016:02:16:01] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[11/Apr/2016:02:16:01] ENGINE Stopped thread 'Session cleanup'.
+[11/Apr/2016:02:16:01] ENGINE Stopped thread '_TimeoutMonitor'.
+[11/Apr/2016:02:16:01] ENGINE Bus STOPPED
+[11/Apr/2016:02:16:01] ENGINE Bus EXITING
+[11/Apr/2016:02:16:01] ENGINE Bus EXITED
+[11/Apr/2016:02:16:01] ENGINE Waiting for child threads to terminate...
+[11/Apr/2016:02:16:01] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[11/Apr/2016:02:16:03] ENGINE Bus STARTING
+[11/Apr/2016:02:16:03] ENGINE Started monitor thread 'Autoreloader'.
+[11/Apr/2016:02:16:03] ENGINE Started monitor thread '_TimeoutMonitor'.
+[11/Apr/2016:02:16:04] ENGINE Serving on http://0.0.0.0:8080
+[11/Apr/2016:02:16:04] ENGINE Bus STARTED
+[11/Apr/2016:02:16:07] ENGINE Started monitor thread 'Session cleanup'.
+[11/Apr/2016:02:18:13] ENGINE Restarting because /data/source/geneseqmaterial/app/mongo_pipe.py changed.
+[11/Apr/2016:02:18:13] ENGINE Stopped thread 'Autoreloader'.
+[11/Apr/2016:02:18:13] ENGINE Bus STOPPING
+[11/Apr/2016:02:18:13] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[11/Apr/2016:02:18:13] ENGINE Stopped thread '_TimeoutMonitor'.
+[11/Apr/2016:02:18:13] ENGINE Stopped thread 'Session cleanup'.
+[11/Apr/2016:02:18:13] ENGINE Bus STOPPED
+[11/Apr/2016:02:18:13] ENGINE Bus EXITING
+[11/Apr/2016:02:18:13] ENGINE Bus EXITED
+[11/Apr/2016:02:18:13] ENGINE Waiting for child threads to terminate...
+[11/Apr/2016:02:18:13] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[11/Apr/2016:02:19:28] ENGINE Bus STARTING
+[11/Apr/2016:02:19:28] ENGINE Started monitor thread 'Autoreloader'.
+[11/Apr/2016:02:19:28] ENGINE Started monitor thread '_TimeoutMonitor'.
+[11/Apr/2016:02:19:28] ENGINE Serving on http://0.0.0.0:8080
+[11/Apr/2016:02:19:28] ENGINE Bus STARTED
+[11/Apr/2016:02:19:31] ENGINE Started monitor thread 'Session cleanup'.
+[11/Apr/2016:02:20:03] ENGINE Restarting because /data/source/geneseqmaterial/app/mongo_pipe.py changed.
+[11/Apr/2016:02:20:03] ENGINE Stopped thread 'Autoreloader'.
+[11/Apr/2016:02:20:03] ENGINE Bus STOPPING
+[11/Apr/2016:02:20:03] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[11/Apr/2016:02:20:03] ENGINE Stopped thread '_TimeoutMonitor'.
+[11/Apr/2016:02:20:03] ENGINE Stopped thread 'Session cleanup'.
+[11/Apr/2016:02:20:03] ENGINE Bus STOPPED
+[11/Apr/2016:02:20:03] ENGINE Bus EXITING
+[11/Apr/2016:02:20:03] ENGINE Bus EXITED
+[11/Apr/2016:02:20:03] ENGINE Waiting for child threads to terminate...
+[11/Apr/2016:02:20:03] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[11/Apr/2016:02:20:05] ENGINE Bus STARTING
+[11/Apr/2016:02:20:05] ENGINE Started monitor thread 'Autoreloader'.
+[11/Apr/2016:02:20:05] ENGINE Started monitor thread '_TimeoutMonitor'.
+[11/Apr/2016:02:20:05] ENGINE Serving on http://0.0.0.0:8080
+[11/Apr/2016:02:20:05] ENGINE Bus STARTED
+[11/Apr/2016:02:20:09] ENGINE Started monitor thread 'Session cleanup'.
+[11/Apr/2016:02:20:35] ENGINE Restarting because /data/source/geneseqmaterial/app/mongo_pipe.py changed.
+[11/Apr/2016:02:20:35] ENGINE Stopped thread 'Autoreloader'.
+[11/Apr/2016:02:20:35] ENGINE Bus STOPPING
+[11/Apr/2016:02:20:35] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[11/Apr/2016:02:20:35] ENGINE Stopped thread '_TimeoutMonitor'.
+[11/Apr/2016:02:20:35] ENGINE Stopped thread 'Session cleanup'.
+[11/Apr/2016:02:20:35] ENGINE Bus STOPPED
+[11/Apr/2016:02:20:35] ENGINE Bus EXITING
+[11/Apr/2016:02:20:35] ENGINE Bus EXITED
+[11/Apr/2016:02:20:35] ENGINE Waiting for child threads to terminate...
+[11/Apr/2016:02:20:35] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[11/Apr/2016:02:20:38] ENGINE Bus STARTING
+[11/Apr/2016:02:20:38] ENGINE Started monitor thread 'Autoreloader'.
+[11/Apr/2016:02:20:38] ENGINE Started monitor thread '_TimeoutMonitor'.
+[11/Apr/2016:02:20:38] ENGINE Serving on http://0.0.0.0:8080
+[11/Apr/2016:02:20:38] ENGINE Bus STARTED
+[11/Apr/2016:02:20:42] ENGINE Started monitor thread 'Session cleanup'.
+[11/Apr/2016:02:21:08] ENGINE Restarting because /data/source/geneseqmaterial/app/mongo_pipe.py changed.
+[11/Apr/2016:02:21:08] ENGINE Stopped thread 'Autoreloader'.
+[11/Apr/2016:02:21:08] ENGINE Bus STOPPING
+[11/Apr/2016:02:21:08] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[11/Apr/2016:02:21:08] ENGINE Stopped thread '_TimeoutMonitor'.
+[11/Apr/2016:02:21:08] ENGINE Stopped thread 'Session cleanup'.
+[11/Apr/2016:02:21:08] ENGINE Bus STOPPED
+[11/Apr/2016:02:21:08] ENGINE Bus EXITING
+[11/Apr/2016:02:21:08] ENGINE Bus EXITED
+[11/Apr/2016:02:21:08] ENGINE Waiting for child threads to terminate...
+[11/Apr/2016:02:21:08] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[11/Apr/2016:02:21:15] ENGINE Bus STARTING
+[11/Apr/2016:02:21:15] ENGINE Started monitor thread 'Autoreloader'.
+[11/Apr/2016:02:21:15] ENGINE Started monitor thread '_TimeoutMonitor'.
+[11/Apr/2016:02:21:15] ENGINE Serving on http://0.0.0.0:8080
+[11/Apr/2016:02:21:15] ENGINE Bus STARTED
+[11/Apr/2016:02:21:18] ENGINE Started monitor thread 'Session cleanup'.
+[11/Apr/2016:02:21:33] ENGINE Restarting because /data/source/geneseqmaterial/app/mongo_pipe.py changed.
+[11/Apr/2016:02:21:33] ENGINE Stopped thread 'Autoreloader'.
+[11/Apr/2016:02:21:33] ENGINE Bus STOPPING
+[11/Apr/2016:02:21:33] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[11/Apr/2016:02:21:33] ENGINE Stopped thread '_TimeoutMonitor'.
+[11/Apr/2016:02:21:33] ENGINE Stopped thread 'Session cleanup'.
+[11/Apr/2016:02:21:33] ENGINE Bus STOPPED
+[11/Apr/2016:02:21:33] ENGINE Bus EXITING
+[11/Apr/2016:02:21:33] ENGINE Bus EXITED
+[11/Apr/2016:02:21:33] ENGINE Waiting for child threads to terminate...
+[11/Apr/2016:02:21:33] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[11/Apr/2016:02:21:35] ENGINE Bus STARTING
+[11/Apr/2016:02:21:35] ENGINE Started monitor thread 'Autoreloader'.
+[11/Apr/2016:02:21:35] ENGINE Started monitor thread '_TimeoutMonitor'.
+[11/Apr/2016:02:21:35] ENGINE Serving on http://0.0.0.0:8080
+[11/Apr/2016:02:21:35] ENGINE Bus STARTED
+[11/Apr/2016:02:21:38] ENGINE Started monitor thread 'Session cleanup'.
+[11/Apr/2016:02:22:49] ENGINE Restarting because /data/source/geneseqmaterial/app/mongo_pipe.py changed.
+[11/Apr/2016:02:22:49] ENGINE Stopped thread 'Autoreloader'.
+[11/Apr/2016:02:22:49] ENGINE Bus STOPPING
+[11/Apr/2016:02:22:49] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[11/Apr/2016:02:22:49] ENGINE Stopped thread '_TimeoutMonitor'.
+[11/Apr/2016:02:22:49] ENGINE Stopped thread 'Session cleanup'.
+[11/Apr/2016:02:22:49] ENGINE Bus STOPPED
+[11/Apr/2016:02:22:49] ENGINE Bus EXITING
+[11/Apr/2016:02:22:49] ENGINE Bus EXITED
+[11/Apr/2016:02:22:49] ENGINE Waiting for child threads to terminate...
+[11/Apr/2016:02:22:49] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[11/Apr/2016:02:22:51] ENGINE Bus STARTING
+[11/Apr/2016:02:22:51] ENGINE Started monitor thread 'Autoreloader'.
+[11/Apr/2016:02:22:51] ENGINE Started monitor thread '_TimeoutMonitor'.
+[11/Apr/2016:02:22:51] ENGINE Serving on http://0.0.0.0:8080
+[11/Apr/2016:02:22:51] ENGINE Bus STARTED
+[11/Apr/2016:02:22:52] ENGINE Started monitor thread 'Session cleanup'.
+[11/Apr/2016:02:23:10] ENGINE Restarting because /data/source/geneseqmaterial/app/mongo_pipe.py changed.
+[11/Apr/2016:02:23:10] ENGINE Stopped thread 'Autoreloader'.
+[11/Apr/2016:02:23:10] ENGINE Bus STOPPING
+[11/Apr/2016:02:23:10] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[11/Apr/2016:02:23:10] ENGINE Stopped thread '_TimeoutMonitor'.
+[11/Apr/2016:02:23:10] ENGINE Stopped thread 'Session cleanup'.
+[11/Apr/2016:02:23:10] ENGINE Bus STOPPED
+[11/Apr/2016:02:23:10] ENGINE Bus EXITING
+[11/Apr/2016:02:23:10] ENGINE Bus EXITED
+[11/Apr/2016:02:23:10] ENGINE Waiting for child threads to terminate...
+[11/Apr/2016:02:23:10] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[11/Apr/2016:02:23:12] ENGINE Bus STARTING
+[11/Apr/2016:02:23:12] ENGINE Started monitor thread 'Autoreloader'.
+[11/Apr/2016:02:23:12] ENGINE Started monitor thread '_TimeoutMonitor'.
+[11/Apr/2016:02:23:12] ENGINE Serving on http://0.0.0.0:8080
+[11/Apr/2016:02:23:12] ENGINE Bus STARTED
+[11/Apr/2016:02:23:40] ENGINE Started monitor thread 'Session cleanup'.
+[11/Apr/2016:02:24:19] ENGINE Restarting because /data/source/geneseqmaterial/app/human.py changed.
+[11/Apr/2016:02:24:19] ENGINE Stopped thread 'Autoreloader'.
+[11/Apr/2016:02:24:19] ENGINE Bus STOPPING
+[11/Apr/2016:02:24:19] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[11/Apr/2016:02:24:19] ENGINE Stopped thread '_TimeoutMonitor'.
+[11/Apr/2016:02:24:19] ENGINE Stopped thread 'Session cleanup'.
+[11/Apr/2016:02:24:19] ENGINE Bus STOPPED
+[11/Apr/2016:02:24:19] ENGINE Bus EXITING
+[11/Apr/2016:02:24:19] ENGINE Bus EXITED
+[11/Apr/2016:02:24:19] ENGINE Waiting for child threads to terminate...
+[11/Apr/2016:02:24:19] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[11/Apr/2016:02:24:21] ENGINE Bus STARTING
+[11/Apr/2016:02:24:21] ENGINE Started monitor thread 'Autoreloader'.
+[11/Apr/2016:02:24:21] ENGINE Started monitor thread '_TimeoutMonitor'.
+[11/Apr/2016:02:24:21] ENGINE Serving on http://0.0.0.0:8080
+[11/Apr/2016:02:24:21] ENGINE Bus STARTED
+[11/Apr/2016:02:24:21] ENGINE Started monitor thread 'Session cleanup'.
+[11/Apr/2016:02:24:28] ENGINE Restarting because /data/source/geneseqmaterial/app/human.py changed.
+[11/Apr/2016:02:24:28] ENGINE Stopped thread 'Autoreloader'.
+[11/Apr/2016:02:24:28] ENGINE Bus STOPPING
+[11/Apr/2016:02:24:33] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[11/Apr/2016:02:24:33] ENGINE Stopped thread '_TimeoutMonitor'.
+[11/Apr/2016:02:24:33] ENGINE Stopped thread 'Session cleanup'.
+[11/Apr/2016:02:24:33] ENGINE Bus STOPPED
+[11/Apr/2016:02:24:33] ENGINE Bus EXITING
+[11/Apr/2016:02:24:33] ENGINE Bus EXITED
+[11/Apr/2016:02:24:33] ENGINE Waiting for child threads to terminate...
+[11/Apr/2016:02:24:33] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[11/Apr/2016:02:24:35] ENGINE Bus STARTING
+[11/Apr/2016:02:24:35] ENGINE Started monitor thread 'Autoreloader'.
+[11/Apr/2016:02:24:35] ENGINE Started monitor thread '_TimeoutMonitor'.
+[11/Apr/2016:02:24:35] ENGINE Serving on http://0.0.0.0:8080
+[11/Apr/2016:02:24:35] ENGINE Bus STARTED
+[11/Apr/2016:02:24:45] ENGINE Restarting because /data/source/geneseqmaterial/app/human.py changed.
+[11/Apr/2016:02:24:45] ENGINE Stopped thread 'Autoreloader'.
+[11/Apr/2016:02:24:45] ENGINE Bus STOPPING
+[11/Apr/2016:02:24:45] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[11/Apr/2016:02:24:45] ENGINE Stopped thread '_TimeoutMonitor'.
+[11/Apr/2016:02:24:45] ENGINE Bus STOPPED
+[11/Apr/2016:02:24:45] ENGINE Bus EXITING
+[11/Apr/2016:02:24:45] ENGINE Bus EXITED
+[11/Apr/2016:02:24:45] ENGINE Waiting for child threads to terminate...
+[11/Apr/2016:02:24:45] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[11/Apr/2016:02:24:48] ENGINE Bus STARTING
+[11/Apr/2016:02:24:48] ENGINE Started monitor thread 'Autoreloader'.
+[11/Apr/2016:02:24:48] ENGINE Started monitor thread '_TimeoutMonitor'.
+[11/Apr/2016:02:24:48] ENGINE Serving on http://0.0.0.0:8080
+[11/Apr/2016:02:24:48] ENGINE Bus STARTED
+[11/Apr/2016:02:24:49] ENGINE Started monitor thread 'Session cleanup'.
+[11/Apr/2016:02:24:50] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/human.py", line 255, in POST
+    data = self.getData(gene_id)
+  File "/data/source/geneseqmaterial/app/human.py", line 292, in getData
+    if ret['region'] == "HIP": ret['region'] = "Neocortex (NCX)"
+KeyError: 'region'
+[11/Apr/2016:02:24:50] HTTP 
+Request Headers:
+  REFERER: http://0.0.0.0/
+  Remote-Addr: 172.17.0.1
+  ORIGIN: http://0.0.0.0
+  Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36
+  Content-Length: 23
+  HOST: 0.0.0.0
+  X-REQUESTED-WITH: XMLHttpRequest
+  ACCEPT-ENCODING: gzip, deflate
+  ACCEPT: */*
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  DNT: 1
+  CONNECTION: keep-alive
+  COOKIE: session_id=4a1c16d190e5fb105216244e6455e08bab0aeb42
+[11/Apr/2016:02:25:16] ENGINE Restarting because /data/source/geneseqmaterial/app/human.py changed.
+[11/Apr/2016:02:25:16] ENGINE Stopped thread 'Autoreloader'.
+[11/Apr/2016:02:25:16] ENGINE Bus STOPPING
+[11/Apr/2016:02:25:16] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[11/Apr/2016:02:25:16] ENGINE Stopped thread 'Session cleanup'.
+[11/Apr/2016:02:25:16] ENGINE Stopped thread '_TimeoutMonitor'.
+[11/Apr/2016:02:25:16] ENGINE Bus STOPPED
+[11/Apr/2016:02:25:16] ENGINE Bus EXITING
+[11/Apr/2016:02:25:16] ENGINE Bus EXITED
+[11/Apr/2016:02:25:16] ENGINE Waiting for child threads to terminate...
+[11/Apr/2016:02:25:16] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[11/Apr/2016:02:25:18] ENGINE Bus STARTING
+[11/Apr/2016:02:25:18] ENGINE Started monitor thread 'Autoreloader'.
+[11/Apr/2016:02:25:18] ENGINE Started monitor thread '_TimeoutMonitor'.
+[11/Apr/2016:02:25:18] ENGINE Serving on http://0.0.0.0:8080
+[11/Apr/2016:02:25:18] ENGINE Bus STARTED
+[11/Apr/2016:02:25:20] ENGINE Started monitor thread 'Session cleanup'.
+[11/Apr/2016:02:25:31] ENGINE Restarting because /data/source/geneseqmaterial/app/human.py changed.
+[11/Apr/2016:02:25:31] ENGINE Stopped thread 'Autoreloader'.
+[11/Apr/2016:02:25:31] ENGINE Bus STOPPING
+[11/Apr/2016:02:25:31] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[11/Apr/2016:02:25:31] ENGINE Stopped thread '_TimeoutMonitor'.
+[11/Apr/2016:02:25:31] ENGINE Stopped thread 'Session cleanup'.
+[11/Apr/2016:02:25:31] ENGINE Bus STOPPED
+[11/Apr/2016:02:25:31] ENGINE Bus EXITING
+[11/Apr/2016:02:25:31] ENGINE Bus EXITED
+[11/Apr/2016:02:25:32] ENGINE Waiting for child threads to terminate...
+[11/Apr/2016:02:25:32] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[11/Apr/2016:02:25:34] ENGINE Bus STARTING
+[11/Apr/2016:02:25:34] ENGINE Started monitor thread 'Autoreloader'.
+[11/Apr/2016:02:25:34] ENGINE Started monitor thread '_TimeoutMonitor'.
+[11/Apr/2016:02:25:34] ENGINE Serving on http://0.0.0.0:8080
+[11/Apr/2016:02:25:34] ENGINE Bus STARTED
+[11/Apr/2016:02:25:37] ENGINE Started monitor thread 'Session cleanup'.
+[11/Apr/2016:02:25:49] ENGINE Restarting because /data/source/geneseqmaterial/app/human.py changed.
+[11/Apr/2016:02:25:49] ENGINE Stopped thread 'Autoreloader'.
+[11/Apr/2016:02:25:49] ENGINE Bus STOPPING
+[11/Apr/2016:02:25:49] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[11/Apr/2016:02:25:49] ENGINE Stopped thread '_TimeoutMonitor'.
+[11/Apr/2016:02:25:49] ENGINE Stopped thread 'Session cleanup'.
+[11/Apr/2016:02:25:49] ENGINE Bus STOPPED
+[11/Apr/2016:02:25:49] ENGINE Bus EXITING
+[11/Apr/2016:02:25:49] ENGINE Bus EXITED
+[11/Apr/2016:02:25:49] ENGINE Waiting for child threads to terminate...
+[11/Apr/2016:02:25:49] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[11/Apr/2016:02:25:51] ENGINE Bus STARTING
+[11/Apr/2016:02:25:51] ENGINE Started monitor thread 'Autoreloader'.
+[11/Apr/2016:02:25:51] ENGINE Started monitor thread '_TimeoutMonitor'.
+[11/Apr/2016:02:25:51] ENGINE Serving on http://0.0.0.0:8080
+[11/Apr/2016:02:25:51] ENGINE Bus STARTED
+[11/Apr/2016:02:25:54] ENGINE Started monitor thread 'Session cleanup'.
+[11/Apr/2016:02:27:44] ENGINE Restarting because /data/source/geneseqmaterial/app/human.py changed.
+[11/Apr/2016:02:27:44] ENGINE Stopped thread 'Autoreloader'.
+[11/Apr/2016:02:27:44] ENGINE Bus STOPPING
+[11/Apr/2016:02:27:44] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[11/Apr/2016:02:27:44] ENGINE Stopped thread 'Session cleanup'.
+[11/Apr/2016:02:27:44] ENGINE Stopped thread '_TimeoutMonitor'.
+[11/Apr/2016:02:27:44] ENGINE Bus STOPPED
+[11/Apr/2016:02:27:44] ENGINE Bus EXITING
+[11/Apr/2016:02:27:44] ENGINE Bus EXITED
+[11/Apr/2016:02:27:44] ENGINE Waiting for child threads to terminate...
+[11/Apr/2016:02:27:44] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[11/Apr/2016:02:27:46] ENGINE Bus STARTING
+[11/Apr/2016:02:27:46] ENGINE Started monitor thread 'Autoreloader'.
+[11/Apr/2016:02:27:46] ENGINE Started monitor thread '_TimeoutMonitor'.
+[11/Apr/2016:02:27:46] ENGINE Serving on http://0.0.0.0:8080
+[11/Apr/2016:02:27:46] ENGINE Bus STARTED
+[11/Apr/2016:02:27:50] ENGINE Started monitor thread 'Session cleanup'.
+[11/Apr/2016:02:28:22] ENGINE Restarting because /data/source/geneseqmaterial/app/human.py changed.
+[11/Apr/2016:02:28:22] ENGINE Stopped thread 'Autoreloader'.
+[11/Apr/2016:02:28:22] ENGINE Bus STOPPING
+[11/Apr/2016:02:28:22] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[11/Apr/2016:02:28:22] ENGINE Stopped thread 'Session cleanup'.
+[11/Apr/2016:02:28:22] ENGINE Stopped thread '_TimeoutMonitor'.
+[11/Apr/2016:02:28:22] ENGINE Bus STOPPED
+[11/Apr/2016:02:28:22] ENGINE Bus EXITING
+[11/Apr/2016:02:28:22] ENGINE Bus EXITED
+[11/Apr/2016:02:28:22] ENGINE Waiting for child threads to terminate...
+[11/Apr/2016:02:28:22] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[11/Apr/2016:02:28:25] ENGINE Bus STARTING
+[11/Apr/2016:02:28:25] ENGINE Started monitor thread 'Autoreloader'.
+[11/Apr/2016:02:28:25] ENGINE Started monitor thread '_TimeoutMonitor'.
+[11/Apr/2016:02:28:25] ENGINE Serving on http://0.0.0.0:8080
+[11/Apr/2016:02:28:25] ENGINE Bus STARTED
+[11/Apr/2016:02:28:26] ENGINE Started monitor thread 'Session cleanup'.
+[11/Apr/2016:02:28:42] ENGINE Restarting because /data/source/geneseqmaterial/app/human.py changed.
+[11/Apr/2016:02:28:42] ENGINE Stopped thread 'Autoreloader'.
+[11/Apr/2016:02:28:42] ENGINE Bus STOPPING
+[11/Apr/2016:02:28:42] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[11/Apr/2016:02:28:42] ENGINE Stopped thread '_TimeoutMonitor'.
+[11/Apr/2016:02:28:42] ENGINE Stopped thread 'Session cleanup'.
+[11/Apr/2016:02:28:42] ENGINE Bus STOPPED
+[11/Apr/2016:02:28:42] ENGINE Bus EXITING
+[11/Apr/2016:02:28:42] ENGINE Bus EXITED
+[11/Apr/2016:02:28:42] ENGINE Waiting for child threads to terminate...
+[11/Apr/2016:02:28:42] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[11/Apr/2016:02:28:45] ENGINE Bus STARTING
+[11/Apr/2016:02:28:45] ENGINE Started monitor thread 'Autoreloader'.
+[11/Apr/2016:02:28:45] ENGINE Started monitor thread '_TimeoutMonitor'.
+[11/Apr/2016:02:28:45] ENGINE Serving on http://0.0.0.0:8080
+[11/Apr/2016:02:28:45] ENGINE Bus STARTED
+[11/Apr/2016:02:28:46] ENGINE Started monitor thread 'Session cleanup'.
+[11/Apr/2016:02:28:47] HTTP 
+Request Headers:
+  ORIGIN: http://0.0.0.0
+  COOKIE: session_id=4a1c16d190e5fb105216244e6455e08bab0aeb42
+  REFERER: http://0.0.0.0/
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  CONNECTION: keep-alive
+  ACCEPT: */*
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36
+  ACCEPT-ENCODING: gzip, deflate
+  Content-Length: 23
+  DNT: 1
+  Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+  HOST: 0.0.0.0
+  X-REQUESTED-WITH: XMLHttpRequest
+  Remote-Addr: 172.17.0.1
+[11/Apr/2016:02:28:47] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/human.py", line 255, in POST
+    data = self.getData(gene_id)
+  File "/data/source/geneseqmaterial/app/human.py", line 294, in getData
+    if columns[region] == "HIP": columns[region] = "Neocortex (NCX)"
+TypeError: list indices must be integers, not str
+[11/Apr/2016:02:28:53] ENGINE Restarting because /data/source/geneseqmaterial/app/human.py changed.
+[11/Apr/2016:02:28:53] ENGINE Stopped thread 'Autoreloader'.
+[11/Apr/2016:02:28:53] ENGINE Bus STOPPING
+[11/Apr/2016:02:28:57] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[11/Apr/2016:02:28:57] ENGINE Stopped thread 'Session cleanup'.
+[11/Apr/2016:02:28:57] ENGINE Stopped thread '_TimeoutMonitor'.
+[11/Apr/2016:02:28:57] ENGINE Bus STOPPED
+[11/Apr/2016:02:28:57] ENGINE Bus EXITING
+[11/Apr/2016:02:28:57] ENGINE Bus EXITED
+[11/Apr/2016:02:28:57] ENGINE Waiting for child threads to terminate...
+[11/Apr/2016:02:28:57] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[11/Apr/2016:02:28:59] ENGINE Bus STARTING
+[11/Apr/2016:02:28:59] ENGINE Started monitor thread 'Autoreloader'.
+[11/Apr/2016:02:28:59] ENGINE Started monitor thread '_TimeoutMonitor'.
+[11/Apr/2016:02:28:59] ENGINE Serving on http://0.0.0.0:8080
+[11/Apr/2016:02:28:59] ENGINE Bus STARTED
+[11/Apr/2016:02:29:00] ENGINE Started monitor thread 'Session cleanup'.
+[11/Apr/2016:02:29:01] HTTP 
+Request Headers:
+  CONNECTION: keep-alive
+  REFERER: http://0.0.0.0/
+  COOKIE: session_id=4a1c16d190e5fb105216244e6455e08bab0aeb42
+  ORIGIN: http://0.0.0.0
+  Content-Length: 23
+  Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT: */*
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/49.0.2623.110 Safari/537.36
+  X-REQUESTED-WITH: XMLHttpRequest
+  DNT: 1
+  HOST: 0.0.0.0
+  Remote-Addr: 172.17.0.1
+  ACCEPT-ENCODING: gzip, deflate
+[11/Apr/2016:02:29:01] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/human.py", line 255, in POST
+    data = self.getData(gene_id)
+  File "/data/source/geneseqmaterial/app/human.py", line 294, in getData
+    if region == "HIP": columns[region] = "Neocortex (NCX)"
+TypeError: list indices must be integers, not str
+[11/Apr/2016:02:30:40] ENGINE Restarting because /data/source/geneseqmaterial/app/human.py changed.
+[11/Apr/2016:02:30:40] ENGINE Stopped thread 'Autoreloader'.
+[11/Apr/2016:02:30:40] ENGINE Bus STOPPING
+[11/Apr/2016:02:30:40] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[11/Apr/2016:02:30:40] ENGINE Stopped thread '_TimeoutMonitor'.
+[11/Apr/2016:02:30:40] ENGINE Stopped thread 'Session cleanup'.
+[11/Apr/2016:02:30:40] ENGINE Bus STOPPED
+[11/Apr/2016:02:30:40] ENGINE Bus EXITING
+[11/Apr/2016:02:30:40] ENGINE Bus EXITED
+[11/Apr/2016:02:30:40] ENGINE Waiting for child threads to terminate...
+[11/Apr/2016:02:30:40] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[11/Apr/2016:02:30:42] ENGINE Bus STARTING
+[11/Apr/2016:02:30:42] ENGINE Started monitor thread 'Autoreloader'.
+[11/Apr/2016:02:30:42] ENGINE Started monitor thread '_TimeoutMonitor'.
+[11/Apr/2016:02:30:43] ENGINE Serving on http://0.0.0.0:8080
+[11/Apr/2016:02:30:43] ENGINE Bus STARTED
+[11/Apr/2016:02:30:46] ENGINE Started monitor thread 'Session cleanup'.
+[11/Apr/2016:02:32:05] ENGINE Restarting because /data/source/geneseqmaterial/app/human.py changed.
+[11/Apr/2016:02:32:05] ENGINE Stopped thread 'Autoreloader'.
+[11/Apr/2016:02:32:05] ENGINE Bus STOPPING
+[11/Apr/2016:02:32:05] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[11/Apr/2016:02:32:05] ENGINE Stopped thread 'Session cleanup'.
+[11/Apr/2016:02:32:05] ENGINE Stopped thread '_TimeoutMonitor'.
+[11/Apr/2016:02:32:05] ENGINE Bus STOPPED
+[11/Apr/2016:02:32:05] ENGINE Bus EXITING
+[11/Apr/2016:02:32:05] ENGINE Bus EXITED
+[11/Apr/2016:02:32:05] ENGINE Waiting for child threads to terminate...
+[11/Apr/2016:02:32:05] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[11/Apr/2016:02:32:08] ENGINE Bus STARTING
+[11/Apr/2016:02:32:08] ENGINE Started monitor thread 'Autoreloader'.
+[11/Apr/2016:02:32:08] ENGINE Started monitor thread '_TimeoutMonitor'.
+[11/Apr/2016:02:32:08] ENGINE Serving on http://0.0.0.0:8080
+[11/Apr/2016:02:32:08] ENGINE Bus STARTED
+[11/Apr/2016:02:32:08] ENGINE Started monitor thread 'Session cleanup'.
+[11/Apr/2016:02:32:12] ENGINE Restarting because /data/source/geneseqmaterial/app/human.py changed.
+[11/Apr/2016:02:32:12] ENGINE Stopped thread 'Autoreloader'.
+[11/Apr/2016:02:32:12] ENGINE Bus STOPPING
+[11/Apr/2016:02:32:17] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[11/Apr/2016:02:32:17] ENGINE Stopped thread 'Session cleanup'.
+[11/Apr/2016:02:32:17] ENGINE Stopped thread '_TimeoutMonitor'.
+[11/Apr/2016:02:32:17] ENGINE Bus STOPPED
+[11/Apr/2016:02:32:17] ENGINE Bus EXITING
+[11/Apr/2016:02:32:17] ENGINE Bus EXITED
+[11/Apr/2016:02:32:17] ENGINE Waiting for child threads to terminate...
+[11/Apr/2016:02:32:17] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[11/Apr/2016:02:32:19] ENGINE Bus STARTING
+[11/Apr/2016:02:32:19] ENGINE Started monitor thread 'Autoreloader'.
+[11/Apr/2016:02:32:19] ENGINE Started monitor thread '_TimeoutMonitor'.
+[11/Apr/2016:02:32:19] ENGINE Serving on http://0.0.0.0:8080
+[11/Apr/2016:02:32:19] ENGINE Bus STARTED
+[11/Apr/2016:02:32:31] ENGINE Restarting because /data/source/geneseqmaterial/app/human.py changed.
+[11/Apr/2016:02:32:31] ENGINE Stopped thread 'Autoreloader'.
+[11/Apr/2016:02:32:31] ENGINE Bus STOPPING
+[11/Apr/2016:02:32:31] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[11/Apr/2016:02:32:31] ENGINE Stopped thread '_TimeoutMonitor'.
+[11/Apr/2016:02:32:31] ENGINE Bus STOPPED
+[11/Apr/2016:02:32:31] ENGINE Bus EXITING
+[11/Apr/2016:02:32:31] ENGINE Bus EXITED
+[11/Apr/2016:02:32:31] ENGINE Waiting for child threads to terminate...
+[11/Apr/2016:02:32:31] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[11/Apr/2016:02:32:33] ENGINE Bus STARTING
+[11/Apr/2016:02:32:33] ENGINE Started monitor thread 'Autoreloader'.
+[11/Apr/2016:02:32:33] ENGINE Started monitor thread '_TimeoutMonitor'.
+[11/Apr/2016:02:32:34] ENGINE Serving on http://0.0.0.0:8080
+[11/Apr/2016:02:32:34] ENGINE Bus STARTED
+[11/Apr/2016:02:32:39] ENGINE Started monitor thread 'Session cleanup'.
+[11/Apr/2016:02:33:05] ENGINE Restarting because /data/source/geneseqmaterial/app/human.py changed.
+[11/Apr/2016:02:33:05] ENGINE Stopped thread 'Autoreloader'.
+[11/Apr/2016:02:33:05] ENGINE Bus STOPPING
+[11/Apr/2016:02:33:05] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[11/Apr/2016:02:33:05] ENGINE Stopped thread '_TimeoutMonitor'.
+[11/Apr/2016:02:33:05] ENGINE Stopped thread 'Session cleanup'.
+[11/Apr/2016:02:33:05] ENGINE Bus STOPPED
+[11/Apr/2016:02:33:05] ENGINE Bus EXITING
+[11/Apr/2016:02:33:05] ENGINE Bus EXITED
+[11/Apr/2016:02:33:05] ENGINE Waiting for child threads to terminate...
+[11/Apr/2016:02:33:05] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[11/Apr/2016:02:33:07] ENGINE Bus STARTING
+[11/Apr/2016:02:33:07] ENGINE Started monitor thread 'Autoreloader'.
+[11/Apr/2016:02:33:07] ENGINE Started monitor thread '_TimeoutMonitor'.
+[11/Apr/2016:02:33:07] ENGINE Serving on http://0.0.0.0:8080
+[11/Apr/2016:02:33:07] ENGINE Bus STARTED
+[11/Apr/2016:02:33:08] ENGINE Started monitor thread 'Session cleanup'.
+[11/Apr/2016:02:36:23] ENGINE Restarting because /data/source/geneseqmaterial/app/human.py changed.
+[11/Apr/2016:02:36:23] ENGINE Stopped thread 'Autoreloader'.
+[11/Apr/2016:02:36:23] ENGINE Bus STOPPING
+[11/Apr/2016:02:36:23] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[11/Apr/2016:02:36:23] ENGINE Stopped thread '_TimeoutMonitor'.
+[11/Apr/2016:02:36:23] ENGINE Stopped thread 'Session cleanup'.
+[11/Apr/2016:02:36:23] ENGINE Bus STOPPED
+[11/Apr/2016:02:36:23] ENGINE Bus EXITING
+[11/Apr/2016:02:36:23] ENGINE Bus EXITED
+[11/Apr/2016:02:36:23] ENGINE Waiting for child threads to terminate...
+[11/Apr/2016:02:36:23] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[11/Apr/2016:02:36:25] ENGINE Bus STARTING
+[11/Apr/2016:02:36:25] ENGINE Started monitor thread 'Autoreloader'.
+[11/Apr/2016:02:36:25] ENGINE Started monitor thread '_TimeoutMonitor'.
+[11/Apr/2016:02:36:25] ENGINE Serving on http://0.0.0.0:8080
+[11/Apr/2016:02:36:25] ENGINE Bus STARTED
+[11/Apr/2016:02:38:22] ENGINE Started monitor thread 'Session cleanup'.
+[11/Apr/2016:12:29:31] ENGINE Restarting because /data/source/geneseqmaterial/app/mouse.py changed.
+[11/Apr/2016:12:29:31] ENGINE Stopped thread 'Autoreloader'.
+[11/Apr/2016:12:29:31] ENGINE Bus STOPPING
+[11/Apr/2016:12:29:31] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[11/Apr/2016:12:29:31] ENGINE Stopped thread '_TimeoutMonitor'.
+[11/Apr/2016:12:29:31] ENGINE Stopped thread 'Session cleanup'.
+[11/Apr/2016:12:29:31] ENGINE Bus STOPPED
+[11/Apr/2016:12:29:31] ENGINE Bus EXITING
+[11/Apr/2016:12:29:31] ENGINE Bus EXITED
+[11/Apr/2016:12:29:31] ENGINE Waiting for child threads to terminate...
+[11/Apr/2016:12:29:31] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[11/Apr/2016:12:29:33] ENGINE Bus STARTING
+[11/Apr/2016:12:29:33] ENGINE Started monitor thread 'Autoreloader'.
+[11/Apr/2016:12:29:33] ENGINE Started monitor thread '_TimeoutMonitor'.
+[11/Apr/2016:12:29:33] ENGINE Serving on http://0.0.0.0:8080
+[11/Apr/2016:12:29:33] ENGINE Bus STARTED
+[11/Apr/2016:12:29:35] ENGINE Started monitor thread 'Session cleanup'.
+[11/Apr/2016:12:31:49] ENGINE Restarting because /data/source/geneseqmaterial/app/mouse.py changed.
+[11/Apr/2016:12:31:49] ENGINE Stopped thread 'Autoreloader'.
+[11/Apr/2016:12:31:49] ENGINE Bus STOPPING
+[11/Apr/2016:12:31:49] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[11/Apr/2016:12:31:49] ENGINE Stopped thread '_TimeoutMonitor'.
+[11/Apr/2016:12:31:49] ENGINE Stopped thread 'Session cleanup'.
+[11/Apr/2016:12:31:49] ENGINE Bus STOPPED
+[11/Apr/2016:12:31:49] ENGINE Bus EXITING
+[11/Apr/2016:12:31:49] ENGINE Bus EXITED
+[11/Apr/2016:12:31:49] ENGINE Waiting for child threads to terminate...
+[11/Apr/2016:12:31:49] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[11/Apr/2016:12:31:51] ENGINE Bus STARTING
+[11/Apr/2016:12:31:51] ENGINE Started monitor thread 'Autoreloader'.
+[11/Apr/2016:12:31:51] ENGINE Started monitor thread '_TimeoutMonitor'.
+[11/Apr/2016:12:31:51] ENGINE Serving on http://0.0.0.0:8080
+[11/Apr/2016:12:31:51] ENGINE Bus STARTED
+[11/Apr/2016:12:32:09] ENGINE Started monitor thread 'Session cleanup'.
+[13/Apr/2016:00:14:57] ENGINE Keyboard Interrupt: shutting down bus
+[13/Apr/2016:00:14:57] ENGINE Bus STOPPING
+[13/Apr/2016:00:14:57] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[13/Apr/2016:00:14:57] ENGINE Stopped thread '_TimeoutMonitor'.
+[13/Apr/2016:00:14:57] ENGINE Stopped thread 'Session cleanup'.
+[13/Apr/2016:00:14:57] ENGINE Stopped thread 'Autoreloader'.
+[13/Apr/2016:00:14:57] ENGINE Bus STOPPED
+[13/Apr/2016:00:14:57] ENGINE Bus EXITING
+[13/Apr/2016:00:14:57] ENGINE Bus EXITED
+[13/Apr/2016:00:14:57] ENGINE Waiting for child threads to terminate...
+[20/Apr/2016:22:33:40] ENGINE Bus STARTING
+[20/Apr/2016:22:33:40] ENGINE Started monitor thread 'Autoreloader'.
+[20/Apr/2016:22:33:40] ENGINE Started monitor thread '_TimeoutMonitor'.
+[20/Apr/2016:22:33:40] ENGINE Serving on http://0.0.0.0:8080
+[20/Apr/2016:22:33:40] ENGINE Bus STARTED
+[20/Apr/2016:22:33:41] ENGINE Started monitor thread 'Session cleanup'.
+[20/Apr/2016:22:35:40] HTTP 
+Request Headers:
+  X-REQUESTED-WITH: XMLHttpRequest
+  COOKIE: session_id=40e6bfae9c746f0dd98530a3c29e4a612e33c8f8
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+  REFERER: http://0.0.0.0/
+  Remote-Addr: 172.17.0.1
+  CONNECTION: keep-alive
+  HOST: 0.0.0.0
+  ACCEPT: text/html, */*; q=0.01
+  DNT: 1
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+[20/Apr/2016:22:35:40] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 58, in GET
+    for key, value in gene.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+[20/Apr/2016:22:35:42] HTTP 
+Request Headers:
+  X-REQUESTED-WITH: XMLHttpRequest
+  COOKIE: session_id=40e6bfae9c746f0dd98530a3c29e4a612e33c8f8
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+  REFERER: http://0.0.0.0/
+  Remote-Addr: 172.17.0.1
+  CONNECTION: keep-alive
+  HOST: 0.0.0.0
+  ACCEPT: text/html, */*; q=0.01
+  DNT: 1
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+[20/Apr/2016:22:35:42] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 58, in GET
+    for key, value in gene.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+[20/Apr/2016:22:35:48] HTTP 
+Request Headers:
+  X-REQUESTED-WITH: XMLHttpRequest
+  COOKIE: session_id=40e6bfae9c746f0dd98530a3c29e4a612e33c8f8
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+  REFERER: http://0.0.0.0/
+  Remote-Addr: 172.17.0.1
+  CONNECTION: keep-alive
+  HOST: 0.0.0.0
+  ACCEPT: text/html, */*; q=0.01
+  DNT: 1
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+[20/Apr/2016:22:35:48] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 58, in GET
+    for key, value in gene.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+[20/Apr/2016:23:58:45] ENGINE Restarting because /data/source/geneseqmaterial/app/mongo_pipe.py changed.
+[20/Apr/2016:23:58:45] ENGINE Stopped thread 'Autoreloader'.
+[20/Apr/2016:23:58:45] ENGINE Bus STOPPING
+[20/Apr/2016:23:58:50] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[20/Apr/2016:23:58:50] ENGINE Stopped thread '_TimeoutMonitor'.
+[20/Apr/2016:23:58:50] ENGINE Stopped thread 'Session cleanup'.
+[20/Apr/2016:23:58:50] ENGINE Bus STOPPED
+[20/Apr/2016:23:58:50] ENGINE Bus EXITING
+[20/Apr/2016:23:58:50] ENGINE Bus EXITED
+[20/Apr/2016:23:58:50] ENGINE Waiting for child threads to terminate...
+[20/Apr/2016:23:58:50] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[20/Apr/2016:23:58:52] ENGINE Bus STARTING
+[20/Apr/2016:23:58:52] ENGINE Started monitor thread 'Autoreloader'.
+[20/Apr/2016:23:58:52] ENGINE Started monitor thread '_TimeoutMonitor'.
+[20/Apr/2016:23:58:52] ENGINE Serving on http://0.0.0.0:8080
+[20/Apr/2016:23:58:52] ENGINE Bus STARTED
+[20/Apr/2016:23:58:55] ENGINE Started monitor thread 'Session cleanup'.
+[20/Apr/2016:23:58:55] HTTP 
+Request Headers:
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+  HOST: 0.0.0.0
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  X-REQUESTED-WITH: XMLHttpRequest
+  Remote-Addr: 172.17.0.1
+  REFERER: http://0.0.0.0/
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT: text/html, */*; q=0.01
+  COOKIE: session_id=40e6bfae9c746f0dd98530a3c29e4a612e33c8f8
+  DNT: 1
+  CACHE-CONTROL: no-cache
+  PRAGMA: no-cache
+  CONNECTION: keep-alive
+[20/Apr/2016:23:58:55] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 66, in GET
+    kwargs['header'] = self.sort(header)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 101, in sort
+    ret = sorted(header, key=lambda i: order.index(i[1]))
+  File "/data/source/geneseqmaterial/app/mouse.py", line 101, in <lambda>
+    ret = sorted(header, key=lambda i: order.index(i[1]))
+ValueError: 'taype' is not in list
+[21/Apr/2016:01:15:27] ENGINE Restarting because /data/source/geneseqmaterial/app/mongo_pipe.py changed.
+[21/Apr/2016:01:15:27] ENGINE Stopped thread 'Autoreloader'.
+[21/Apr/2016:01:15:27] ENGINE Bus STOPPING
+[21/Apr/2016:01:15:27] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Apr/2016:01:15:27] ENGINE Stopped thread 'Session cleanup'.
+[21/Apr/2016:01:15:27] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Apr/2016:01:15:27] ENGINE Bus STOPPED
+[21/Apr/2016:01:15:27] ENGINE Bus EXITING
+[21/Apr/2016:01:15:27] ENGINE Bus EXITED
+[21/Apr/2016:01:15:27] ENGINE Waiting for child threads to terminate...
+[21/Apr/2016:01:15:27] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[21/Apr/2016:01:15:30] ENGINE Bus STARTING
+[21/Apr/2016:01:15:30] ENGINE Started monitor thread 'Autoreloader'.
+[21/Apr/2016:01:15:30] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Apr/2016:01:15:30] ENGINE Serving on http://0.0.0.0:8080
+[21/Apr/2016:01:15:30] ENGINE Bus STARTED
+[21/Apr/2016:01:15:47] ENGINE Started monitor thread 'Session cleanup'.
+[21/Apr/2016:01:18:10] ENGINE Keyboard Interrupt: shutting down bus
+[21/Apr/2016:01:18:10] ENGINE Bus STOPPING
+[21/Apr/2016:01:18:15] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Apr/2016:01:18:15] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Apr/2016:01:18:15] ENGINE Stopped thread 'Autoreloader'.
+[21/Apr/2016:01:18:15] ENGINE Stopped thread 'Session cleanup'.
+[21/Apr/2016:01:18:15] ENGINE Bus STOPPED
+[21/Apr/2016:01:18:15] ENGINE Bus EXITING
+[21/Apr/2016:01:18:15] ENGINE Bus EXITED
+[21/Apr/2016:01:18:15] ENGINE Waiting for child threads to terminate...
+[21/Apr/2016:01:18:20] ENGINE Bus STARTING
+[21/Apr/2016:01:18:20] ENGINE Started monitor thread 'Autoreloader'.
+[21/Apr/2016:01:18:20] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Apr/2016:01:18:20] ENGINE Serving on http://0.0.0.0:8080
+[21/Apr/2016:01:18:20] ENGINE Bus STARTED
+[21/Apr/2016:01:18:21] ENGINE Started monitor thread 'Session cleanup'.
+[21/Apr/2016:01:18:21] HTTP 
+Request Headers:
+  DNT: 1
+  CONNECTION: keep-alive
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+  ACCEPT: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  CACHE-CONTROL: max-age=0
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  Remote-Addr: 172.17.0.1
+  HOST: 0.0.0.0
+  COOKIE: session_id=ecea86fa9472390003980af8c9f92c42cd301abc
+  UPGRADE-INSECURE-REQUESTS: 1
+  REFERER: http://0.0.0.0/search?query=lpar
+[21/Apr/2016:01:18:21] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/human.py", line 59, in GET
+    kwargs['header'] = self.sort(header)
+  File "/data/source/geneseqmaterial/app/human.py", line 73, in sort
+    ret = sorted(header, key=lambda i: order.index(i[1]))
+  File "/data/source/geneseqmaterial/app/human.py", line 73, in <lambda>
+    ret = sorted(header, key=lambda i: order.index(i[1]))
+ValueError: 'chr' is not in list
+[21/Apr/2016:01:18:30] ENGINE Keyboard Interrupt: shutting down bus
+[21/Apr/2016:01:18:30] ENGINE Bus STOPPING
+[21/Apr/2016:01:18:31] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Apr/2016:01:18:31] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Apr/2016:01:18:31] ENGINE Stopped thread 'Session cleanup'.
+[21/Apr/2016:01:18:31] ENGINE Stopped thread 'Autoreloader'.
+[21/Apr/2016:01:18:31] ENGINE Bus STOPPED
+[21/Apr/2016:01:18:31] ENGINE Bus EXITING
+[21/Apr/2016:01:18:31] ENGINE Bus EXITED
+[21/Apr/2016:01:18:31] ENGINE Waiting for child threads to terminate...
+[21/Apr/2016:01:19:10] ENGINE Bus STARTING
+[21/Apr/2016:01:19:10] ENGINE Started monitor thread 'Autoreloader'.
+[21/Apr/2016:01:19:10] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Apr/2016:01:19:10] ENGINE Serving on http://0.0.0.0:8080
+[21/Apr/2016:01:19:10] ENGINE Bus STARTED
+[21/Apr/2016:01:19:11] ENGINE Started monitor thread 'Session cleanup'.
+[21/Apr/2016:01:33:45] ENGINE Restarting because /data/source/geneseqmaterial/app/mouse.py changed.
+[21/Apr/2016:01:33:45] ENGINE Stopped thread 'Autoreloader'.
+[21/Apr/2016:01:33:45] ENGINE Bus STOPPING
+[21/Apr/2016:01:33:45] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Apr/2016:01:33:45] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Apr/2016:01:33:45] ENGINE Stopped thread 'Session cleanup'.
+[21/Apr/2016:01:33:45] ENGINE Bus STOPPED
+[21/Apr/2016:01:33:45] ENGINE Bus EXITING
+[21/Apr/2016:01:33:45] ENGINE Bus EXITED
+[21/Apr/2016:01:33:45] ENGINE Waiting for child threads to terminate...
+[21/Apr/2016:01:33:45] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[21/Apr/2016:01:33:47] ENGINE Bus STARTING
+[21/Apr/2016:01:33:47] ENGINE Started monitor thread 'Autoreloader'.
+[21/Apr/2016:01:33:47] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Apr/2016:01:33:47] ENGINE Serving on http://0.0.0.0:8080
+[21/Apr/2016:01:33:47] ENGINE Bus STARTED
+[21/Apr/2016:01:33:53] ENGINE Started monitor thread 'Session cleanup'.
+[21/Apr/2016:01:35:11] ENGINE Restarting because /data/source/geneseqmaterial/app/mouse.py changed.
+[21/Apr/2016:01:35:11] ENGINE Stopped thread 'Autoreloader'.
+[21/Apr/2016:01:35:11] ENGINE Bus STOPPING
+[21/Apr/2016:01:35:11] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Apr/2016:01:35:11] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Apr/2016:01:35:11] ENGINE Stopped thread 'Session cleanup'.
+[21/Apr/2016:01:35:11] ENGINE Bus STOPPED
+[21/Apr/2016:01:35:11] ENGINE Bus EXITING
+[21/Apr/2016:01:35:11] ENGINE Bus EXITED
+[21/Apr/2016:01:35:11] ENGINE Waiting for child threads to terminate...
+[21/Apr/2016:01:35:11] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[21/Apr/2016:01:35:13] ENGINE Bus STARTING
+[21/Apr/2016:01:35:13] ENGINE Started monitor thread 'Autoreloader'.
+[21/Apr/2016:01:35:13] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Apr/2016:01:35:13] ENGINE Serving on http://0.0.0.0:8080
+[21/Apr/2016:01:35:13] ENGINE Bus STARTED
+[21/Apr/2016:01:35:16] ENGINE Started monitor thread 'Session cleanup'.
+[21/Apr/2016:01:36:20] ENGINE Restarting because /data/source/geneseqmaterial/app/mouse.py changed.
+[21/Apr/2016:01:36:20] ENGINE Stopped thread 'Autoreloader'.
+[21/Apr/2016:01:36:20] ENGINE Bus STOPPING
+[21/Apr/2016:01:36:20] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Apr/2016:01:36:20] ENGINE Stopped thread 'Session cleanup'.
+[21/Apr/2016:01:36:20] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Apr/2016:01:36:20] ENGINE Bus STOPPED
+[21/Apr/2016:01:36:20] ENGINE Bus EXITING
+[21/Apr/2016:01:36:20] ENGINE Bus EXITED
+[21/Apr/2016:01:36:20] ENGINE Waiting for child threads to terminate...
+[21/Apr/2016:01:36:20] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[21/Apr/2016:01:36:22] ENGINE Bus STARTING
+[21/Apr/2016:01:36:22] ENGINE Started monitor thread 'Autoreloader'.
+[21/Apr/2016:01:36:22] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Apr/2016:01:36:22] ENGINE Serving on http://0.0.0.0:8080
+[21/Apr/2016:01:36:22] ENGINE Bus STARTED
+[21/Apr/2016:01:36:23] ENGINE Started monitor thread 'Session cleanup'.
+[21/Apr/2016:01:36:54] ENGINE Restarting because /data/source/geneseqmaterial/app/mouse.py changed.
+[21/Apr/2016:01:36:54] ENGINE Stopped thread 'Autoreloader'.
+[21/Apr/2016:01:36:54] ENGINE Bus STOPPING
+[21/Apr/2016:01:36:54] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Apr/2016:01:36:54] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Apr/2016:01:36:54] ENGINE Stopped thread 'Session cleanup'.
+[21/Apr/2016:01:36:54] ENGINE Bus STOPPED
+[21/Apr/2016:01:36:54] ENGINE Bus EXITING
+[21/Apr/2016:01:36:54] ENGINE Bus EXITED
+[21/Apr/2016:01:36:54] ENGINE Waiting for child threads to terminate...
+[21/Apr/2016:01:36:54] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[21/Apr/2016:01:36:57] ENGINE Bus STARTING
+[21/Apr/2016:01:36:57] ENGINE Started monitor thread 'Autoreloader'.
+[21/Apr/2016:01:36:57] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Apr/2016:01:36:57] ENGINE Serving on http://0.0.0.0:8080
+[21/Apr/2016:01:36:57] ENGINE Bus STARTED
+[21/Apr/2016:01:36:58] ENGINE Started monitor thread 'Session cleanup'.
+[21/Apr/2016:01:37:28] ENGINE Restarting because /data/source/geneseqmaterial/app/mouse.py changed.
+[21/Apr/2016:01:37:28] ENGINE Stopped thread 'Autoreloader'.
+[21/Apr/2016:01:37:28] ENGINE Bus STOPPING
+[21/Apr/2016:01:37:28] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Apr/2016:01:37:28] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Apr/2016:01:37:28] ENGINE Stopped thread 'Session cleanup'.
+[21/Apr/2016:01:37:28] ENGINE Bus STOPPED
+[21/Apr/2016:01:37:28] ENGINE Bus EXITING
+[21/Apr/2016:01:37:28] ENGINE Bus EXITED
+[21/Apr/2016:01:37:28] ENGINE Waiting for child threads to terminate...
+[21/Apr/2016:01:37:28] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[21/Apr/2016:01:37:30] ENGINE Bus STARTING
+[21/Apr/2016:01:37:30] ENGINE Started monitor thread 'Autoreloader'.
+[21/Apr/2016:01:37:30] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Apr/2016:01:37:30] ENGINE Serving on http://0.0.0.0:8080
+[21/Apr/2016:01:37:30] ENGINE Bus STARTED
+[21/Apr/2016:01:37:33] ENGINE Started monitor thread 'Session cleanup'.
+[21/Apr/2016:01:37:42] ENGINE Restarting because /data/source/geneseqmaterial/app/mouse.py changed.
+[21/Apr/2016:01:37:42] ENGINE Stopped thread 'Autoreloader'.
+[21/Apr/2016:01:37:42] ENGINE Bus STOPPING
+[21/Apr/2016:01:37:44] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Apr/2016:01:37:44] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Apr/2016:01:37:44] ENGINE Stopped thread 'Session cleanup'.
+[21/Apr/2016:01:37:44] ENGINE Bus STOPPED
+[21/Apr/2016:01:37:44] ENGINE Bus EXITING
+[21/Apr/2016:01:37:44] ENGINE Bus EXITED
+[21/Apr/2016:01:37:44] ENGINE Waiting for child threads to terminate...
+[21/Apr/2016:01:37:44] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[21/Apr/2016:01:37:47] ENGINE Bus STARTING
+[21/Apr/2016:01:37:47] ENGINE Started monitor thread 'Autoreloader'.
+[21/Apr/2016:01:37:47] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Apr/2016:01:37:47] ENGINE Serving on http://0.0.0.0:8080
+[21/Apr/2016:01:37:47] ENGINE Bus STARTED
+[21/Apr/2016:01:37:50] ENGINE Started monitor thread 'Session cleanup'.
+[21/Apr/2016:01:38:03] ENGINE Restarting because /data/source/geneseqmaterial/app/mouse.py changed.
+[21/Apr/2016:01:38:03] ENGINE Stopped thread 'Autoreloader'.
+[21/Apr/2016:01:38:03] ENGINE Bus STOPPING
+[21/Apr/2016:01:38:05] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Apr/2016:01:38:05] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Apr/2016:01:38:05] ENGINE Stopped thread 'Session cleanup'.
+[21/Apr/2016:01:38:05] ENGINE Bus STOPPED
+[21/Apr/2016:01:38:05] ENGINE Bus EXITING
+[21/Apr/2016:01:38:05] ENGINE Bus EXITED
+[21/Apr/2016:01:38:05] ENGINE Waiting for child threads to terminate...
+[21/Apr/2016:01:38:05] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[21/Apr/2016:01:38:08] ENGINE Bus STARTING
+[21/Apr/2016:01:38:08] ENGINE Started monitor thread 'Autoreloader'.
+[21/Apr/2016:01:38:08] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Apr/2016:01:38:08] ENGINE Serving on http://0.0.0.0:8080
+[21/Apr/2016:01:38:08] ENGINE Bus STARTED
+[21/Apr/2016:01:39:21] ENGINE Restarting because /data/source/geneseqmaterial/app/mouse.py changed.
+[21/Apr/2016:01:39:21] ENGINE Stopped thread 'Autoreloader'.
+[21/Apr/2016:01:39:21] ENGINE Bus STOPPING
+[21/Apr/2016:01:39:21] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Apr/2016:01:39:21] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Apr/2016:01:39:21] ENGINE Bus STOPPED
+[21/Apr/2016:01:39:21] ENGINE Bus EXITING
+[21/Apr/2016:01:39:21] ENGINE Bus EXITED
+[21/Apr/2016:01:39:21] ENGINE Waiting for child threads to terminate...
+[21/Apr/2016:01:39:21] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[21/Apr/2016:01:39:24] ENGINE Bus STARTING
+[21/Apr/2016:01:39:24] ENGINE Started monitor thread 'Autoreloader'.
+[21/Apr/2016:01:39:24] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Apr/2016:01:39:24] ENGINE Serving on http://0.0.0.0:8080
+[21/Apr/2016:01:39:24] ENGINE Bus STARTED
+[21/Apr/2016:01:39:45] ENGINE Started monitor thread 'Session cleanup'.
+[21/Apr/2016:01:41:28] ENGINE Restarting because /data/source/geneseqmaterial/app/mouse.py changed.
+[21/Apr/2016:01:41:28] ENGINE Stopped thread 'Autoreloader'.
+[21/Apr/2016:01:41:28] ENGINE Bus STOPPING
+[21/Apr/2016:01:41:28] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Apr/2016:01:41:28] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Apr/2016:01:41:28] ENGINE Stopped thread 'Session cleanup'.
+[21/Apr/2016:01:41:28] ENGINE Bus STOPPED
+[21/Apr/2016:01:41:28] ENGINE Bus EXITING
+[21/Apr/2016:01:41:28] ENGINE Waiting for child threads to terminate...
+[21/Apr/2016:01:41:28] ENGINE Bus EXITED
+[21/Apr/2016:01:41:28] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[21/Apr/2016:01:41:30] ENGINE Bus STARTING
+[21/Apr/2016:01:41:30] ENGINE Started monitor thread 'Autoreloader'.
+[21/Apr/2016:01:41:30] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Apr/2016:01:41:30] ENGINE Serving on http://0.0.0.0:8080
+[21/Apr/2016:01:41:30] ENGINE Bus STARTED
+[21/Apr/2016:01:41:32] ENGINE Restarting because /data/source/geneseqmaterial/app/mouse.py changed.
+[21/Apr/2016:01:41:32] ENGINE Stopped thread 'Autoreloader'.
+[21/Apr/2016:01:41:32] ENGINE Bus STOPPING
+[21/Apr/2016:01:41:32] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Apr/2016:01:41:32] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Apr/2016:01:41:32] ENGINE Bus STOPPED
+[21/Apr/2016:01:41:32] ENGINE Bus EXITING
+[21/Apr/2016:01:41:32] ENGINE Bus EXITED
+[21/Apr/2016:01:41:32] ENGINE Waiting for child threads to terminate...
+[21/Apr/2016:01:41:32] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[21/Apr/2016:01:41:35] ENGINE Bus STARTING
+[21/Apr/2016:01:41:35] ENGINE Started monitor thread 'Autoreloader'.
+[21/Apr/2016:01:41:35] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Apr/2016:01:41:35] ENGINE Serving on http://0.0.0.0:8080
+[21/Apr/2016:01:41:35] ENGINE Bus STARTED
+[21/Apr/2016:01:42:25] ENGINE Restarting because /data/source/geneseqmaterial/app/mouse.py changed.
+[21/Apr/2016:01:42:25] ENGINE Stopped thread 'Autoreloader'.
+[21/Apr/2016:01:42:25] ENGINE Bus STOPPING
+[21/Apr/2016:01:42:25] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Apr/2016:01:42:25] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Apr/2016:01:42:25] ENGINE Bus STOPPED
+[21/Apr/2016:01:42:25] ENGINE Bus EXITING
+[21/Apr/2016:01:42:25] ENGINE Bus EXITED
+[21/Apr/2016:01:42:25] ENGINE Waiting for child threads to terminate...
+[21/Apr/2016:01:42:25] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[21/Apr/2016:01:42:28] ENGINE Bus STARTING
+[21/Apr/2016:01:42:28] ENGINE Started monitor thread 'Autoreloader'.
+[21/Apr/2016:01:42:28] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Apr/2016:01:42:28] ENGINE Started monitor thread 'Session cleanup'.
+[21/Apr/2016:01:42:28] ENGINE Serving on http://0.0.0.0:8080
+[21/Apr/2016:01:42:28] ENGINE Bus STARTED
+[21/Apr/2016:01:44:23] ENGINE Keyboard Interrupt: shutting down bus
+[21/Apr/2016:01:44:23] ENGINE Bus STOPPING
+[21/Apr/2016:01:44:23] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Apr/2016:01:44:23] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Apr/2016:01:44:23] ENGINE Stopped thread 'Session cleanup'.
+[21/Apr/2016:01:44:23] ENGINE Stopped thread 'Autoreloader'.
+[21/Apr/2016:01:44:23] ENGINE Bus STOPPED
+[21/Apr/2016:01:44:23] ENGINE Bus EXITING
+[21/Apr/2016:01:44:23] ENGINE Bus EXITED
+[21/Apr/2016:01:44:23] ENGINE Waiting for child threads to terminate...
+[21/Apr/2016:01:44:28] ENGINE Bus STARTING
+[21/Apr/2016:01:44:28] ENGINE Started monitor thread 'Autoreloader'.
+[21/Apr/2016:01:44:28] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Apr/2016:01:44:28] ENGINE Serving on http://0.0.0.0:8080
+[21/Apr/2016:01:44:28] ENGINE Bus STARTED
+[21/Apr/2016:01:44:30] ENGINE Started monitor thread 'Session cleanup'.
+[21/Apr/2016:01:44:31] HTTP 
+Request Headers:
+  DNT: 1
+  HOST: 0.0.0.0
+  COOKIE: session_id=ecea86fa9472390003980af8c9f92c42cd301abc
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+  X-REQUESTED-WITH: XMLHttpRequest
+  ACCEPT: text/html, */*; q=0.01
+  CONNECTION: keep-alive
+  Remote-Addr: 172.17.0.1
+  CACHE-CONTROL: max-age=0
+  REFERER: http://0.0.0.0/
+[21/Apr/2016:01:44:31] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 70, in GET
+    kwargs['header'] = self.sort(header)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 105, in sort
+    ret = sorted(header, key=lambda i: order.index(i[1]))
+  File "/data/source/geneseqmaterial/app/mouse.py", line 105, in <lambda>
+    ret = sorted(header, key=lambda i: order.index(i[1]))
+ValueError: 'expression' is not in list
+[21/Apr/2016:01:46:47] ENGINE Keyboard Interrupt: shutting down bus
+[21/Apr/2016:01:46:47] ENGINE Bus STOPPING
+[21/Apr/2016:01:46:47] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Apr/2016:01:46:47] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Apr/2016:01:46:47] ENGINE Stopped thread 'Session cleanup'.
+[21/Apr/2016:01:46:47] ENGINE Stopped thread 'Autoreloader'.
+[21/Apr/2016:01:46:47] ENGINE Bus STOPPED
+[21/Apr/2016:01:46:47] ENGINE Bus EXITING
+[21/Apr/2016:01:46:47] ENGINE Bus EXITED
+[21/Apr/2016:01:46:47] ENGINE Waiting for child threads to terminate...
+[21/Apr/2016:01:46:49] ENGINE Bus STARTING
+[21/Apr/2016:01:46:49] ENGINE Started monitor thread 'Autoreloader'.
+[21/Apr/2016:01:46:49] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Apr/2016:01:46:49] ENGINE Serving on http://0.0.0.0:8080
+[21/Apr/2016:01:46:49] ENGINE Bus STARTED
+[21/Apr/2016:01:46:51] ENGINE Started monitor thread 'Session cleanup'.
+[21/Apr/2016:01:48:15] ENGINE Restarting because /data/source/geneseqmaterial/app/mouse.py changed.
+[21/Apr/2016:01:48:15] ENGINE Stopped thread 'Autoreloader'.
+[21/Apr/2016:01:48:15] ENGINE Bus STOPPING
+[21/Apr/2016:01:48:15] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Apr/2016:01:48:15] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Apr/2016:01:48:15] ENGINE Stopped thread 'Session cleanup'.
+[21/Apr/2016:01:48:15] ENGINE Bus STOPPED
+[21/Apr/2016:01:48:15] ENGINE Bus EXITING
+[21/Apr/2016:01:48:15] ENGINE Bus EXITED
+[21/Apr/2016:01:48:15] ENGINE Waiting for child threads to terminate...
+[21/Apr/2016:01:48:15] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[21/Apr/2016:01:48:17] ENGINE Bus STARTING
+[21/Apr/2016:01:48:17] ENGINE Started monitor thread 'Autoreloader'.
+[21/Apr/2016:01:48:17] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Apr/2016:01:48:18] ENGINE Serving on http://0.0.0.0:8080
+[21/Apr/2016:01:48:18] ENGINE Bus STARTED
+[21/Apr/2016:01:48:19] ENGINE Started monitor thread 'Session cleanup'.
+[21/Apr/2016:01:49:25] ENGINE Restarting because /data/source/geneseqmaterial/app/mouse.py changed.
+[21/Apr/2016:01:49:25] ENGINE Stopped thread 'Autoreloader'.
+[21/Apr/2016:01:49:25] ENGINE Bus STOPPING
+[21/Apr/2016:01:49:25] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Apr/2016:01:49:25] ENGINE Stopped thread 'Session cleanup'.
+[21/Apr/2016:01:49:25] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Apr/2016:01:49:25] ENGINE Bus STOPPED
+[21/Apr/2016:01:49:25] ENGINE Bus EXITING
+[21/Apr/2016:01:49:25] ENGINE Bus EXITED
+[21/Apr/2016:01:49:25] ENGINE Waiting for child threads to terminate...
+[21/Apr/2016:01:49:25] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[21/Apr/2016:01:49:28] ENGINE Bus STARTING
+[21/Apr/2016:01:49:28] ENGINE Started monitor thread 'Autoreloader'.
+[21/Apr/2016:01:49:28] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Apr/2016:01:49:28] ENGINE Serving on http://0.0.0.0:8080
+[21/Apr/2016:01:49:28] ENGINE Bus STARTED
+[21/Apr/2016:01:49:29] ENGINE Started monitor thread 'Session cleanup'.
+[21/Apr/2016:01:49:30] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 74, in GET
+    kwargs['header'] = self.sort(header)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 109, in sort
+    ret = sorted(header, key=lambda i: order.index(i[1]))
+  File "/data/source/geneseqmaterial/app/mouse.py", line 109, in <lambda>
+    ret = sorted(header, key=lambda i: order.index(i[1]))
+ValueError: None is not in list
+[21/Apr/2016:01:49:30] HTTP 
+Request Headers:
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  PRAGMA: no-cache
+  REFERER: http://0.0.0.0/
+  COOKIE: session_id=ecea86fa9472390003980af8c9f92c42cd301abc
+  Remote-Addr: 172.17.0.1
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  X-REQUESTED-WITH: XMLHttpRequest
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+  HOST: 0.0.0.0
+  CONNECTION: keep-alive
+  CACHE-CONTROL: no-cache
+  ACCEPT: text/html, */*; q=0.01
+  DNT: 1
+[21/Apr/2016:01:50:06] ENGINE Restarting because /data/source/geneseqmaterial/app/mouse.py changed.
+[21/Apr/2016:01:50:06] ENGINE Stopped thread 'Autoreloader'.
+[21/Apr/2016:01:50:06] ENGINE Bus STOPPING
+[21/Apr/2016:01:50:06] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Apr/2016:01:50:06] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Apr/2016:01:50:06] ENGINE Stopped thread 'Session cleanup'.
+[21/Apr/2016:01:50:06] ENGINE Bus STOPPED
+[21/Apr/2016:01:50:06] ENGINE Bus EXITING
+[21/Apr/2016:01:50:06] ENGINE Bus EXITED
+[21/Apr/2016:01:50:06] ENGINE Waiting for child threads to terminate...
+[21/Apr/2016:01:50:06] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[21/Apr/2016:01:50:08] ENGINE Bus STARTING
+[21/Apr/2016:01:50:08] ENGINE Started monitor thread 'Autoreloader'.
+[21/Apr/2016:01:50:08] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Apr/2016:01:50:08] ENGINE Serving on http://0.0.0.0:8080
+[21/Apr/2016:01:50:08] ENGINE Bus STARTED
+[21/Apr/2016:01:50:09] ENGINE Started monitor thread 'Session cleanup'.
+[21/Apr/2016:01:50:21] ENGINE Restarting because /data/source/geneseqmaterial/app/mouse.py changed.
+[21/Apr/2016:01:50:21] ENGINE Stopped thread 'Autoreloader'.
+[21/Apr/2016:01:50:21] ENGINE Bus STOPPING
+[21/Apr/2016:01:50:21] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Apr/2016:01:50:21] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Apr/2016:01:50:21] ENGINE Stopped thread 'Session cleanup'.
+[21/Apr/2016:01:50:21] ENGINE Bus STOPPED
+[21/Apr/2016:01:50:21] ENGINE Bus EXITING
+[21/Apr/2016:01:50:21] ENGINE Bus EXITED
+[21/Apr/2016:01:50:21] ENGINE Waiting for child threads to terminate...
+[21/Apr/2016:01:50:21] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[21/Apr/2016:01:50:23] ENGINE Bus STARTING
+[21/Apr/2016:01:50:23] ENGINE Started monitor thread 'Autoreloader'.
+[21/Apr/2016:01:50:23] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Apr/2016:01:50:23] ENGINE Serving on http://0.0.0.0:8080
+[21/Apr/2016:01:50:23] ENGINE Bus STARTED
+[21/Apr/2016:01:50:39] ENGINE Restarting because /data/source/geneseqmaterial/app/mouse.py changed.
+[21/Apr/2016:01:50:39] ENGINE Stopped thread 'Autoreloader'.
+[21/Apr/2016:01:50:39] ENGINE Bus STOPPING
+[21/Apr/2016:01:50:39] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Apr/2016:01:50:39] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Apr/2016:01:50:39] ENGINE Bus STOPPED
+[21/Apr/2016:01:50:39] ENGINE Bus EXITING
+[21/Apr/2016:01:50:39] ENGINE Bus EXITED
+[21/Apr/2016:01:50:39] ENGINE Waiting for child threads to terminate...
+[21/Apr/2016:01:50:39] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[21/Apr/2016:01:50:41] ENGINE Bus STARTING
+[21/Apr/2016:01:50:41] ENGINE Started monitor thread 'Autoreloader'.
+[21/Apr/2016:01:50:41] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Apr/2016:01:50:42] ENGINE Serving on http://0.0.0.0:8080
+[21/Apr/2016:01:50:42] ENGINE Bus STARTED
+[21/Apr/2016:01:50:43] ENGINE Started monitor thread 'Session cleanup'.
+[21/Apr/2016:01:50:44] HTTP 
+Request Headers:
+  DNT: 1
+  Remote-Addr: 172.17.0.1
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+  CONNECTION: keep-alive
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  ACCEPT: text/html, */*; q=0.01
+  COOKIE: session_id=ecea86fa9472390003980af8c9f92c42cd301abc
+  X-REQUESTED-WITH: XMLHttpRequest
+  PRAGMA: no-cache
+  HOST: 0.0.0.0
+  CACHE-CONTROL: no-cache
+  REFERER: http://0.0.0.0/
+[21/Apr/2016:01:50:44] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 65, in GET
+    value += "x"
+TypeError: unsupported operand type(s) for +=: 'float' and 'str'
+[21/Apr/2016:01:51:04] ENGINE Restarting because /data/source/geneseqmaterial/app/mouse.py changed.
+[21/Apr/2016:01:51:04] ENGINE Stopped thread 'Autoreloader'.
+[21/Apr/2016:01:51:04] ENGINE Bus STOPPING
+[21/Apr/2016:01:51:05] HTTP 
+Request Headers:
+  DNT: 1
+  Remote-Addr: 172.17.0.1
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+  CONNECTION: keep-alive
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  ACCEPT: text/html, */*; q=0.01
+  COOKIE: session_id=ecea86fa9472390003980af8c9f92c42cd301abc
+  X-REQUESTED-WITH: XMLHttpRequest
+  PRAGMA: no-cache
+  HOST: 0.0.0.0
+  CACHE-CONTROL: no-cache
+  REFERER: http://0.0.0.0/
+[21/Apr/2016:01:51:05] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 65, in GET
+    value = str(value) + "x"
+TypeError: unsupported operand type(s) for +=: 'float' and 'str'
+[21/Apr/2016:01:51:09] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Apr/2016:01:51:09] ENGINE Stopped thread 'Session cleanup'.
+[21/Apr/2016:01:51:09] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Apr/2016:01:51:09] ENGINE Bus STOPPED
+[21/Apr/2016:01:51:09] ENGINE Bus EXITING
+[21/Apr/2016:01:51:09] ENGINE Bus EXITED
+[21/Apr/2016:01:51:09] ENGINE Waiting for child threads to terminate...
+[21/Apr/2016:01:51:09] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[21/Apr/2016:01:51:11] ENGINE Bus STARTING
+[21/Apr/2016:01:51:11] ENGINE Started monitor thread 'Autoreloader'.
+[21/Apr/2016:01:51:11] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Apr/2016:01:51:11] ENGINE Serving on http://0.0.0.0:8080
+[21/Apr/2016:01:51:11] ENGINE Bus STARTED
+[21/Apr/2016:01:51:13] ENGINE Started monitor thread 'Session cleanup'.
+[21/Apr/2016:15:57:36] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 58, in GET
+    for key, value in gene.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+[21/Apr/2016:15:57:36] HTTP 
+Request Headers:
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  X-REQUESTED-WITH: XMLHttpRequest
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+  ACCEPT: text/html, */*; q=0.01
+  REFERER: http://0.0.0.0/
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  CONNECTION: keep-alive
+  COOKIE: session_id=fc33b848b6018f9fb9e66cbfee57163ec67fb1a7
+  DNT: 1
+  Remote-Addr: 172.17.0.1
+  HOST: 0.0.0.0
+[21/Apr/2016:16:56:57] ENGINE Restarting because /data/source/geneseqmaterial/app/web.py changed.
+[21/Apr/2016:16:56:57] ENGINE Stopped thread 'Autoreloader'.
+[21/Apr/2016:16:56:57] ENGINE Bus STOPPING
+[21/Apr/2016:16:56:57] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Apr/2016:16:56:57] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Apr/2016:16:56:57] ENGINE Stopped thread 'Session cleanup'.
+[21/Apr/2016:16:56:57] ENGINE Bus STOPPED
+[21/Apr/2016:16:56:57] ENGINE Bus EXITING
+[21/Apr/2016:16:56:57] ENGINE Bus EXITED
+[21/Apr/2016:16:56:57] ENGINE Waiting for child threads to terminate...
+[21/Apr/2016:16:56:57] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[21/Apr/2016:16:57:08] ENGINE Bus STARTING
+[21/Apr/2016:16:57:08] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Apr/2016:16:57:08] ENGINE Started monitor thread 'Autoreloader'.
+[21/Apr/2016:16:57:08] ENGINE Serving on http://0.0.0.0:8080
+[21/Apr/2016:16:57:08] ENGINE Bus STARTED
+[21/Apr/2016:16:57:12] ENGINE Started monitor thread 'Session cleanup'.
+[21/Apr/2016:16:57:45] ENGINE Restarting because /data/source/geneseqmaterial/app/web.py changed.
+[21/Apr/2016:16:57:45] ENGINE Stopped thread 'Autoreloader'.
+[21/Apr/2016:16:57:45] ENGINE Bus STOPPING
+[21/Apr/2016:16:57:45] ENGINE HTTP Server cherrypy._cpwsgi_server.CPWSGIServer(('0.0.0.0', 8080)) shut down
+[21/Apr/2016:16:57:45] ENGINE Stopped thread '_TimeoutMonitor'.
+[21/Apr/2016:16:57:45] ENGINE Stopped thread 'Session cleanup'.
+[21/Apr/2016:16:57:45] ENGINE Bus STOPPED
+[21/Apr/2016:16:57:45] ENGINE Bus EXITING
+[21/Apr/2016:16:57:45] ENGINE Bus EXITED
+[21/Apr/2016:16:57:46] ENGINE Waiting for child threads to terminate...
+[21/Apr/2016:16:57:46] ENGINE Re-spawning /data/source/geneseqmaterial/wsgi.py
+[21/Apr/2016:16:57:48] ENGINE Bus STARTING
+[21/Apr/2016:16:57:48] ENGINE Started monitor thread '_TimeoutMonitor'.
+[21/Apr/2016:16:57:48] ENGINE Started monitor thread 'Autoreloader'.
+[21/Apr/2016:16:57:48] ENGINE Serving on http://0.0.0.0:8080
+[21/Apr/2016:16:57:48] ENGINE Bus STARTED
+[21/Apr/2016:16:57:55] ENGINE Started monitor thread 'Session cleanup'.
+[21/Apr/2016:18:04:31] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 58, in GET
+    for key, value in gene.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+[21/Apr/2016:18:04:31] HTTP 
+Request Headers:
+  COOKIE: session_id=fc33b848b6018f9fb9e66cbfee57163ec67fb1a7
+  Remote-Addr: 172.17.0.1
+  CONNECTION: keep-alive
+  REFERER: http://0.0.0.0/
+  DNT: 1
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT: text/html, */*; q=0.01
+  X-REQUESTED-WITH: XMLHttpRequest
+  HOST: 0.0.0.0
+[21/Apr/2016:18:04:32] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 58, in GET
+    for key, value in gene.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+[21/Apr/2016:18:04:32] HTTP 
+Request Headers:
+  COOKIE: session_id=fc33b848b6018f9fb9e66cbfee57163ec67fb1a7
+  Remote-Addr: 172.17.0.1
+  CONNECTION: keep-alive
+  REFERER: http://0.0.0.0/
+  DNT: 1
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT: text/html, */*; q=0.01
+  X-REQUESTED-WITH: XMLHttpRequest
+  HOST: 0.0.0.0
+[21/Apr/2016:18:04:32] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 58, in GET
+    for key, value in gene.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+[21/Apr/2016:18:04:32] HTTP 
+Request Headers:
+  COOKIE: session_id=fc33b848b6018f9fb9e66cbfee57163ec67fb1a7
+  Remote-Addr: 172.17.0.1
+  CONNECTION: keep-alive
+  REFERER: http://0.0.0.0/
+  DNT: 1
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT: text/html, */*; q=0.01
+  X-REQUESTED-WITH: XMLHttpRequest
+  HOST: 0.0.0.0
+[21/Apr/2016:18:05:00] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 58, in GET
+    for key, value in gene.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+[21/Apr/2016:18:05:00] HTTP 
+Request Headers:
+  COOKIE: session_id=fc33b848b6018f9fb9e66cbfee57163ec67fb1a7
+  Remote-Addr: 172.17.0.1
+  CONNECTION: keep-alive
+  REFERER: http://0.0.0.0/
+  DNT: 1
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT: text/html, */*; q=0.01
+  X-REQUESTED-WITH: XMLHttpRequest
+  HOST: 0.0.0.0
+[21/Apr/2016:18:05:00] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 58, in GET
+    for key, value in gene.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+[21/Apr/2016:18:05:00] HTTP 
+Request Headers:
+  COOKIE: session_id=fc33b848b6018f9fb9e66cbfee57163ec67fb1a7
+  Remote-Addr: 172.17.0.1
+  CONNECTION: keep-alive
+  REFERER: http://0.0.0.0/
+  DNT: 1
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT: text/html, */*; q=0.01
+  X-REQUESTED-WITH: XMLHttpRequest
+  HOST: 0.0.0.0
+[21/Apr/2016:18:05:01] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 58, in GET
+    for key, value in gene.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+[21/Apr/2016:18:05:01] HTTP 
+Request Headers:
+  COOKIE: session_id=fc33b848b6018f9fb9e66cbfee57163ec67fb1a7
+  Remote-Addr: 172.17.0.1
+  CONNECTION: keep-alive
+  REFERER: http://0.0.0.0/
+  DNT: 1
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT: text/html, */*; q=0.01
+  X-REQUESTED-WITH: XMLHttpRequest
+  HOST: 0.0.0.0
+[21/Apr/2016:18:05:01] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 58, in GET
+    for key, value in gene.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+[21/Apr/2016:18:05:01] HTTP 
+Request Headers:
+  COOKIE: session_id=fc33b848b6018f9fb9e66cbfee57163ec67fb1a7
+  Remote-Addr: 172.17.0.1
+  CONNECTION: keep-alive
+  REFERER: http://0.0.0.0/
+  DNT: 1
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT: text/html, */*; q=0.01
+  X-REQUESTED-WITH: XMLHttpRequest
+  HOST: 0.0.0.0
+[21/Apr/2016:18:05:02] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 58, in GET
+    for key, value in gene.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+[21/Apr/2016:18:05:02] HTTP 
+Request Headers:
+  COOKIE: session_id=fc33b848b6018f9fb9e66cbfee57163ec67fb1a7
+  Remote-Addr: 172.17.0.1
+  CONNECTION: keep-alive
+  REFERER: http://0.0.0.0/
+  DNT: 1
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT: text/html, */*; q=0.01
+  X-REQUESTED-WITH: XMLHttpRequest
+  HOST: 0.0.0.0
+[21/Apr/2016:18:05:03] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 58, in GET
+    for key, value in gene.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+[21/Apr/2016:18:05:03] HTTP 
+Request Headers:
+  COOKIE: session_id=fc33b848b6018f9fb9e66cbfee57163ec67fb1a7
+  Remote-Addr: 172.17.0.1
+  CONNECTION: keep-alive
+  REFERER: http://0.0.0.0/
+  DNT: 1
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT: text/html, */*; q=0.01
+  X-REQUESTED-WITH: XMLHttpRequest
+  HOST: 0.0.0.0
+[21/Apr/2016:18:05:03] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 58, in GET
+    for key, value in gene.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+[21/Apr/2016:18:05:03] HTTP 
+Request Headers:
+  COOKIE: session_id=fc33b848b6018f9fb9e66cbfee57163ec67fb1a7
+  Remote-Addr: 172.17.0.1
+  CONNECTION: keep-alive
+  REFERER: http://0.0.0.0/
+  DNT: 1
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT: text/html, */*; q=0.01
+  X-REQUESTED-WITH: XMLHttpRequest
+  HOST: 0.0.0.0
+[21/Apr/2016:18:05:04] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 58, in GET
+    for key, value in gene.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+[21/Apr/2016:18:05:04] HTTP 
+Request Headers:
+  COOKIE: session_id=fc33b848b6018f9fb9e66cbfee57163ec67fb1a7
+  Remote-Addr: 172.17.0.1
+  CONNECTION: keep-alive
+  REFERER: http://0.0.0.0/
+  DNT: 1
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT: text/html, */*; q=0.01
+  X-REQUESTED-WITH: XMLHttpRequest
+  HOST: 0.0.0.0
+[21/Apr/2016:18:05:06] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 58, in GET
+    for key, value in gene.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+[21/Apr/2016:18:05:06] HTTP 
+Request Headers:
+  COOKIE: session_id=fc33b848b6018f9fb9e66cbfee57163ec67fb1a7
+  Remote-Addr: 172.17.0.1
+  CONNECTION: keep-alive
+  REFERER: http://0.0.0.0/
+  DNT: 1
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT: text/html, */*; q=0.01
+  X-REQUESTED-WITH: XMLHttpRequest
+  HOST: 0.0.0.0
+[21/Apr/2016:18:05:06] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 58, in GET
+    for key, value in gene.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+[21/Apr/2016:18:05:06] HTTP 
+Request Headers:
+  COOKIE: session_id=fc33b848b6018f9fb9e66cbfee57163ec67fb1a7
+  Remote-Addr: 172.17.0.1
+  CONNECTION: keep-alive
+  REFERER: http://0.0.0.0/
+  DNT: 1
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT: text/html, */*; q=0.01
+  X-REQUESTED-WITH: XMLHttpRequest
+  HOST: 0.0.0.0
+[21/Apr/2016:18:05:07] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 58, in GET
+    for key, value in gene.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+[21/Apr/2016:18:05:07] HTTP 
+Request Headers:
+  COOKIE: session_id=fc33b848b6018f9fb9e66cbfee57163ec67fb1a7
+  Remote-Addr: 172.17.0.1
+  CONNECTION: keep-alive
+  REFERER: http://0.0.0.0/
+  DNT: 1
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT: text/html, */*; q=0.01
+  X-REQUESTED-WITH: XMLHttpRequest
+  HOST: 0.0.0.0
+[21/Apr/2016:18:05:07] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 58, in GET
+    for key, value in gene.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+[21/Apr/2016:18:05:07] HTTP 
+Request Headers:
+  COOKIE: session_id=fc33b848b6018f9fb9e66cbfee57163ec67fb1a7
+  Remote-Addr: 172.17.0.1
+  CONNECTION: keep-alive
+  REFERER: http://0.0.0.0/
+  DNT: 1
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT: text/html, */*; q=0.01
+  X-REQUESTED-WITH: XMLHttpRequest
+  HOST: 0.0.0.0
+[21/Apr/2016:18:05:08] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 58, in GET
+    for key, value in gene.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+[21/Apr/2016:18:05:08] HTTP 
+Request Headers:
+  COOKIE: session_id=fc33b848b6018f9fb9e66cbfee57163ec67fb1a7
+  Remote-Addr: 172.17.0.1
+  CONNECTION: keep-alive
+  REFERER: http://0.0.0.0/
+  DNT: 1
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT: text/html, */*; q=0.01
+  X-REQUESTED-WITH: XMLHttpRequest
+  HOST: 0.0.0.0
+[21/Apr/2016:18:05:09] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 58, in GET
+    for key, value in gene.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+[21/Apr/2016:18:05:09] HTTP 
+Request Headers:
+  COOKIE: session_id=fc33b848b6018f9fb9e66cbfee57163ec67fb1a7
+  Remote-Addr: 172.17.0.1
+  CONNECTION: keep-alive
+  REFERER: http://0.0.0.0/
+  DNT: 1
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT: text/html, */*; q=0.01
+  X-REQUESTED-WITH: XMLHttpRequest
+  HOST: 0.0.0.0
+[21/Apr/2016:18:05:09] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 58, in GET
+    for key, value in gene.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+[21/Apr/2016:18:05:09] HTTP 
+Request Headers:
+  COOKIE: session_id=fc33b848b6018f9fb9e66cbfee57163ec67fb1a7
+  Remote-Addr: 172.17.0.1
+  CONNECTION: keep-alive
+  REFERER: http://0.0.0.0/
+  DNT: 1
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT: text/html, */*; q=0.01
+  X-REQUESTED-WITH: XMLHttpRequest
+  HOST: 0.0.0.0
+[21/Apr/2016:18:05:10] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 58, in GET
+    for key, value in gene.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+[21/Apr/2016:18:05:10] HTTP 
+Request Headers:
+  COOKIE: session_id=fc33b848b6018f9fb9e66cbfee57163ec67fb1a7
+  Remote-Addr: 172.17.0.1
+  CONNECTION: keep-alive
+  REFERER: http://0.0.0.0/
+  DNT: 1
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT: text/html, */*; q=0.01
+  X-REQUESTED-WITH: XMLHttpRequest
+  HOST: 0.0.0.0
+[21/Apr/2016:18:05:10] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 58, in GET
+    for key, value in gene.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+[21/Apr/2016:18:05:10] HTTP 
+Request Headers:
+  COOKIE: session_id=fc33b848b6018f9fb9e66cbfee57163ec67fb1a7
+  Remote-Addr: 172.17.0.1
+  CONNECTION: keep-alive
+  REFERER: http://0.0.0.0/
+  DNT: 1
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT: text/html, */*; q=0.01
+  X-REQUESTED-WITH: XMLHttpRequest
+  HOST: 0.0.0.0
+[21/Apr/2016:18:05:55] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 58, in GET
+    for key, value in gene.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+[21/Apr/2016:18:05:55] HTTP 
+Request Headers:
+  COOKIE: session_id=fc33b848b6018f9fb9e66cbfee57163ec67fb1a7
+  Remote-Addr: 172.17.0.1
+  CONNECTION: keep-alive
+  REFERER: http://0.0.0.0/
+  DNT: 1
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT: text/html, */*; q=0.01
+  X-REQUESTED-WITH: XMLHttpRequest
+  HOST: 0.0.0.0
+[21/Apr/2016:18:53:23] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 58, in GET
+    for key, value in gene.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+[21/Apr/2016:18:53:23] HTTP 
+Request Headers:
+  COOKIE: session_id=fc33b848b6018f9fb9e66cbfee57163ec67fb1a7
+  Remote-Addr: 172.17.0.1
+  CONNECTION: keep-alive
+  PRAGMA: no-cache
+  REFERER: http://0.0.0.0/
+  DNT: 1
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+  CACHE-CONTROL: no-cache
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT: text/html, */*; q=0.01
+  X-REQUESTED-WITH: XMLHttpRequest
+  HOST: 0.0.0.0
+[21/Apr/2016:18:58:45] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 58, in GET
+    for key, value in gene.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+[21/Apr/2016:18:58:45] HTTP 
+Request Headers:
+  COOKIE: session_id=fc33b848b6018f9fb9e66cbfee57163ec67fb1a7
+  Remote-Addr: 172.17.0.1
+  CONNECTION: keep-alive
+  REFERER: http://0.0.0.0/
+  DNT: 1
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT: text/html, */*; q=0.01
+  X-REQUESTED-WITH: XMLHttpRequest
+  HOST: 0.0.0.0
+[21/Apr/2016:19:03:50] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 58, in GET
+    for key, value in gene.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+[21/Apr/2016:19:03:50] HTTP 
+Request Headers:
+  COOKIE: session_id=fc33b848b6018f9fb9e66cbfee57163ec67fb1a7
+  Remote-Addr: 172.17.0.1
+  CONNECTION: keep-alive
+  REFERER: http://0.0.0.0/
+  DNT: 1
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT: text/html, */*; q=0.01
+  X-REQUESTED-WITH: XMLHttpRequest
+  HOST: 0.0.0.0
+[21/Apr/2016:19:03:51] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 58, in GET
+    for key, value in gene.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+[21/Apr/2016:19:03:51] HTTP 
+Request Headers:
+  COOKIE: session_id=fc33b848b6018f9fb9e66cbfee57163ec67fb1a7
+  Remote-Addr: 172.17.0.1
+  CONNECTION: keep-alive
+  REFERER: http://0.0.0.0/
+  DNT: 1
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT: text/html, */*; q=0.01
+  X-REQUESTED-WITH: XMLHttpRequest
+  HOST: 0.0.0.0
+[21/Apr/2016:19:03:51] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 58, in GET
+    for key, value in gene.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+[21/Apr/2016:19:03:51] HTTP 
+Request Headers:
+  COOKIE: session_id=fc33b848b6018f9fb9e66cbfee57163ec67fb1a7
+  Remote-Addr: 172.17.0.1
+  CONNECTION: keep-alive
+  REFERER: http://0.0.0.0/
+  DNT: 1
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT: text/html, */*; q=0.01
+  X-REQUESTED-WITH: XMLHttpRequest
+  HOST: 0.0.0.0
+[21/Apr/2016:19:03:51] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 58, in GET
+    for key, value in gene.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+[21/Apr/2016:19:03:51] HTTP 
+Request Headers:
+  COOKIE: session_id=fc33b848b6018f9fb9e66cbfee57163ec67fb1a7
+  Remote-Addr: 172.17.0.1
+  CONNECTION: keep-alive
+  REFERER: http://0.0.0.0/
+  DNT: 1
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT: text/html, */*; q=0.01
+  X-REQUESTED-WITH: XMLHttpRequest
+  HOST: 0.0.0.0
+[21/Apr/2016:19:03:52] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 58, in GET
+    for key, value in gene.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+[21/Apr/2016:19:03:52] HTTP 
+Request Headers:
+  COOKIE: session_id=fc33b848b6018f9fb9e66cbfee57163ec67fb1a7
+  Remote-Addr: 172.17.0.1
+  CONNECTION: keep-alive
+  REFERER: http://0.0.0.0/
+  DNT: 1
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT: text/html, */*; q=0.01
+  X-REQUESTED-WITH: XMLHttpRequest
+  HOST: 0.0.0.0
+[21/Apr/2016:19:03:52] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 58, in GET
+    for key, value in gene.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+[21/Apr/2016:19:03:52] HTTP 
+Request Headers:
+  COOKIE: session_id=fc33b848b6018f9fb9e66cbfee57163ec67fb1a7
+  Remote-Addr: 172.17.0.1
+  CONNECTION: keep-alive
+  REFERER: http://0.0.0.0/
+  DNT: 1
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT: text/html, */*; q=0.01
+  X-REQUESTED-WITH: XMLHttpRequest
+  HOST: 0.0.0.0
+[21/Apr/2016:19:03:52] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 58, in GET
+    for key, value in gene.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+[21/Apr/2016:19:03:52] HTTP 
+Request Headers:
+  COOKIE: session_id=fc33b848b6018f9fb9e66cbfee57163ec67fb1a7
+  Remote-Addr: 172.17.0.1
+  CONNECTION: keep-alive
+  REFERER: http://0.0.0.0/
+  DNT: 1
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT: text/html, */*; q=0.01
+  X-REQUESTED-WITH: XMLHttpRequest
+  HOST: 0.0.0.0
+[21/Apr/2016:19:03:52] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 58, in GET
+    for key, value in gene.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+[21/Apr/2016:19:03:52] HTTP 
+Request Headers:
+  COOKIE: session_id=fc33b848b6018f9fb9e66cbfee57163ec67fb1a7
+  Remote-Addr: 172.17.0.1
+  CONNECTION: keep-alive
+  REFERER: http://0.0.0.0/
+  DNT: 1
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT: text/html, */*; q=0.01
+  X-REQUESTED-WITH: XMLHttpRequest
+  HOST: 0.0.0.0
+[21/Apr/2016:19:03:53] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 58, in GET
+    for key, value in gene.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+[21/Apr/2016:19:03:53] HTTP 
+Request Headers:
+  COOKIE: session_id=fc33b848b6018f9fb9e66cbfee57163ec67fb1a7
+  Remote-Addr: 172.17.0.1
+  CONNECTION: keep-alive
+  REFERER: http://0.0.0.0/
+  DNT: 1
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT: text/html, */*; q=0.01
+  X-REQUESTED-WITH: XMLHttpRequest
+  HOST: 0.0.0.0
+[21/Apr/2016:19:03:55] HTTP 
+Traceback (most recent call last):
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cprequest.py", line 670, in respond
+    response.body = self.handler()
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/lib/encoding.py", line 217, in __call__
+    self.body = self.oldhandler(*args, **kwargs)
+  File "/usr/local/lib/python3.4/dist-packages/cherrypy/_cpdispatch.py", line 61, in __call__
+    return self.callable(*self.args, **self.kwargs)
+  File "/data/source/geneseqmaterial/app/mouse.py", line 58, in GET
+    for key, value in gene.items():
+AttributeError: 'NoneType' object has no attribute 'items'
+[21/Apr/2016:19:03:55] HTTP 
+Request Headers:
+  COOKIE: session_id=fc33b848b6018f9fb9e66cbfee57163ec67fb1a7
+  Remote-Addr: 172.17.0.1
+  CONNECTION: keep-alive
+  PRAGMA: no-cache
+  REFERER: http://0.0.0.0/
+  DNT: 1
+  ACCEPT-ENCODING: gzip, deflate, sdch
+  USER-AGENT: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/50.0.2661.75 Safari/537.36
+  CACHE-CONTROL: no-cache
+  ACCEPT-LANGUAGE: en-US,en;q=0.8
+  ACCEPT: text/html, */*; q=0.01
+  X-REQUESTED-WITH: XMLHttpRequest
+  HOST: 0.0.0.0

@@ -1,0 +1,150 @@
+<div class="home-grid mdl-grid">
+    <div class="mdl-cell mdl-cell--12-col">
+        <div class="index-card search-card mdl-card mdl-shadow--2dp">
+            <div class="inside-text">
+                <h4>Home</h4>
+                <p>genseq is a tool that allows all users to explore the human
+                genome and view all information regarding that query and any
+                visual derivations of that data. Developed at Gerstein Lab of
+                Yale University under the guidance of Drs. Robert Kitchen and
+                Mark Gerstein</p>
+                <p>Use the search bar below to search through our database. For
+                example, you can enter a gene name such as "<code>LPAR2</code>"
+                or part of a gene name such as "<code>LPA</code>".</p>
+                <div class="mdh-expandable-search mdl-cell--hide-phone">
+                    <i class="material-icons">search</i>
+                    <form action="/search" method="get">
+                        <input autocomplete="off" class="mdl-color--primary" name="query"
+                        placeholder="Search" size="1" type="text">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="margin-top:0px;" class="mdl-cell mdl-cell--12-col">
+        <div style="min-height:0px;" class="index-card search-card mdl-card mdl-shadow--2dp">
+            <table style="display: none; width: 100%;" id="liveSearchTable" class="mdl-data-table mdl-js-data-table mdl-shadow--8dp">
+                <thead>
+                    <tr>
+                        <th class="mdl-data-table__cell--non-numeric">Gene
+                        Name</th>
+                        <th class="mdl-data-table__cell--non-numeric">Cell
+                        Type</th>
+                        <th class="sort_none">Expression (TPM)</th>
+                        <th class="sort_none">Fold Enrichment</th>
+                    </tr>
+                </thead>
+                <tbody id="liveSearchBody">
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <div class="mdl-cell mdl-cell--6-col">
+        <div class="index-card mdl-card mdl-shadow--2dp">
+            <div class="inside-text">
+                <h4>Sample Entry</h4>
+                <table class="mdl-data-table mdl-js-data-table mdl-shadow--8dp"
+                style="width: 100%;">
+                    <thead>
+                        <tr>
+                            <th class="mdl-data-table__cell--non-numeric">Gene
+                            Name</th>
+                            <th class="mdl-data-table__cell--non-numeric">Cell
+                            Type</th>
+                            <th class="sort_none">Expression (TPM)</th>
+                            <th class="sort_none">Fold Enrichment</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="mdl-data-table__cell--non-numeric">
+                                <a href="/gene?id=ENSMUSG00000067714">LPAR5</a>
+                            </td>
+                            <td class="mdl-data-table__cell--non-numeric">
+                            microglia</td>
+                            <td>41.5336159265621</td>
+                            <td>46.1027684616861</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="mdl-cell mdl-cell--6-col">
+        <div class="index-card mdl-card mdl-shadow--2dp">
+            <div class="inside-text">
+                <h4>Explore</h4>
+                <p>Explore the geneseq table through two different
+                interfaces.</p><button class=
+                "mdl-button mdl-js-button mdl-button--raised mdl-button--colored">Interactive
+                table</button> <button class=
+                "mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
+                Table</button>
+            </div>
+        </div>
+    </div>
+    <div class="mdl-cell mdl-cell--12-col">
+        <div class="index-card mdl-card mdl-shadow--2dp">
+            <div class="inside-text">
+                <h4>News</h4>
+                <ul class="demo-list-icon mdl-list">
+                    <li class="mdl-list__item"><span class=
+                    "mdl-list__item-primary-content"><i class=
+                    "material-icons mdl-list__item-icon">turned_in</i> V 1.2
+                    Release</span></li>
+                    <li style="list-style: none; display: inline">
+                        <p>Added:</p>
+                    </li>
+                    <li>One page application w/ JS Routing system</li>
+                    <li>Added the <a href=
+                    "http://bl.ocks.org/zanarmstrong/raw/84a5cb09fa4a1a144104/">
+                        Armstrong Visual</a>
+                    </li>
+                </ul>
+                <ul class="demo-list-icon mdl-list">
+                    <li class="mdl-list__item"><span class=
+                    "mdl-list__item-primary-content"><i class=
+                    "material-icons mdl-list__item-icon">turned_in</i> V 1.1
+                    Release</span></li>
+                    <li style="list-style: none; display: inline">
+                        <p>Welcome everybody. This is a new version we are
+                        releasing. Features a new UI.</p>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+function liveSearch (input){
+    getData = {};
+    getData['query'] = $(input).val();
+    getData['api'] = true;
+    $.ajax({
+        type: "GET",
+        url: "/search",
+        data: getData,
+        cache: false,
+        success: function(d)
+        {
+            $('#liveSearchTable').show();
+            $('#liveSearchBody').empty();
+            var items = [];
+            var data = JSON.parse(d);
+            $.each( data, function( key, val ) {
+                items.push('<tr><td class="mdl-data-table__cell--non-numeric"><a href="/gene?id=' + val["_id"] + '">'+ val['human_name'] + '</a></td><td>' + val['cell'] + '</td><td>'+ parseFloat(val['expression']).toFixed(2) +'</td><td>'+parseFloat(val['enrichment']).toFixed(2)+'</td></tr>');
+            });
+            $('#liveSearchBody').append( items.join('') );
+        }
+    });
+}
+timer = 0;
+$('input[name=query]').keyup(function() {
+    if($(this).val().length >= 3){
+        clearTimeout(timer);
+        timer = setTimeout(liveSearch(this), 0);
+    }else{
+        $('#liveSearchTable').hide();
+    }
+});
+</script>

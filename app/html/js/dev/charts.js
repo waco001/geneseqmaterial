@@ -1,5 +1,4 @@
-
-$(document).ready(function() {
+function drawCharts(){
     var id = $('span#_id').attr('value');
     var human_id = $('span#human_id').attr('value');
    if (mouse != null) {
@@ -22,4 +21,4 @@ $(document).ready(function() {
         brainspan.plot(human_id, '/human/chart/brainspan', {'node': 'div#brainspan-chart',
                                                             'width': 100});
     }
-});
+}

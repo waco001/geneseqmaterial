@@ -379,6 +379,7 @@ class Human(Parent):
         pipe.disconnect()
 
         logger.debug('annotations \n%s' % annotations)
+
         return annotations
 
     def plot_brainspan(self, human_id):

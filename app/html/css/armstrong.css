@@ -1,0 +1,213 @@
+#note {
+  color: #ffa500;
+}
+.axis path {
+  stroke-width: 0.5px;
+  fill: none;
+  stroke: #808080;
+}
+.axis .tick text {
+  font-size: 14px;
+  fill: #808080;
+}
+.axis .tick line {
+  stroke: #808080;
+  stroke-width: 0.25px;
+}
+.brush .extent {
+  fill-opacity: 0.125;
+  shape-rendering: crispEdges;
+  fill: #401f21;
+}
+rect.extents {
+  fill-opacity: 0.125;
+  stroke: none;
+  fill: #401f21;
+}
+text.extents {
+  fill: #808080;
+  font-size: 14px;
+}
+.cellTypeLabels {
+  cursor: pointer;
+  fill: #808080;
+}
+.cellTypeLabels.hovered {
+  fill: #f34f00;
+}
+.cellTypeLabels.selected {
+  fill: #0c7de9;
+}
+.mouse_genes {
+  fill: #808080;
+  stroke: none;
+  opacity: 0.5;
+  transform: scale(1);
+}
+.mouse_genes.unhovered {
+  opacity: 0.15;
+}
+.mouse_genes.unselected {
+  opacity: 0.08;
+}
+.mouse_genes.hovered {
+  fill: #f34f00;
+  opacity: 1;
+}
+.mouse_genes.selected {
+  fill: #0056f4;
+  opacity: 1;
+}
+.mouse_genes.pulse {
+  animation-name: pulsar;
+  animation-duration: 0.8s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  transform-origin: 50% 50%;
+  opacity: 1;
+}
+.mouse_genes.selectedGenes {
+  fill: #0056f4;
+  transform: scale(1.5);
+  transform-origin: 50% 50%;
+  opacity: 1;
+}
+.mouse_genes.selectedGenes.hovered {
+  stroke: #0056f4;
+  transform: scale(2);
+  fill: #f34f00;
+  stroke-width: 1px;
+}
+.title {
+  fill: #808080;
+  stroke: none;
+}
+.title.main {
+  fill: #000;
+}
+.hidden {
+  display: none;
+}
+.node {
+  font: 10px sans-serif;
+}
+.node circle {
+  fill: #808080;
+}
+.link {
+  fill: none;
+  stroke: #9b9b9c;
+}
+table {
+  margin: 40px;
+  border-collapse: collapse;
+  font: 12px sans-serif;
+  max-width: 1200px;
+  color: #3c3c3c;
+}
+th,
+td {
+  padding-right: 25px;
+  text-align: left;
+}
+thead {
+  font-weight: bold;
+}
+tbody th {
+  font-weight: normal;
+}
+thead .td-quant,
+.td-expression {
+  cursor: s-resize;
+}
+tbody tr.selected {
+  color: #0056f4;
+  fill: #0056f4;
+}
+tbody tr.selected rect,
+tbody tr.selected text {
+  color: #0056f4;
+  fill: #0056f4;
+}
+tbody tr:hover {
+  background: #f3f3f3;
+}
+tbody tr:hover rect {
+  fill: #f34f00;
+}
+tbody tr:hover td,
+tbody tr:hover th,
+tbody tr:hover text {
+  color: #db4700;
+  fill: #db4700;
+}
+tbody tr:hover.selected rect {
+  fill: #0056f4;
+}
+tbody tr:hover.selected td,
+tbody tr:hover.selected th,
+tbody tr:hover.selected text {
+  color: #0056f4;
+  fill: #0056f4;
+}
+tbody tr:first-child td {
+  padding-top: 2px;
+}
+tbody .td-quant {
+  padding: 0;
+  padding-right: 30px;
+  border-left: solid 1px #c0c0c0;
+}
+tbody .enrichedVis {
+  padding: 0;
+  border-left: solid 1px #c0c0c0;
+}
+text {
+  fill: #3c3c3c;
+}
+tbody rect {
+  fill: #c0c0c0;
+}
+.myTable {
+  margin-left: 120px;
+}
+@-moz-keyframes pulsar {
+  from {
+    fill: #4586ff;
+  }
+  to {
+    fill: #f34f00;
+    transform: scale(2.5);
+    transform-origin: 50% 50%;
+  }
+}
+@-webkit-keyframes pulsar {
+  from {
+    fill: #4586ff;
+  }
+  to {
+    fill: #f34f00;
+    transform: scale(2.5);
+    transform-origin: 50% 50%;
+  }
+}
+@-o-keyframes pulsar {
+  from {
+    fill: #4586ff;
+  }
+  to {
+    fill: #f34f00;
+    transform: scale(2.5);
+    transform-origin: 50% 50%;
+  }
+}
+@keyframes pulsar {
+  from {
+    fill: #4586ff;
+  }
+  to {
+    fill: #f34f00;
+    transform: scale(2.5);
+    transform-origin: 50% 50%;
+  }
+}

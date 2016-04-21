@@ -58,11 +58,20 @@ class Gene(Parent):
             for key, value in gene.items():
                 name = settings.translate_readable(key)
                 if name == key:
-                    name = ' '.join(key.split('_')).title()
-
+                    if name == "human_id": name = "Human Gene ID"
+                    if name == "_id": name = "Mouse Gene ID"
+                    if name == "enrichment":
+                        name = "Enriched (fold)"
+                        value = str(value) + "x"
+                    if name == "type": name = "Celltype"
+                    if name == "human_name": name = "Gene Name"
+                    if name == "expression": #Temp get-around
+                        name = ""
+                        value = ""
                 item = dict()
                 item = (name, key, value)
                 header.append(item)
+            print(header)
             kwargs['header'] = self.sort(header)
             try:
                 return tmpl.render(**kwargs)
@@ -270,7 +279,7 @@ class Chart(Parent):
         names = [x[1] for x in columns]
 
         ret = {'values': values, 'names': names, 'colors': order}
-        ret['title'] = 'Mouse CNS Celltype Expression'
+        ret['title'] = 'Gene Expression (log10 transcripts per million)'
         ret['min'] = min([x[-1] for x in values])
         ret['max'] = max([x[-1] for x in values])
         ret['axis_length'] = max(len(x) for x in values)

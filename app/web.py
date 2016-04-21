@@ -44,7 +44,7 @@ class Root(Parent):
         logger.debug('session %s' % cherrypy.session.get(app.settings.SESSION_KEY))
         kwargs['Title'] = 'Home'
         kwargs = self.mako_args(kwargs)
-        tmpl = lookup.get_template("index.html")
+        tmpl = lookup.get_template("base.html")
         try:
             return tmpl.render(**kwargs)
         except:
@@ -103,7 +103,7 @@ class Search(Parent):
             query = kwargs['query']
             data = self.pipe.textSearch(query)
             if ('api' in kwargs):
-                    return json.dumps(data)
+                return json.dumps(data)
             kwargs = {'Title': 'Mouse Expression Table',
                       'data': data,
                       'columnNames': app.settings.getColumnNames('mouse'),

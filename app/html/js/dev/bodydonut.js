@@ -15,7 +15,7 @@ var bodydonut = new function() {
             'gene_id': id
         }, function(data, status) {
             if (status == 'success' && data != null) {
-                $('#two').addClass("mdl-cell--5-col");
+                $('#two').addClass("mdl-cell--4-col");
                 $('#two').append('<div class="donut-card mdl-card mdl-shadow--2dp"></div>');
                 var bodydonut_node = $('<div />', {
                     id: 'bodydonut-chart',
@@ -60,7 +60,7 @@ var bodydonut = new function() {
                 var svg = d3.select("#bodydonut-chart").append("svg")
                 .attr("width", width)
                 .attr("height", height)
-                .attr("stroke-width", "2.5")
+                .attr("stroke-width", "5")
                 .attr("stroke", "white")
                 .append("g")
                 .attr("transform", "translate(" + (inner_radius+cwidth) + "," + (inner_radius+cwidth+25) + ")");
@@ -85,14 +85,14 @@ var bodydonut = new function() {
                     .attr("stroke","white")
                     .transition()
                     .duration(500)
-                    .attr("stroke-width",6);
+                    .attr("stroke-width",0);
                     d3.select(".inside-text").text(genes[i] + " " + Math.round(d.value));
                 }).on("mouseout", function() {
                     d3.select(this)
                     .attr("stroke","white")
                     .transition()
-                    .duration(1000)
-                    .attr("stroke-width",2.5);
+                    .duration(500)
+                    .attr("stroke-width","2.5");
                     d3.select(".inside-text").text("");
                 }).on("click", function(d, j) {
                     alert("Onclick Maybe?:" + d.data.name);

@@ -1,0 +1,139 @@
+[{
+  "level1": "oligodendrocyte",
+  "root": "glia",
+  "level2": "oligodendrocyte precursor"
+}, {
+  "level1": "oligodendrocyte",
+  "root": "glia",
+  "level2": "newly formed oligodendrocyte"
+}, {
+  "level1": "oligodendrocyte",
+  "root": "glia",
+  "level2": "myelinating oligodendrocyte"
+}, {
+  "level1": "microglia",
+  "root": "glia"
+}, {
+  "level1": "astrocyte",
+  "root": "glia"
+}, {
+  "level1": "astrocyte",
+  "root": "glia",
+  "level2": "Aldh1l1 astrocyte"
+}, {
+  "level1": "endothelial",
+  "root": "glia",
+  "level2": "Abcb1a blood vessel"
+}, {
+  "level1": "ependymal",
+  "root": "glia",
+  "level2": "Dcdc2a ependymal"
+}, {
+  "level1": "projection neuron",
+  "root": "neuron",
+  "level3": "Glt25d2 pyramidal neuron",
+  "level2": "pyramidal neuron"
+}, {
+  "level1": "projection neuron",
+  "root": "neuron",
+  "level3": "S100a10 pyramidal neuron",
+  "level2": "pyramidal neuron"
+}, {
+  "level1": "projection neuron",
+  "root": "neuron",
+  "level3": "callosal projection neuron",
+  "level2": "pyramidal neuron"
+}, {
+  "level1": "projection neuron",
+  "root": "neuron",
+  "level3": "subcerebral projection neuron",
+  "level2": "pyramidal neuron"
+}, {
+  "level1": "projection neuron",
+  "root": "neuron",
+  "level3": "corticothalamic projection neuron",
+  "level2": "pyramidal neuron"
+}, {
+  "level1": "projection neuron",
+  "root": "neuron",
+  "level3": "AGRP neuron",
+  "level2": "AGRP projection neuron"
+}, {
+  "level1": "projection neuron",
+  "root": "neuron",
+  "level3": "POMC neuron",
+  "level2": "POMC projection neuron"
+}, {
+  "level1": "interneuron",
+  "root": "neuron",
+  "level3": "Lhx5 hypothalamic interneuron",
+  "level2": "inhibitory interneuron"
+}, {
+  "level1": "projection neuron",
+  "root": "neuron",
+  "level3": "Stard8 neuron",
+  "level2": "dopaminergic neuron"
+}, {
+  "level1": "interneuron",
+  "root": "neuron",
+  "level2": "Lhx5 midbrain interneuron"
+}, {
+  "level1": "projection neuron",
+  "root": "neuron",
+  "level3": "SNpc dopaminergic neuron",
+  "level2": "dopaminergic neuron"
+}, {
+  "level1": "projection neuron",
+  "root": "neuron",
+  "level3": "VTA dopaminergic neuron",
+  "level2": "dopaminergic neuron"
+}, {
+  "level1": "projection neuron",
+  "root": "neuron",
+  "level3": "Drd1 neuron",
+  "level2": "medium spiny neuron"
+}, {
+  "level1": "projection neuron",
+  "root": "neuron",
+  "level3": "Drd2 neuron",
+  "level2": "medium spiny neuron"
+}, {
+  "level1": "projection neuron",
+  "root": "neuron",
+  "level3": "ChAT neuron",
+  "level2": "cholinergic neuron"
+}, {
+  "level1": "projection neuron",
+  "root": "neuron",
+  "level3": "ChAT neuron",
+  "level2": "cholinergic neuron"
+}, {
+  "level1": "interneuron",
+  "root": "neuron",
+  "level3": "Slc17a6 neuron",
+  "level2": "periglomerular neuron"
+}, {
+  "level1": "interneuron",
+  "root": "neuron",
+  "level3": "Slc17a6 neuron",
+  "level2": "periglomerular neuron"
+}, {
+  "level1": "interneuron",
+  "root": "neuron",
+  "level3": "Slc17a6 neuron",
+  "level2": "periglomerular neuron"
+}, {
+  "level1": "granule cell",
+  "root": "neuron",
+  "level2": "Cbln1 neuron"
+}, {
+  "level1": "projection neuron",
+  "root": "neuron",
+  "level3": "Epyc neuron",
+  "level2": "GABAergic neuron"
+}, {
+  "level1": "projection neuron",
+  "root": "neuron",
+  "level3": "Chrna5 neuron",
+  "level2": "GABAergic neuron"
+}]
